@@ -3,35 +3,39 @@ import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Home = () => {
-    return (
-        <Body>
-            <BookCover>
-                <Bookdot>
-                    <Page>
-                        <Container1>
-                            <Item1>
-                                <Box>TODAY 28 | TOTAL 123456</Box>
-                            </Item1>
-                            <Item2></Item2>
-                        </Container1>
+  return (
+    <Body>
+      <BookCover>
+        <Bookdot>
+          <Page>
+            <Container1>
+              <Item1>
+                <Box>TODAY 28 | TOTAL 123456</Box>
+              </Item1>
+              <Item2>
+                <Qqq>
+                  사진을 넣자
+                </Qqq>
+              </Item2>
+            </Container1>
 
-                        <Container2>
-                            <Item3>
-                                이재호의 포트폴리오
-                                <Tab>
-                                    <a href="https://github.com/jaeho13">
-                                        https://github.com/jaeho13
-                                    </a>
-                                </Tab>
-                            </Item3>
-                            <Item4></Item4>
-                        </Container2>
-                        <Container3></Container3>
-                    </Page>
-                </Bookdot>
-            </BookCover>
-        </Body>
-    );
+            <Container2>
+              <Item3>
+                이재호의 포트폴리오
+                <Tab>
+                  <a href="https://github.com/jaeho13">
+                    https://github.com/jaeho13
+                  </a>
+                </Tab>
+              </Item3>
+              <Item4></Item4>
+            </Container2>
+            <Container3></Container3>
+          </Page>
+        </Bookdot>
+      </BookCover >
+    </Body >
+  );
 };
 
 const Body = styled.div`
@@ -78,6 +82,12 @@ const Page = styled.div`
   display: flex;
 `;
 
+const Qqq = styled.div`
+  width: 100%;
+  height: 10rem;
+  border: 2px solid black;
+`
+
 const Container1 = styled.div`
   flex: 0.4;
   display: flex;
@@ -100,6 +110,11 @@ const Item2 = styled.div`
   border-radius: 1rem;
   background-color: white;
 `;
+
+const Profile = styled.div`
+  flex: 1;
+  text-align: center;
+`
 
 const Container2 = styled.div`
   flex: 1;
