@@ -19,7 +19,7 @@ const Home = () => {
                                 <Visit>TODAY <Visit2>28</Visit2> | TOTAL 123456</Visit>
                                 <Bind2>
                                     <HomePage>이재호의 미니홈피</HomePage>
-                                    <Link>이 홈페이지</Link>
+                                    <Link>이 홈페이지 링크</Link>
                                 </Bind2>
                             </Bind>
 
@@ -30,9 +30,8 @@ const Home = () => {
                                     </LeftTop>
                                     <LeftCenterComment>Introduce</LeftCenterComment>
                                     <LeftCenter>
-                                        프론트엔드 개발자를 꿈꾸는 97년생 이재호입니다. <br />
-                                        새로운 것을 배우며 성장하는 것을 좋아합니다. <br />
-                                        저의 성실함을 보여드리기 위해서 1일 1커밋을 진행하고 있습니다. <br />
+                                        프론트엔드 개발자를 꿈꾸는 이재호입니다.<br />
+                                        사용자 경험을 고려한 직관적이고 효율적인 인터페이스를 디자인하고 개발하는 것에 관심이 많습니다. <br />
                                     </LeftCenter>
                                     <LeftBottomComment>
                                         Link
@@ -224,12 +223,11 @@ const LeftCenter = styled.div`
     width: 90%;
     height: 13rem;
     font-size: 1.2rem;
+    /* margin-top: 2rem; */
     /* margin-left: 0.3rem; */
     /* border: 2px solid red; */
-    /* margin-top: 2rem; */
     overflow: hidden;
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap; */
+    text-overflow: ellipsis;
     
     margin: 0 auto;
 `
@@ -259,9 +257,9 @@ const Choice = styled.select`
     width: 100%;
     height: 2rem;
     border: 1px solid black;
-    border-radius: 2rem;
-    color: white;
-    background-color: rgba(163, 163, 163, 0.6);
+    border-radius: 1rem;
+    color: black;
+    background-color: rgba(163, 163, 163, 0.3);
 `
 
 const Center = styled.div`
