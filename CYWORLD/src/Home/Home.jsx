@@ -16,7 +16,7 @@ const Home = () => {
                     <Page>
                         <Main>
                             <Bind>
-                                <Visit>TODAY <Visit2>28</Visit2> | TOTAL 123456</Visit>
+                                <Visit>TODAY <Visit2>4</Visit2> | TOTAL 191026</Visit>
                                 <Bind2>
                                     <HomePage>이재호의 미니홈피</HomePage>
                                     <Link>이 홈페이지 링크</Link>
@@ -52,7 +52,7 @@ const Home = () => {
                                     </CentetTop>
                                     <CentetMiddle>Miniroom</CentetMiddle>
                                     <CenterBottom>
-                                        <CenterBottomImage src="/background/Study.png" alt="study" />
+                                        <CenterBottomImage src="/background/study.png" alt="study" />
                                     </CenterBottom>
                                 </Center>
                                 <Right>
@@ -284,7 +284,7 @@ const CentetTop = styled.div`
 `
 
 const CenterTop2 = styled.div`
-    width: 100%;
+    width: 95%;
     height: 4.5rem;
     margin-top: 3rem;
     display: flex;
