@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
 
@@ -7,6 +8,24 @@ const Home = () => {
         if (url !== '사이트') {
             window.open(url, '_blank');
         }
+    };
+
+    const navigate = useNavigate();
+
+    const goToHome = () => {
+        navigate("/home");
+    };
+
+    const goToProfile = () => {
+        navigate("/profile");
+    };
+
+    const goToProject = () => {
+        navigate("/project");
+    };
+
+    const goToContact = () => {
+        navigate("/contact");
     };
 
     return (
@@ -56,10 +75,10 @@ const Home = () => {
                                     </CenterBottom>
                                 </Center>
                                 <Right>
-                                    <RightButton1>Home</RightButton1>
-                                    <RightButton2>Profile</RightButton2>
-                                    <RightButton3>Project</RightButton3>
-                                    <RightButton4>Contact</RightButton4>
+                                    <RightButton1 onClick={goToHome}>Home</RightButton1>
+                                    <RightButton2 onClick={goToProfile}>Profile</RightButton2>
+                                    <RightButton3 onClick={goToProject}>Project</RightButton3>
+                                    <RightButton4 onClick={goToContact}>Contact</RightButton4>
                                 </Right>
                             </Bind3>
                         </Main>
@@ -324,12 +343,13 @@ const CenterBottomImage = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 1rem;
 `
 
 const Right = styled.div`
     width: 10%;
     height: 33rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* margin-left: 3rem; */
     margin-top: 2rem;
 `

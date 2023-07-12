@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components"
 import { useNavigate } from "react-router-dom";
 
-const Profile = () => {
+const Project = () => {
 
     const navigate = useNavigate();
 
@@ -30,12 +30,18 @@ const Profile = () => {
                         <Main>
                             <Bind>
                                 <Filed>
-                                    <FiledTop>Introduce </FiledTop>
-                                    <FiledCenter>자기소개서 내용</FiledCenter>
-                                    <FiledTop>Stack</FiledTop>
-                                    <FiledBottom>스택 내용</FiledBottom>
+                                    <FiledTop>프로젝트</FiledTop>
+                                    <Bind2>
+                                        <Contents>1번</Contents>
+                                        <ContentsDetail>1번 설명</ContentsDetail>
+                                    </Bind2>
 
+                                    <Bind2>
+                                        <Contents>2번</Contents>
+                                        <ContentsDetail>2번 설명</ContentsDetail>
+                                    </Bind2>
                                 </Filed>
+
                                 <Right>
                                     <RightButton1 onClick={goToHome}>Home</RightButton1>
                                     <RightButton2 onClick={goToProfile}>Profile</RightButton2>
@@ -43,8 +49,6 @@ const Profile = () => {
                                     <RightButton4 onClick={goToContact}>Contact</RightButton4>
                                 </Right>
                             </Bind>
-
-
                         </Main>
                     </Page>
                 </BookCover>
@@ -53,7 +57,7 @@ const Profile = () => {
     );
 }
 
-export default Profile;
+export default Project;
 
 const Body = styled.div`
     font-size: 16px;
@@ -123,38 +127,35 @@ const FiledTop = styled.div`
     /* border: 2px solid black; */
 `
 
-const FiledCenter = styled.div`
-    width: 95%;
-    height: 18rem;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    /* margin-top: 1.1rem;
-    margin-left: 1.1rem; */
-    color: #3B87AB;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 1rem;
-    /* border: 2px solid black; */
+const Bind2 = styled.div`
+    display: flex;
+    flex-direction: row;
 `
 
-const FiledBottom = styled.div`
-    width: 95%;
-    height: 17rem;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    /* margin-top: 1.1rem;
-    margin-left: 1.1rem; */
-    color: #3B87AB;
-    background-color: white;
-    font-weight: bold;
+const Contents = styled.div`
+    width: 44%;
+    height: 15rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    border: 2px solid #A3A3A3;
     border-radius: 1rem;
-    /* border: 2px solid black; */
+    opacity: 0.9;
+`
+
+const ContentsDetail = styled.div`
+    width: 44%;
+    height: 15rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    /* border: 2px solid red; */
+    background-color: rgba(255, 255, 255, 0.4);
 `
 
 const Right = styled.div`
     width: 10%;
     height: 40rem;
-    /* border: 2px solid blue; */
+    /* border: 2px solid blue;   */
     /* margin-left: 3rem; */
     margin-top: 2rem;
 `
