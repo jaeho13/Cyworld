@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components"
+import { CgPhone } from "react-icons/cg";
 
 const Contact = () => {
 
@@ -33,7 +34,9 @@ const Contact = () => {
                                     <FiledTop>Contact </FiledTop>
                                     <FiledCenter>
                                         <Bind2>
-                                            <FiledIcon1></FiledIcon1>
+                                            <FiledIcon1>
+                                                <CgPhone size="80" />
+                                            </FiledIcon1>
                                             <FiledIcon2></FiledIcon2>
                                         </Bind2>
 

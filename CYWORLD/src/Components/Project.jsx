@@ -30,7 +30,9 @@ const Project = () => {
                         <Main>
                             <Bind>
                                 <Filed>
+
                                     <FiledTop>프로젝트</FiledTop>
+
                                     <Bind2>
                                         <Contents>1번</Contents>
                                         <ContentsDetail>1번 설명</ContentsDetail>
@@ -40,6 +42,18 @@ const Project = () => {
                                         <Contents>2번</Contents>
                                         <ContentsDetail>2번 설명</ContentsDetail>
                                     </Bind2>
+
+                                    <Bind2>
+                                        <Contents>3번</Contents>
+                                        <ContentsDetail>3번 설명</ContentsDetail>
+                                    </Bind2>
+
+                                    <Bind2>
+                                        <Contents>4번</Contents>
+                                        <ContentsDetail>4번 설명</ContentsDetail>
+                                    </Bind2>
+
+
                                 </Filed>
 
                                 <Right>
@@ -113,6 +127,8 @@ const Filed = styled.div`
     background-color: rgba(255, 255, 255, 0.4);
     margin-top: 1rem;
     margin-left: 2rem;
+    overflow: auto; /* 스크롤 추가 */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
 `
 
 const FiledTop = styled.div`
@@ -123,7 +139,7 @@ const FiledTop = styled.div`
     font-weight: bold;
     margin-top: 1.2rem;
     margin-left: 1.2rem;
-    margin-bottom: 1.1rem;
+    margin-bottom: 2rem;
     /* border: 2px solid black; */
 `
 
@@ -133,20 +149,20 @@ const Bind2 = styled.div`
 `
 
 const Contents = styled.div`
-    width: 44%;
+    width: 46%;
     height: 15rem;
     margin-left: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     border: 2px solid #A3A3A3;
     border-radius: 1rem;
     opacity: 0.9;
 `
 
 const ContentsDetail = styled.div`
-    width: 44%;
+    width: 46%;
     height: 15rem;
     margin-left: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     border-radius: 1rem;
     /* border: 2px solid red; */
     background-color: rgba(255, 255, 255, 0.4);
