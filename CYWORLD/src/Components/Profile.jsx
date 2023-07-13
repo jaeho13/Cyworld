@@ -190,8 +190,10 @@ const RightButton2 = styled.button`
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
-    color: white;
-    background-color: #3B87AB;
+    /* color: white;
+    background-color: #3B87AB; */
+    color: black;
+    background-color: white;
     display: flex;
     float: left;
     align-items: center;

@@ -247,7 +247,6 @@ const LeftCenter = styled.div`
     /* border: 2px solid red; */
     overflow: hidden;
     text-overflow: ellipsis;
-    
     margin: 0 auto;
 `
 
@@ -366,8 +365,10 @@ const RightButton1 = styled.button`
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
-    color: white;
-    background-color: #3B87AB;
+    /* color: white;
+    background-color: #3B87AB; */
+    color: black;
+    background-color: white;
     display: flex;
     float: left;
     align-items: center;

@@ -30,12 +30,12 @@ const Project = () => {
                         <Main>
                             <Bind>
                                 <Filed>
-
                                     <FiledTop>프로젝트</FiledTop>
 
                                     <Bind2>
                                         <Contents>1번</Contents>
                                         <ContentsDetail>1번 설명</ContentsDetail>
+
                                     </Bind2>
 
                                     <Bind2>
@@ -52,8 +52,6 @@ const Project = () => {
                                         <Contents>4번</Contents>
                                         <ContentsDetail>4번 설명</ContentsDetail>
                                     </Bind2>
-
-
                                 </Filed>
 
                                 <Right>
@@ -166,6 +164,9 @@ const ContentsDetail = styled.div`
     border-radius: 1rem;
     /* border: 2px solid red; */
     background-color: rgba(255, 255, 255, 0.4);
+    overflow: auto; /* 스크롤 추가 */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+    white-space: pre-wrap;
 `
 
 const Right = styled.div`
@@ -226,8 +227,10 @@ const RightButton3 = styled.button`
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
-    color: white;
-    background-color: #3B87AB;
+    /* color: white;
+    background-color: #3B87AB; */
+    color: black;
+    background-color: white;
     display: flex;
     float: left;
     align-items: center;
