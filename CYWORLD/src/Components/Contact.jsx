@@ -35,9 +35,11 @@ const Contact = () => {
                                     <FiledCenter>
                                         <Bind2>
                                             <FiledIcon1>
-                                                <CgPhone size="80" />
+                                                <FiledIconImage1 img src="/background/Call.png" alt="call" />
                                             </FiledIcon1>
-                                            <FiledIcon2></FiledIcon2>
+                                            <FiledIcon2>
+                                                <FiledIconImage1 img src="/background/Mail.png" alt="mail" />
+                                            </FiledIcon2>
                                         </Bind2>
 
                                         <Bind3>
@@ -45,7 +47,7 @@ const Contact = () => {
                                             <FiledText2>jaehooo13@naver.com</FiledText2>
                                         </Bind3>
                                         <FiledBottom>
-                                            <CenterBottomImage img src="/background/Last.png" alt="last" />
+                                            <FiledBottomImage img src="/background/Last.png" alt="last" />
                                         </FiledBottom>
                                     </FiledCenter>
                                 </Filed>
@@ -168,12 +170,26 @@ const FiledIcon1 = styled.div`
     margin-top: 2rem;
 `
 
+const FiledIconImage1 = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+`
+
 const FiledIcon2 = styled.div`
     width: 8%;
     height: 5rem;
     border: 2px solid black;
     border-radius: 1rem;
     margin-top: 2rem;
+`
+
+const FiledIconImage2 = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
 `
 
 const Bind3 = styled.div`
@@ -221,7 +237,7 @@ const FiledBottom = styled.div`
     /* border: 2px solid black; */
 `
 
-const CenterBottomImage = styled.img`
+const FiledBottomImage = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;

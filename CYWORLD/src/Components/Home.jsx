@@ -301,13 +301,13 @@ const CenterTop = styled.div`
     /* border: 2px solid black; */
 `
 const CenterTop2 = styled.div`
-    width: 95%;
+    width: 100%;
     height: 4.5rem;
     margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* 내용이 넘치는 경우 숨기기 */
+    /* overflow: hidden; 내용이 넘치는 경우 숨기기 */
     text-align: center; /* 내용 가운데 정렬 */
 `
 
