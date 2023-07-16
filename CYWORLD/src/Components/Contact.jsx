@@ -8,7 +8,7 @@ const Contact = () => {
     const navigate = useNavigate();
 
     const goToHome = () => {
-        navigate("/home");
+        navigate("/");
     };
 
     const goToProfile = () => {

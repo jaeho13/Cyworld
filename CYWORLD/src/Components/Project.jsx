@@ -7,7 +7,7 @@ const Project = () => {
     const navigate = useNavigate();
 
     const goToHome = () => {
-        navigate("/home");
+        navigate("/");
     };
 
     const goToProfile = () => {

@@ -13,7 +13,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     const goToHome = () => {
-        navigate("/home");
+        navigate("/");
     };
 
     const goToProfile = () => {
