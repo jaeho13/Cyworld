@@ -35,10 +35,12 @@ const Home = () => {
                     <Page>
                         <Main>
                             <Bind>
-                                <Visit>TODAY <Visit2>4</Visit2> | TOTAL 191026</Visit>
+                                <Visit>TODAY <Visit2>11</Visit2> | TOTAL 1113</Visit>
                                 <Bind2>
                                     <HomePage>이재호의 미니홈피</HomePage>
-                                    <Link>이 홈페이지 링크</Link>
+                                    <Link>
+                                        <a href="https://jaeho13.github.io">https://jaeho13.github.io</a>
+                                    </Link>
                                 </Bind2>
                             </Bind>
 
@@ -198,6 +200,7 @@ const Link = styled.div`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #3B87AB
 `
 
 const Left = styled.div`
