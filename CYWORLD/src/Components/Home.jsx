@@ -68,7 +68,7 @@ const Home = () => {
                                 <Center>
                                     <CenterTop>Commit Status
                                         <CenterTop2>
-                                            <img src="https://ghchart.rshah.org/jaeho13" />
+                                            <CenterTop2Image src="https://ghchart.rshah.org/jaeho13" />
                                         </CenterTop2>
                                     </CenterTop>
                                     <CenterMiddle>Miniroom</CenterMiddle>
@@ -303,8 +303,13 @@ const CenterTop = styled.div`
     font-weight: bold;
     /* border: 2px solid black; */
 `
+
+const CenterTop2Image = styled.img`
+    max-width: 100%; 
+`
+
 const CenterTop2 = styled.div`
-    width: 100%;
+    width: 90%;
     height: 4.5rem;
     margin-top: 3rem;
     display: flex;
@@ -312,10 +317,6 @@ const CenterTop2 = styled.div`
     justify-content: center;
     /* overflow: hidden; 내용이 넘치는 경우 숨기기 */
     text-align: center; /* 내용 가운데 정렬 */
-`
-
-const CenterTop2Image = styled.img`
-    max-width: 100%; /* 이미지가 부모 요소를 넘어가지 않도록 최대 너비 설정 */
 `
 
 const CenterMiddle = styled.div`
