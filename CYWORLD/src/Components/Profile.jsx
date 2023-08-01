@@ -31,7 +31,9 @@ const Profile = () => {
                             <Bind>
                                 <Filed>
                                     <FiledTop>Introduce </FiledTop>
-                                    <FiledCenter>자기소개서 내용</FiledCenter>
+                                    <FiledCenter>
+                                        안녕하십니까 이재호입니다.
+                                    </FiledCenter>
                                     <FiledTop>Stack</FiledTop>
                                     <FiledBottom>스택 내용</FiledBottom>
 
@@ -128,13 +130,14 @@ const FiledCenter = styled.div`
     height: 18rem;
     margin: 0 auto;
     font-size: 1.2rem;
-    /* margin-top: 1.1rem;
-    margin-left: 1.1rem; */
-    color: #3B87AB;
+    /* color: #3B87AB; */
+    color: black;
     background-color: white;
     font-weight: bold;
     border-radius: 1rem;
-    /* border: 2px solid black; */
+    overflow: auto; /* 스크롤 추가 */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+    white-space: pre-wrap; /*한 줄 꽉 차면 줄 바꿈*/
 `
 
 const FiledBottom = styled.div`
@@ -148,7 +151,9 @@ const FiledBottom = styled.div`
     background-color: white;
     font-weight: bold;
     border-radius: 1rem;
-    /* border: 2px solid black; */
+    overflow: auto; /* 스크롤 추가 */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+    white-space: pre-wrap; /*한 줄 꽉 차면 줄 바꿈*/
 `
 
 const Right = styled.div`
