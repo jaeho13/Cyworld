@@ -33,7 +33,7 @@ const Profile = () => {
                                     <FiledTop>Introduce </FiledTop>
                                     <FiledCenter>
                                         안녕하십니까 이재호입니다.
-                                        <br />
+                                        <br />저는 프론트엔드 지망생입니다.
                                     </FiledCenter>
                                     <FiledTop>Stack</FiledTop>
                                     <FiledBottom>스택 내용</FiledBottom>
