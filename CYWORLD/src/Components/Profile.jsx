@@ -36,7 +36,12 @@ const Profile = () => {
                                         <br />저는 프론트엔드 지망생입니다.
                                     </FiledCenter>
                                     <FiledTop>Stack</FiledTop>
-                                    <FiledBottom>스택 내용</FiledBottom>
+                                    <FiledBottom>
+                                        html CSS JS React Flutter <br />
+
+
+                                        Notion Figma Github Discord Aws Linux Slack <br />
+                                    </FiledBottom>
 
                                 </Filed>
                                 <Right>
