@@ -35,7 +35,10 @@ const Project = () => {
                                     <Bind2>
                                         <Contents>1번</Contents>
                                         <ContentsDetail>
-                                            <ContentsDetailTitle>싸이월드 자소서</ContentsDetailTitle>
+                                            <ContentsDetailTitle>싸이월드 자기소개서</ContentsDetailTitle>
+                                            개발을 처음 접하고 만들었던 자기소개서를 보니 새로 만들어야겠다고 생각이 들어 다시 만든 프로젝트입니다.<br />
+                                            {/* 멘트 수정 필요 */}
+                                            어떻게 하면 사람들이 제 자기소개서를 볼 때 기억에 남을까를 생각을 하다보니 20대 30대가 되어 취업을 준비하고 면접을 보는 사람들이 한 번 쯤은 해봤을 법한 싸이월드로 저를 표현하는것이 재밌을 것 같다는 생각이 들어서 싸이월드로 자기소개서 프로젝트를 진행하기로 생각했습니다.<br />
 
                                         </ContentsDetail>
 
@@ -48,6 +51,8 @@ const Project = () => {
                                             처음으로 참여한 팀 프로젝트입니다. <br />
                                             젤리를 먹고 후기를 남길 수 있고 다른 사람의 후기에 댓글도 달 수 있습니다. <br />
                                             이 프로젝트에서 저는 게시판 및 댓글 구현을 맡아 리액트 스프링 CRUD를 작업하였습니다. <br />
+                                            처음 진행한 팀 단위 프로젝트이다보니 처음에는 어떻게 시작을 해야할지 방향을 못 잡고 조금 방황했지만 팀원 분들과의 소통으로 방향성을 잡고 제가 맡은 일을 진행할 수 있었습니다. <br />
+                                            이 프로젝트를 하면서 배운 점은 소통이 얼마나 중요한지를 깨달았고 리액트와 스프링을 이용한 게시판 댓글 등 CRUD를 한층 더 깊게 이해할 수 있었습니다. <br />
                                         </ContentsDetail>
                                     </Bind2>
 
@@ -173,6 +178,7 @@ const ContentsDetail = styled.div`
     margin-left: 2rem;
     margin-bottom: 3rem;
     border-radius: 1rem;
+    padding-left: 0.5rem;
     /* border: 2px solid red; */
     background-color: rgba(255, 255, 255, 0.4);
     overflow: auto; /* 스크롤 추가 */
@@ -182,6 +188,7 @@ const ContentsDetail = styled.div`
 
 const ContentsDetailTitle = styled.div`
     font-size: 1.3rem;
+    padding: 0.5rem;
  `
 
 
