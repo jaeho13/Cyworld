@@ -45,7 +45,9 @@ const Project = () => {
                                         <Contents>2번</Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>젤비티아이</ContentsDetailTitle>
-
+                                            처음으로 참여한 팀 프로젝트입니다. <br />
+                                            젤리를 먹고 후기를 남길 수 있고 다른 사람의 후기에 댓글도 달 수 있습니다. <br />
+                                            이 프로젝트에서 저는 게시판 및 댓글 구현을 맡아 리액트 스프링 CRUD를 작업하였습니다. <br />
                                         </ContentsDetail>
                                     </Bind2>
 
@@ -73,7 +75,7 @@ const Project = () => {
                         </Main>
                     </Page>
                 </BookCover>
-            </Body>
+            </Body >
         </>
     );
 }
