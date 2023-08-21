@@ -34,18 +34,27 @@ const Project = () => {
 
                                     <Bind2>
                                         <Contents>1번</Contents>
-                                        <ContentsDetail>1번 설명</ContentsDetail>
+                                        <ContentsDetail>
+                                            <ContentsDetailTitle>싸이월드 자소서</ContentsDetailTitle>
+
+                                        </ContentsDetail>
 
                                     </Bind2>
 
                                     <Bind2>
                                         <Contents>2번</Contents>
-                                        <ContentsDetail>2번 설명</ContentsDetail>
+                                        <ContentsDetail>
+                                            <ContentsDetailTitle>젤비티아이</ContentsDetailTitle>
+
+                                        </ContentsDetail>
                                     </Bind2>
 
                                     <Bind2>
                                         <Contents>3번</Contents>
-                                        <ContentsDetail>3번 설명</ContentsDetail>
+                                        <ContentsDetail>
+                                            <ContentsDetailTitle>펜팔펜스</ContentsDetailTitle>
+
+                                        </ContentsDetail>
                                     </Bind2>
 
                                     <Bind2>
@@ -168,6 +177,11 @@ const ContentsDetail = styled.div`
     overflow-x: hidden; /* 가로 스크롤 제거 */
     white-space: pre-wrap;
 `
+
+const ContentsDetailTitle = styled.div`
+    font-size: 1.3rem;
+ `
+
 
 const Right = styled.div`
     width: 10%;
