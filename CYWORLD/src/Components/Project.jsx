@@ -33,7 +33,14 @@ const Project = () => {
                                     <FiledTop>프로젝트</FiledTop>
 
                                     <Bind2>
-                                        <Contents>1번</Contents>
+                                        <Contents>
+                                            1번<br />
+                                            프로젝트 이름 <br />
+                                            프로젝트 기능 <br />
+                                            그 프로젝트를 하게 된 이유 <br />
+                                            프로젝트에서 맡은 일 <br />
+                                            프로젝트로 배운 점 <br />
+                                        </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>싸이월드 자기소개서</ContentsDetailTitle>
                                             개발을 처음 접하고 만들었던 자기소개서를 보니 새로 만들어야겠다고 생각이 들어 다시 만든 프로젝트입니다.<br />
@@ -47,20 +54,64 @@ const Project = () => {
                                     <Bind2>
                                         <Contents>2번</Contents>
                                         <ContentsDetail>
-                                            <ContentsDetailTitle>젤비티아이</ContentsDetailTitle>
-                                            처음으로 참여한 팀 프로젝트입니다. <br />
-                                            젤리를 먹고 후기를 남길 수 있고 다른 사람의 후기에 댓글도 달 수 있습니다. <br />
-                                            이 프로젝트에서 저는 게시판 및 댓글 구현을 맡아 리액트 스프링 CRUD를 작업하였습니다. <br />
-                                            처음 진행한 팀 단위 프로젝트이다보니 처음에는 어떻게 시작을 해야할지 방향을 못 잡고 조금 방황했지만 팀원 분들과의 소통으로 방향성을 잡고 제가 맡은 일을 진행할 수 있었습니다. <br />
-                                            이 프로젝트를 하면서 배운 점은 소통이 얼마나 중요한지를 깨달았고 리액트와 스프링을 이용한 게시판 댓글 등 CRUD를 한층 더 깊게 이해할 수 있었습니다. <br />
+                                            <ContentsDetailTitle>Jell-BTI</ContentsDetailTitle>
+                                            <br />
+                                            1. 개발 배경 및 내용<br />
+                                            - 내 취향에 맞는 하리보 젤리 찾기<br />
+                                            <br />
+                                            2. 개발 목표 <br />
+                                            - 젤리 MBTI 테스트로 성향 파악<br />
+                                            - 외부 API 사용 학습 및 백엔트 팀과 협업으로 실무 능력 향상 <br />
+                                            - RESTful API 이해<br />
+                                            <br />
+                                            3. 역할 <br />
+                                            - Frontend <br />
+                                            - 기획 <br />
+                                            - RESTful API를 이용한 React, Spring 게시판 및 댓글 CRUD 구현 <br />
+                                            - Jelly MBTI 테스트 구현 <br />
+                                            <br />
+                                            4. 사용 기술 <br />
+                                            - React, Spring, Oracle, Figma <br />
+                                            <br />
+                                            5. 프로젝트 후기 <br />
+                                            처음으로 혼자가 아닌 팀으로 시작하게 된 프로젝트이다. 처음에는 어떻게 시작을 해야하나 싶어서 방황했지만 다른 팀원 분들과의 소통으로 방향성을 잡고 맡은 일을 진행할 수 있었다. <br />
+                                            그로인해 프로젝트에서 소통이 얼마나 중요한지 알게 되었고 맡은 일에 대한 책임감도 많이 배울 수 있었다. <br />
+                                            <br />
                                         </ContentsDetail>
                                     </Bind2>
 
                                     <Bind2>
-                                        <Contents>3번</Contents>
+                                        <Contents>
+                                            1번<br />
+                                            프로젝트 이름 <br />
+                                            프로젝트 기능 <br />
+                                            그 프로젝트를 하게 된 이유 <br />
+                                            프로젝트에서 맡은 일 <br />
+                                            프로젝트로 배운 점 <br />
+                                        </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>펜팔펜스</ContentsDetailTitle>
-
+                                            <br />
+                                            1. 개발 배경 및 내용<br />
+                                            - 어릴 적 펜팔(penpal) 친구와 주고받던 교환일기, 펜(pens)으로 다이어리에 작성하던 일기를 웹으로 구현해 시간이 지나도 사라지지 않는 일기장을 구현 <br />
+                                            <br />
+                                            2. 개발 목표 <br />
+                                            - 일기 및 친구와의 교환일기 작성 <br />
+                                            - React, Spring 게시판 CRUD 정리 <br />
+                                            - 카카오 로그인 API 구현 <br />
+                                            <br />
+                                            3. 역할 <br />
+                                            - Frontend <br />
+                                            - 기획 및 디자인 <br />
+                                            - RESTful API를 이용한 React, Spring 게시판 CRUD 구현 <br />
+                                            - 카카오 로그인 API 구현 <br />
+                                            <br />
+                                            4. 사용 기술 <br />
+                                            - React, Spring, Oracle, Figma <br />
+                                            <br />
+                                            5. 프로젝트 후기 <br />
+                                            저번 프로젝트에 이어서 React, Spring 게시판 CRUD를 구현하며 다시 한 번 복습할 수 있었고, 나아가 저번에는 구현하지 못한 카카오 로그인 API까지 구현하여 더 배울 수 있었다.<br />
+                                            <br />
                                         </ContentsDetail>
                                     </Bind2>
 
@@ -187,8 +238,8 @@ const ContentsDetail = styled.div`
 `
 
 const ContentsDetailTitle = styled.div`
-    font-size: 1.3rem;
-    padding: 0.5rem;
+    font-size: 2rem;
+    /* padding: 0.5rem; */
  `
 
 
