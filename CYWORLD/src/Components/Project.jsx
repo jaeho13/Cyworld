@@ -116,8 +116,12 @@ const Project = () => {
                                     </Bind2>
 
                                     <Bind2>
-                                        <Contents>4번</Contents>
-                                        <ContentsDetail>4번 설명</ContentsDetail>
+                                        <Contents>
+                                            4번
+                                        </Contents>
+                                        <ContentsDetail>
+                                            <ContentsDetailTitle>셀런트</ContentsDetailTitle>
+                                        </ContentsDetail>
                                     </Bind2>
                                 </Filed>
 
