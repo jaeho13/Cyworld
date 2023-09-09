@@ -121,6 +121,26 @@ const Project = () => {
                                         </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>셀런트</ContentsDetailTitle>
+                                            1. 개발 배경 및 내용<br />
+                                            - 어릴 적 펜팔(penpal) 친구와 주고받던 교환일기, 펜(pens)으로 다이어리에 작성하던 일기를 웹으로 구현해 시간이 지나도 사라지지 않는 일기장을 구현 <br />
+                                            <br />
+                                            2. 개발 목표 <br />
+                                            - 일기 및 친구와의 교환일기 작성 <br />
+                                            - React, Spring 게시판 CRUD 정리 <br />
+                                            - 카카오 로그인 API 구현 <br />
+                                            <br />
+                                            3. 역할 <br />
+                                            - Frontend <br />
+                                            - 기획 및 디자인 <br />
+                                            - RESTful API를 이용한 React, Spring 게시판 CRUD 구현 <br />
+                                            - 카카오 로그인 API 구현 <br />
+                                            <br />
+                                            4. 사용 기술 <br />
+                                            - React, Spring, Oracle, Figma <br />
+                                            <br />
+                                            5. 프로젝트 후기 <br />
+                                            저번 프로젝트에 이어서 React, Spring 게시판 CRUD를 구현하며 다시 한 번 복습할 수 있었고, 나아가 저번에는 구현하지 못한 카카오 로그인 API까지 구현하여 더 배울 수 있었다.<br />
+
                                         </ContentsDetail>
                                     </Bind2>
                                 </Filed>
