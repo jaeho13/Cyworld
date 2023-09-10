@@ -32,15 +32,36 @@ const Profile = () => {
                                 <Filed>
                                     <FiledTop>Introduce </FiledTop>
                                     <FiledCenter>
-                                        안녕하십니까 이재호입니다.
-                                        <br />저는 프론트엔드 지망생입니다.
+                                        안녕하십니까 프론트엔드를 지망하는 97년생 이재호입니다. <br /> <br />
+                                        프로그래밍 언어, 데이터베이스, 프레임워크 등을 학습하며 다양한 웹 개발 프로젝트에 참여하였습니다. <br />
+                                        배운 내용을 활용하는 과정에서는 고정된 것이라고 생각했던 시각적 화면이 저의 손끝에서 구현된다는 생각에 가슴이 뛰었고, 그중에서 프론트엔드 구현에 가장 흥미와 즐거움을 느껴 JavaScript와 REACT를 집중적으로 공부하였습니다. <br /> <br />
+
+                                        1. 화면 구현 <br />
+
+                                        사용자 인터페이스(UI)를 설계하고, REACT를 활용하여 시각적인 화면을 개발하였습니다. 특히 사용자가 쉽게 접근하고 사용할 수 있는 직관적인 디자인을 구현해 사용자 경험을 개선하기 위해 노력하였습니다. <br />
+                                        <br />
+                                        2. 기획 및 CRUD 기능 구현 <br />
+                                        CRUD(Create, Read, Update, Delete) 기능에 대한 사용자 플로우를 고려해 데이터를 효율적으로 생성, 조회, 수정, 삭제할 수 있도록 구현하였습니다. <br />
+                                        <br />
+                                        3. API 사용 <br />
+                                        카카오 API를 사용하여 사이트 내 소셜 로그인을 지원하거나 위치 기반 정보를 표시하는 맵 API를 사용한 경험이 있습니다. <br />
+                                        <br />
+                                        4. 데이터베이스 테이블 설계 <br />
+
+                                        프로젝트의 데이터를 효율적으로 저장하고 관리하기 위해 데이터베이스 테이블을 백엔드 팀원과 함께 설계하였습니다.
+                                        데이터 구조와 관계를 고려하여 테이블을 정의하고 필요한 컬럼을 설계하였습니다. <br /> <br />
+                                        저는 위와 같은 작업을 통해 프론트엔드 개발 및 백엔드와의 협업 경험을 쌓았고, 이를 통해 더 나은 웹 개발자로 성장하고자 끊임없이 노력하고 있습니다. <br /> <br />
+
+                                        앞으로도 어떤 일을 하던 책임감을 가지고 진행하며, 부족함 없이 실행할 수 있도록 하겠습니다. 감사합니다. <br />
                                     </FiledCenter>
                                     <FiledTop>Stack</FiledTop>
                                     <FiledBottom>
-                                        html CSS JS React Flutter <br />
+                                        {/* html CSS JS React Flutter <br />
                                         Aws postgresql <br />
                                         Github Notion Slack Discord <br />
-                                        Figma Zeplin <br />
+                                        Figma Zeplin <br /> */}
+                                        프로그래밍 언어, 데이터베이스, 프레임워크 등을 학습하며 다양한 웹 개발 프로젝트에 참여하였습니다. <br />
+                                        배운 내용을 활용하는 과정에서는 고정된 것이라고 생각했던 시각적 화면이 저의 손끝에서 구현된다는 생각에 가슴이 뛰었고, 그 중 프론트엔드 구현에 가장 흥미와 즐거움을 느껴 JavaScript와 REACT를 집중적으로 공부하였습니다.
                                     </FiledBottom>
 
                                 </Filed>
@@ -133,10 +154,10 @@ const FiledTop = styled.div`
 
 const FiledCenter = styled.div`
     width: 95%;
-    height: 18rem;
+    height: 17rem;
     margin: 0 auto;
+    padding: 0.5rem;
     font-size: 1.2rem;
-    /* color: #3B87AB; */
     color: black;
     background-color: white;
     font-weight: bold;
@@ -148,8 +169,9 @@ const FiledCenter = styled.div`
 
 const FiledBottom = styled.div`
     width: 95%;
-    height: 17rem;
+    height: 16rem;
     margin: 0 auto;
+    padding: 0.5rem;
     font-size: 1.2rem;
     /* margin-top: 1.1rem;
     margin-left: 1.1rem; */
