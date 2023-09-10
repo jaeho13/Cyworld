@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components"
-import { CgPhone } from "react-icons/cg";
 
 const Contact = () => {
 
+    // const navigate = useNavigate();
     const navigate = useNavigate();
 
     const goToHome = () => {
