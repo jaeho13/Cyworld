@@ -34,12 +34,7 @@ const Project = () => {
 
                                     <Bind2>
                                         <Contents>
-                                            1번<br />
-                                            프로젝트 이름 <br />
-                                            프로젝트 기능 <br />
-                                            그 프로젝트를 하게 된 이유 <br />
-                                            프로젝트에서 맡은 일 <br />
-                                            프로젝트로 배운 점 <br />
+                                            <img src="/background/page.1.png" alt="page.1" />
                                         </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>싸이월드 자기소개서</ContentsDetailTitle>
@@ -258,6 +253,12 @@ const Contents = styled.div`
     border: 2px solid #A3A3A3;
     border-radius: 1rem;
     opacity: 0.9;
+    img {
+        width: 100%; /* Contents의 가로 너비에 맞게 이미지 너비 조정 */
+        height: 100%; /* Contents의 세로 높이에 맞게 이미지 높이 조정 */
+        object-fit: cover; /* 이미지를 Contents에 맞게 조절 */
+        border-radius: 1rem; /* 이미지에도 둥근 모서리를 적용 */
+    }
 `
 
 const ContentsDetail = styled.div`

@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 const Contact = () => {
 
-    // const navigate = useNavigate();
     const navigate = useNavigate();
 
     const goToHome = () => {
@@ -185,12 +184,6 @@ const FiledIcon2 = styled.div`
     margin-top: 2rem;
 `
 
-const FiledIconImage2 = styled.img`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-`
 
 const Bind3 = styled.div`
     display: flex;

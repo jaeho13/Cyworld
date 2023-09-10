@@ -38,9 +38,9 @@ const Profile = () => {
                                     <FiledTop>Stack</FiledTop>
                                     <FiledBottom>
                                         html CSS JS React Flutter <br />
-
-
-                                        Notion Figma Github Discord Aws Linux Slack <br />
+                                        Aws postgresql <br />
+                                        Github Notion Slack Discord <br />
+                                        Figma Zeplin <br />
                                     </FiledBottom>
 
                                 </Filed>
