@@ -57,7 +57,7 @@ const Profile = () => {
                                     <FiledTop>Stack</FiledTop>
                                     <FiledBottom>
                                         {/* html CSS JS React Flutter <br />
-                                        Aws postgresql <br />
+                                        Aws postgresql Dbeaver <br />
                                         Github Notion Slack Discord <br />
                                         Figma Zeplin <br /> */}
                                         프로그래밍 언어, 데이터베이스, 프레임워크 등을 학습하며 다양한 웹 개발 프로젝트에 참여하였습니다. <br />
