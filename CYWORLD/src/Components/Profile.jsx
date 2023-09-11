@@ -60,8 +60,6 @@ const Profile = () => {
                                         Aws postgresql Dbeaver <br />
                                         Github Notion Slack Discord <br />
                                         Figma Zeplin <br /> */}
-                                        프로그래밍 언어, 데이터베이스, 프레임워크 등을 학습하며 다양한 웹 개발 프로젝트에 참여하였습니다. <br />
-                                        배운 내용을 활용하는 과정에서는 고정된 것이라고 생각했던 시각적 화면이 저의 손끝에서 구현된다는 생각에 가슴이 뛰었고, 그 중 프론트엔드 구현에 가장 흥미와 즐거움을 느껴 JavaScript와 REACT를 집중적으로 공부하였습니다.
                                     </FiledBottom>
 
                                 </Filed>
