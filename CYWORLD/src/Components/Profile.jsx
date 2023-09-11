@@ -56,10 +56,10 @@ const Profile = () => {
                                     </FiledCenter>
                                     <FiledTop>Stack</FiledTop>
                                     <FiledBottom>
-                                        {/* html CSS JS React Flutter <br />
+                                        html CSS JS React Flutter <br />
                                         Aws postgresql Dbeaver <br />
                                         Github Notion Slack Discord <br />
-                                        Figma Zeplin <br /> */}
+                                        Figma Zeplin <br />
                                     </FiledBottom>
 
                                 </Filed>
