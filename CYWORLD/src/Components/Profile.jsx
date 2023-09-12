@@ -53,13 +53,42 @@ const Profile = () => {
                                         저는 위와 같은 작업을 통해 프론트엔드 개발 및 백엔드와의 협업 경험을 쌓았고, 이를 통해 더 나은 웹 개발자로 성장하고자 끊임없이 노력하고 있습니다. <br /> <br />
 
                                         앞으로도 어떤 일을 하던 책임감을 가지고 진행하며, 부족함 없이 실행할 수 있도록 하겠습니다. 감사합니다. <br />
+                                        <br />
                                     </FiledCenter>
                                     <FiledTop>Stack</FiledTop>
                                     <FiledBottom>
-                                        html CSS JS React Flutter <br />
-                                        Aws postgresql Dbeaver <br />
+                                        <FiledBottomBind>
+                                            <FiledBottomLeftTop>
+                                                <FiledBottomText>Front-End</FiledBottomText>
+                                                - html CSS JS<br />
+                                                - React Flutter
+                                            </FiledBottomLeftTop>
+
+                                            <FiledBottomRightTop>
+                                                <FiledBottomText>Back-End</FiledBottomText>
+                                                - AWS<br />
+                                                - Oracle Postgresql<br />
+                                            </FiledBottomRightTop>
+                                        </FiledBottomBind>
+
+                                        <FiledBottomBind>
+                                            <FiledBottomLeftBottom>
+                                                <FiledBottomText>Tool</FiledBottomText>
+                                                - Figma Zeplin<br />
+                                                - dbeaver<br />
+                                            </FiledBottomLeftBottom>
+
+                                            <FiledBottomRightBottom>
+                                                <FiledBottomText>Etc.</FiledBottomText>
+                                                - Github Notion<br />
+                                                - Slack Discord<br />
+                                                - MsOffice Hwp
+                                            </FiledBottomRightBottom>
+                                        </FiledBottomBind>
+
+                                        {/* Aws postgresql Dbeaver <br />
                                         Github Notion Slack Discord <br />
-                                        Figma Zeplin <br />
+                                        Figma Zeplin <br /> */}
                                     </FiledBottom>
 
                                 </Filed>
@@ -173,7 +202,7 @@ const FiledBottom = styled.div`
     font-size: 1.2rem;
     /* margin-top: 1.1rem;
     margin-left: 1.1rem; */
-    color: #3B87AB;
+    /* color: #3B87AB; */
     background-color: white;
     font-weight: bold;
     border-radius: 1rem;
@@ -181,6 +210,47 @@ const FiledBottom = styled.div`
     overflow-x: hidden; /* 가로 스크롤 제거 */
     white-space: pre-wrap; /*한 줄 꽉 차면 줄 바꿈*/
 `
+
+const FiledBottomBind = styled.div`
+    flex-direction: row;
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+`
+
+const FiledBottomLeftTop = styled.div`
+    width: 50%;
+    height: 7rem;
+    /* border: 2px solid red; */
+`
+
+const FiledBottomLeftBottom = styled.div`
+    width: 50%;
+    height: 7rem;
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+`
+
+const FiledBottomRightTop = styled.div`
+    width: 50%;
+    height: 7rem;
+    /* border: 2px solid red; */
+`
+
+const FiledBottomRightBottom = styled.div`
+    width: 50%;
+    height: 7rem;
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+`
+
+const FiledBottomText = styled.div`
+    width: 20%;
+    height: 2rem;
+    /* border: 2px solid blue; */
+    display: flex;
+`
+
 
 const Right = styled.div`
     width: 10%;
