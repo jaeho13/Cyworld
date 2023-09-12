@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components"
 import { useNavigate } from "react-router-dom";
 
@@ -22,6 +22,43 @@ const Project = () => {
         navigate("/contact");
     };
 
+    const [cyImageIndex, setCyImageIndex] = useState(0);
+    const cyImages = ['/background/page.1.png', '/background/page.2.png', '/background/page.3.png', '/background/page.4.png'];
+
+    const goCyImage = (index) => {
+        setCyImageIndex(index);
+    };
+
+    useEffect(() => {
+        const cyInterval = setInterval(() => {
+            setCyImageIndex((prevIndex) => (prevIndex + 1) % cyImages.length);
+        }, 2500);
+
+        return () => {
+            clearInterval(cyInterval);
+        };
+    }, [cyImages]);
+
+
+    const [penpalImageIndex, setPenpalImageIndex] = useState(0);
+    const penImages = ['/background/p_page.1.png', '/background/p_page.2.png', '/background/p_page.3.png', '/background/p_page.4.png', '/background/p_page.5.png'];
+
+    const goPenpalImage = (index) => {
+        setPenpalImageIndex(index);
+    };
+
+    useEffect(() => {
+        const penInterval = setInterval(() => {
+            setPenpalImageIndex((prevIndex) => (prevIndex + 1) % penImages.length);
+        }, 2500);
+
+        return () => {
+            clearInterval(penInterval);
+        };
+    }, [penImages]);
+
+
+
     return (
         <>
             <Body>
@@ -34,7 +71,23 @@ const Project = () => {
 
                                     <Bind2>
                                         <Contents>
-                                            <img src="/background/page.1.png" alt="page.1" />
+                                            <img src={cyImages[cyImageIndex]} alt="carousel" />
+                                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                                {cyImages.map((_, index) => (
+                                                    <span
+                                                        key={index}
+                                                        onClick={() => goCyImage(index)}
+                                                        style={{
+                                                            width: '10px',
+                                                            height: '10px',
+                                                            borderRadius: '50%',
+                                                            backgroundColor: index === cyImageIndex ? '#3B87AB' : 'gray',
+                                                            margin: '5px',
+                                                            cursor: 'pointer',
+                                                        }}
+                                                    ></span>
+                                                ))}
+                                            </div>
                                         </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>싸이월드 자기소개서</ContentsDetailTitle>
@@ -63,7 +116,9 @@ const Project = () => {
                                     </Bind2>
 
                                     <Bind2>
-                                        <Contents>2번</Contents>
+                                        <Contents>
+                                            2번
+                                        </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>Jell-BTI</ContentsDetailTitle>
                                             <br />
@@ -93,19 +148,30 @@ const Project = () => {
                                             처음으로 혼자가 아닌 팀으로 시작하게 된 프로젝트이다. 프로젝트에서는 게시판 및 댓글 기능 CRUD를 맡았는데,
                                             처음에는 어떻게 구현을 해야할 지 몰라 많이 힘들었지만 팀원과의 소통으로 개발의 방향성을 잡고 배워가며 맡은 일을 진행할 수 있었다. <br />
                                             이번 프로젝트에서 나는 게시판을 만드는 CRUD를 배웠고, 팀원들과의 소통이 얼마나 중요한지도 알 수 있었다. <br />
-                                            나아가 맡은 일에 대한 책임감을 배울 수 있었던 기회였다. <br />
+                                            더불어, 맡은 업무에 대한 책임감을 키우는 기회가 되어서 좋았다. <br />
                                             <br />
                                         </ContentsDetail>
                                     </Bind2>
 
                                     <Bind2>
                                         <Contents>
-                                            1번<br />
-                                            프로젝트 이름 <br />
-                                            프로젝트 기능 <br />
-                                            그 프로젝트를 하게 된 이유 <br />
-                                            프로젝트에서 맡은 일 <br />
-                                            프로젝트로 배운 점 <br />
+                                            <img src={penImages[penpalImageIndex]} alt="pen_carousel" />
+                                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                                {penImages.map((_, index) => (
+                                                    <span
+                                                        key={index}
+                                                        onClick={() => goPenpalImage(index)}
+                                                        style={{
+                                                            width: '10px',
+                                                            height: '10px',
+                                                            borderRadius: '50%',
+                                                            backgroundColor: index === penpalImageIndex ? '#3B87AB' : 'gray',
+                                                            margin: '5px',
+                                                            cursor: 'pointer',
+                                                        }}
+                                                    ></span>
+                                                ))}
+                                            </div>
                                         </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>펜팔펜스</ContentsDetailTitle>
