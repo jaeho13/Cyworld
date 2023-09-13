@@ -249,6 +249,7 @@ const FiledBottomText = styled.div`
     height: 2rem;
     /* border: 2px solid blue; */
     display: flex;
+    color: #3B87AB;
 `
 
 

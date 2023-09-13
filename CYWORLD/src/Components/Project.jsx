@@ -23,7 +23,7 @@ const Project = () => {
     };
 
     const [cyImageIndex, setCyImageIndex] = useState(0);
-    const cyImages = ['/background/page.1.png', '/background/page.2.png', '/background/page.3.png', '/background/page.4.png'];
+    const cyImages = ['/background/c_page.1.png', '/background/c_page.2.png', '/background/c_page.3.png', '/background/c_page.4.png'];
 
     const goCyImage = (index) => {
         setCyImageIndex(index);
@@ -38,6 +38,23 @@ const Project = () => {
             clearInterval(cyInterval);
         };
     }, [cyImages]);
+
+    const [jbtiImageIndex, setJbtiImageIndex] = useState(0);
+    const jbtiImages = ['/background/j_page.1.png', '/background/j_page.2.png', '/background/j_page.3.png', '/background/j_page.4.png', '/background/j_page.5.png'];
+
+    const goJbtiImage = (index) => {
+        setJbtiImageIndex(index);
+    };
+
+    useEffect(() => {
+        const jbtiInterval = setInterval(() => {
+            setJbtiImageIndex((prevIndex) => (prevIndex + 1) % jbtiImages.length);
+        }, 2500);
+
+        return () => {
+            clearInterval(jbtiInterval);
+        };
+    }, [jbtiImages]);
 
 
     const [penpalImageIndex, setPenpalImageIndex] = useState(0);
@@ -117,7 +134,23 @@ const Project = () => {
 
                                     <Bind2>
                                         <Contents>
-                                            2번
+                                            <img src={jbtiImages[jbtiImageIndex]} alt="jbti_carousel" />
+                                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                                {jbtiImages.map((_, index) => (
+                                                    <span
+                                                        key={index}
+                                                        onClick={() => goJbtiImage(index)}
+                                                        style={{
+                                                            width: '10px',
+                                                            height: '10px',
+                                                            borderRadius: '50%',
+                                                            backgroundColor: index === jbtiImageIndex ? '#3B87AB' : 'gray',
+                                                            margin: '5px',
+                                                            cursor: 'pointer',
+                                                        }}
+                                                    ></span>
+                                                ))}
+                                            </div>
                                         </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>Jell-BTI</ContentsDetailTitle>
