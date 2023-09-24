@@ -271,6 +271,8 @@ const Project = () => {
                                                             backgroundColor: index === sellentImageIndex ? '#3B87AB' : 'gray',
                                                             margin: '5px',
                                                             cursor: 'pointer',
+
+
                                                         }}
                                                     ></span>
                                                 ))}
