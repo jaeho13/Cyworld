@@ -74,8 +74,8 @@ const Profile = () => {
                                         <FiledBottomBind>
                                             <FiledBottomLeftBottom>
                                                 <FiledBottomText>Tool</FiledBottomText>
-                                                - Figma Zeplin<br />
                                                 - dbeaver<br />
+                                                - Figma Zeplin<br />
                                             </FiledBottomLeftBottom>
 
                                             <FiledBottomRightBottom>
@@ -170,12 +170,12 @@ const Filed = styled.div`
 const FiledTop = styled.div`
     width: 100%;
     height: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #3B87AB;
     font-weight: bold;
-    margin-top: 1.2rem;
+    margin-top: 0.5rem;
     margin-left: 1.2rem;
-    margin-bottom: 1.1rem;
+    margin-bottom: 2rem;
     /* border: 2px solid black; */
 `
 
@@ -222,6 +222,8 @@ const FiledBottomLeftTop = styled.div`
     width: 50%;
     height: 7rem;
     /* border: 2px solid red; */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+    white-space: pre-wrap; /*한 줄 꽉 차면 줄 바꿈*/
 `
 
 const FiledBottomLeftBottom = styled.div`
@@ -245,7 +247,7 @@ const FiledBottomRightBottom = styled.div`
 `
 
 const FiledBottomText = styled.div`
-    width: 20%;
+    width: 100%;
     height: 2rem;
     /* border: 2px solid blue; */
     display: flex;

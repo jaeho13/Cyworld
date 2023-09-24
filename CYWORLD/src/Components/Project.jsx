@@ -75,6 +75,23 @@ const Project = () => {
     }, [penImages]);
 
 
+    const [sellentImageIndex, setSellentImageIndex] = useState(0);
+    const sellImages = ['/background/s_page.1.png', '/background/s_page.2.png', '/background/s_page.3.png'];
+
+    const goSellentImage = (index) => {
+        setSellentImageIndex(index);
+    };
+
+    useEffect(() => {
+        const sellentInterval = setInterval(() => {
+            setSellentImageIndex((prevIndex) => (prevIndex + 1) % sellImages.length);
+        }, 2500);
+
+        return () => {
+            clearInterval(sellentInterval);
+        };
+    }, [sellImages]);
+
 
     return (
         <>
@@ -108,15 +125,16 @@ const Project = () => {
                                         </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>싸이월드 자기소개서</ContentsDetailTitle>
+                                            (링크 - <a href="https://github.com/jaeho13/Cyworld">https://github.com/jaeho13/Cyworld</a>)
                                             <br />
-
+                                            <br />
                                             1. 개발 배경 및 내용<br />
-                                            - 어린 시절 유행하던 싸이월드로 자기소개서 새로 만들기 <br />
+                                            - 어린 시절 유행하던 싸이월드 자기소개서  <br />
                                             <br />
 
                                             2. 개발 목표 <br />
-                                            - 저번 자기소개서와는 다른 느낌으로 만들기 <br />
-                                            - CSS를 사용하면서 다시 학습하기 <br />
+                                            - CSS 학습 <br />
+                                            - 자기소개서 개선 <br />
                                             <br />
 
                                             3. 사용 기술 <br />
@@ -154,8 +172,9 @@ const Project = () => {
                                         </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>Jell-BTI</ContentsDetailTitle>
+                                            (링크 - <a href="https://github.com/kimpizza/Jell-BTI_Project">https://github.com/kimpizza/Jell-BTI_Project</a>)
                                             <br />
-
+                                            <br />
                                             1. 개발 배경 및 내용<br />
                                             - 내 취향에 맞는 하리보 젤리 찾기<br />
                                             <br />
@@ -208,6 +227,8 @@ const Project = () => {
                                         </Contents>
                                         <ContentsDetail>
                                             <ContentsDetailTitle>펜팔펜스</ContentsDetailTitle>
+                                            (링크 - <a href="https://github.com/jaeho13/PenPalPens">https://github.com/jaeho13/PenPalPens</a>)
+                                            <br />
                                             <br />
                                             1. 개발 배경 및 내용<br />
                                             - 어릴 적 펜팔(penpal) 친구와 주고받던 교환일기, 펜(pens)으로 다이어리에 작성하던 일기를 웹으로 구현해 시간이 지나도 사라지지 않는 일기장을 구현 <br />
@@ -219,9 +240,9 @@ const Project = () => {
                                             <br />
                                             3. 역할 <br />
                                             - Frontend <br />
-                                            - 기획 및 디자인 <br />
-                                            - RESTful API를 이용한 React, Spring 게시판 CRUD 구현 <br />
+                                            - 기획, 디자인 및 DB설계 <br />
                                             - 카카오 로그인 API 구현 <br />
+                                            - RESTful API를 이용한 React, Spring 게시판 CRUD 구현 <br />
                                             <br />
                                             4. 사용 기술 <br />
                                             - React, Spring, Oracle, Figma <br />
@@ -237,30 +258,53 @@ const Project = () => {
 
                                     <Bind2>
                                         <Contents>
-                                            4번
+                                            <img src={sellImages[sellentImageIndex]} alt="sell_carousel" />
+                                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                                {sellImages.map((_, index) => (
+                                                    <span
+                                                        key={index}
+                                                        onClick={() => goSellentImage(index)}
+                                                        style={{
+                                                            width: '10px',
+                                                            height: '10px',
+                                                            borderRadius: '50%',
+                                                            backgroundColor: index === sellentImageIndex ? '#3B87AB' : 'gray',
+                                                            margin: '5px',
+                                                            cursor: 'pointer',
+                                                        }}
+                                                    ></span>
+                                                ))}
+                                            </div>
                                         </Contents>
                                         <ContentsDetail>
-                                            <ContentsDetailTitle>셀런트</ContentsDetailTitle>
+                                            <ContentsDetailTitle>셀런트(진행 중)</ContentsDetailTitle>
+                                            (링크 - <a href="https://github.com/jaeho13/Sellent">https://github.com/jaeho13/Sellent</a>)
+                                            <br />
+                                            <br />
                                             1. 개발 배경 및 내용<br />
-                                            - 어릴 적 펜팔(penpal) 친구와 주고받던 교환일기, 펜(pens)으로 다이어리에 작성하던 일기를 웹으로 구현해 시간이 지나도 사라지지 않는 일기장을 구현 <br />
+                                            - 자신이 가진 재능을 판매하거나 구매할 수 있는 재능 거래 사이트 <br />
                                             <br />
                                             2. 개발 목표 <br />
-                                            - 일기 및 친구와의 교환일기 작성 <br />
-                                            - React, Spring 게시판 CRUD 정리 <br />
-                                            - 카카오 로그인 API 구현 <br />
+                                            - 낭비되고 있는 재능을 구매하고 판매 <br />
+                                            - React, Spring 게시판 및 댓글 CRUD 정리 <br />
+                                            - 카카오, 네이버 로그인 API 구현 <br />
+                                            - 카카오 지도, 결제 API 구현 <br />
                                             <br />
                                             3. 역할 <br />
                                             - Frontend <br />
                                             - 기획 및 디자인 <br />
-                                            - RESTful API를 이용한 React, Spring 게시판 CRUD 구현 <br />
+                                            - 네이버 로그인 API 구현 <br />
                                             - 카카오 로그인 API 구현 <br />
+                                            - 카카오 지도 API, 카카오 결제 API <br />
+                                            - 실시간 채팅 구현 <br />
+                                            - RESTful API를 이용한 React, Spring 게시판 및 댓글 CRUD 구현 <br />
                                             <br />
                                             4. 사용 기술 <br />
                                             - React, Spring, Oracle, Figma <br />
                                             <br />
                                             5. 프로젝트 후기 <br />
-                                            저번 프로젝트에 이어서 React, Spring 게시판 CRUD를 구현하며 다시 한 번 복습할 수 있었고, 나아가 저번에는 구현하지 못한 카카오 로그인 API까지 구현하여 더 배울 수 있었다.<br />
 
+                                            <br />
                                         </ContentsDetail>
                                     </Bind2>
                                 </Filed>
