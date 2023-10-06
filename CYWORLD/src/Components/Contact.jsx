@@ -117,7 +117,6 @@ const Bind = styled.div`
 const Filed = styled.div`
     width: 95%;
     height: 43rem;
-    /* border: 2px solid red; */
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.4);
     margin-top: 1rem;
@@ -132,8 +131,6 @@ const FiledTop = styled.div`
     font-weight: bold;
     margin-top: 1.2rem;
     margin-left: 1.2rem;
-    /* margin-bottom: 0.5rem; */
-    /* border: 2px solid black; */
 `
 
 
@@ -142,13 +139,10 @@ const FiledCenter = styled.div`
     height: 38rem;
     margin: 0 auto;
     font-size: 1.2rem;
-    /* margin-top: 1.1rem;
-    margin-left: 1.1rem; */
     color: #3B87AB;
     background-color: white;
     font-weight: bold;
     border-radius: 1rem;
-    /* border: 2px solid black; */
 `
 
 const Bind2 = styled.div`
@@ -157,7 +151,6 @@ const Bind2 = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    /* border: 2px solid red; */
 `
 
 const FiledIcon1 = styled.div`
@@ -190,15 +183,11 @@ const Bind3 = styled.div`
     flex-direction: row;
     display: flex;
     justify-content: center;
-    /* width: 100%; */
-    /* margin-top: 2rem;
-    border: 2px solid red; */
 `
 
 const FiledText1 = styled.div`
     width: 25%;
     height: 3rem;
-    /* border: 2px solid blue; */
     border-radius: 1rem;
     margin-right: 5rem;
     margin-top: 1rem;
@@ -211,7 +200,6 @@ const FiledText1 = styled.div`
 const FiledText2 = styled.div`
     width: 25%;
     height: 3rem;
-    /* border: 2px solid blue; */
     border-radius: 1rem;
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -226,8 +214,6 @@ const FiledBottom = styled.div`
     height: 25rem;
     margin: 0 auto;
     margin-top: 1rem;
-    /* margin-left: 1.1rem; */
-    /* border: 2px solid black; */
 `
 
 const FiledBottomImage = styled.img`
@@ -240,8 +226,6 @@ const FiledBottomImage = styled.img`
 const Right = styled.div`
     width: 10%;
     height: 40rem;
-    /* border: 2px solid blue; */
-    /* margin-left: 3rem; */
     margin-top: 2rem;
 `
 
