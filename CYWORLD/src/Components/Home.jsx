@@ -60,8 +60,8 @@ const Home = () => {
                                     <LeftBottom>
                                         <Choice onChange={(e) => handleLinkClick(e.target.value)}>
                                             <option value="사이트">깃허브 및 블로그</option>
-                                            <option value="https://github.com/jaeho13">https://github.com/jaeho13</option>
-                                            <option value="https://velog.io/@jaehooo13">https://velog.io/@jaehooo13</option>
+                                            <option>https://github.com/jaeho13</option>
+                                            <option>https://velog.io/@jaehooo13</option>
                                         </Choice>
                                     </LeftBottom>
                                 </Left>
