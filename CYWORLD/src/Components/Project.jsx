@@ -331,7 +331,8 @@ const Body = styled.div`
     background-color: #a3a3a3;
     background-image: url(/background/pattern.png);
     background-size: 100px;
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
