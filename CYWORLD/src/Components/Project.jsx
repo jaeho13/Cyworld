@@ -277,7 +277,7 @@ const Project = () => {
                                             </div>
                                         </Contents>
                                         <ContentsDetail>
-                                            <ContentsDetailTitle>셀런트(진행 중)</ContentsDetailTitle>
+                                            <ContentsDetailTitle>셀런트</ContentsDetailTitle>
                                             (링크 - <a href="https://github.com/jaeho13/Sellent">https://github.com/jaeho13/Sellent</a>)
                                             <br />
                                             <br />

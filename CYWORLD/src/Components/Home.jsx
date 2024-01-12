@@ -31,16 +31,21 @@ const Home = () => {
     return (
         <>
             <Body>
+                {/* <Qorud src="/background/pattern.png" alt="배경" /> */}
+
                 <BookCover>
                     <Page>
                         <Main>
                             <Bind>
                                 <Visit>TODAY <Visit2>11</Visit2> | TOTAL 1113</Visit>
                                 <Bind2>
-                                    <HomePage>이재호의 미니홈피</HomePage>
-                                    <Link>
-                                        <a href="https://jaeho13.github.io">https://jaeho13.github.io</a>
-                                    </Link>
+                                    <SizeBox>
+
+                                        <HomePage>이재호의 미니홈피</HomePage>
+                                        <Link>
+                                            <a href="https://jaeho13.github.io">https://jaeho13.github.io</a>
+                                        </Link>
+                                    </SizeBox>
                                 </Bind2>
                             </Bind>
 
@@ -98,11 +103,16 @@ const Body = styled.div`
     background-color: #a3a3a3;
     background-image: url(/background/pattern.png);
     background-size: 100px;
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
+`
+
+const Qorud = styled.img`
+    width: 10%;
 `
 
 const BookCover = styled.div`
@@ -174,12 +184,20 @@ const Visit2 = styled.div`
     margin-right: 0.5rem;
 `
 
+const SizeBox = styled.div`
+    width: 90%;
+    height: 2rem;
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 0 auto;
+`
+
 
 const HomePage = styled.div`
-    width: 80%;
+    width: 50%;
     height: 2rem;
-    /* border: 2px solid black; */
-    margin-left: 2.5rem;
+    /* border: 2px solid red; */
+    /* margin-left: 2.5rem; */
     font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
@@ -187,11 +205,11 @@ const HomePage = styled.div`
 `
 
 const Link = styled.div`
-    width: 80%;
+    width: 50%;
     height: 2rem;
     /* border: 2px solid green; */
-    margin-left: 10rem;
-    margin-right: 6rem;
+    /* margin-left: 10rem;
+    margin-right: 6rem; */
     font-size: 1.15rem;
     display: flex;
     justify-content: right;
