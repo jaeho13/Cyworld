@@ -76,7 +76,7 @@ const Project = () => {
 
 
     const [sellentImageIndex, setSellentImageIndex] = useState(0);
-    const sellImages = ['/background/s_page.1.png', '/background/s_page.2.png', '/background/s_page.3.png'];
+    const sellImages = ['/background/s_page.1.png', '/background/s_page.2.png', '/background/s_page.3.png', '/background/s_page.4.png', '/background/s_page.5.png'];
 
     const goSellentImage = (index) => {
         setSellentImageIndex(index);
@@ -293,10 +293,8 @@ const Project = () => {
                                             3. 역할 <br />
                                             - Frontend <br />
                                             - 기획 및 디자인 <br />
-                                            - 네이버 로그인 API 구현 <br />
-                                            - 카카오 로그인 API 구현 <br />
+                                            - 네이버 및 카카오 로그인 API 구현 <br />
                                             - 카카오 지도 API, 카카오 결제 API <br />
-                                            - 실시간 채팅 구현 <br />
                                             - RESTful API를 이용한 React, Spring 게시판 및 댓글 CRUD 구현 <br />
                                             <br />
                                             4. 사용 기술 <br />
