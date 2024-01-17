@@ -98,7 +98,6 @@ const Profile = () => {
                                         Github Notion Slack Discord <br />
                                         Figma Zeplin <br /> */}
                                     </FiledBottom>
-
                                 </Filed>
                                 <Right>
                                     <RightButton1 onClick={goToHome}>Home</RightButton1>
@@ -136,31 +135,32 @@ const Body = styled.div`
 
 const BookCover = styled.div`
     width: 70%;
-    height: 50rem;
+    height: 85vh;
     border: 2px solid #738186;
     border-radius: 2rem;
     background-color: #b4d1da;
     margin: 0 auto;
-    /* margin-top: 4rem; */
+    display: flex;
+    align-items: center;
 `
 
 const Page = styled.div`
     width: 96%;
-    height: 47rem;
+    height: 80vh;
     border: 3.5px dashed white;
     border-radius: 1rem;
     margin: 0 auto;
-    margin-top: 1rem;
+    display: flex;
+    align-items: center;
 `
 
 const Main = styled.div`
     width: 97%;
-    height: 45rem;
+    height: 77vh;
     border: 2px solid #d4d4d4;
     border-radius: 1rem;
     background-color: #d4d4d4;
     margin: 0 auto;
-    margin-top: 1rem;
 `
 
 const Bind = styled.div`
@@ -170,29 +170,29 @@ const Bind = styled.div`
 
 const Filed = styled.div`
     width: 95%;
-    height: 43rem;
+    height: 74vh;
+    /* border: 2px solid red; */
     /* border: 2px solid red; */
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 1rem;
     margin-top: 1rem;
-    margin-left: 2rem;
 `
 
 const FiledTop = styled.div`
-    width: 100%;
-    height: 1.2rem;
-    font-size: 2rem;
+    width: 95%;
+    height: 3vh;
+    font-size: 1.5rem;
     color: #3B87AB;
     font-weight: bold;
     margin-top: 0.5rem;
-    margin-left: 1.2rem;
-    margin-bottom: 2rem;
-    /* border: 2px solid black; */
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 `
 
 const FiledCenter = styled.div`
     width: 95%;
-    height: 17rem;
+    height: 30vh;
     margin: 0 auto;
     padding: 0.5rem;
     font-size: 1.2rem;
@@ -205,9 +205,10 @@ const FiledCenter = styled.div`
     white-space: pre-wrap; /*한 줄 꽉 차면 줄 바꿈*/
 `
 
+
 const FiledBottom = styled.div`
     width: 95%;
-    height: 16rem;
+    height: 28vh;
     margin: 0 auto;
     padding: 0.5rem;
     font-size: 1.2rem;
@@ -267,23 +268,22 @@ const FiledBottomText = styled.div`
     color: #3B87AB;
 `
 
-
 const Right = styled.div`
     width: 10%;
-    height: 40rem;
-    /* border: 2px solid blue; */
-    /* margin-left: 3rem; */
-    margin-top: 2rem;
+    height: 50vh;
+    margin-top: 5vh;
+    /* border: 2px solid red; */
 `
 
+
 const RightButton1 = styled.button`
-    width: 100%;
-    height: 3rem;
+    width: 90%;
+    height: 5vh;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 4rem;
-    font-size: 1.5rem;
+    margin-top: 1vh;
+    font-size: 1.2rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -296,13 +296,13 @@ const RightButton1 = styled.button`
 `
 
 const RightButton2 = styled.button`
-    width: 100%;
-    height: 3rem;
+    width: 90%;
+    height: 5vh;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    margin-top: 1vh;
+    font-size: 1.2rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -317,13 +317,13 @@ const RightButton2 = styled.button`
 `
 
 const RightButton3 = styled.button`
-    width: 100%;
-    height: 3rem;
+    width: 90%;
+    height: 5vh;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    margin-top: 1vh;
+    font-size: 1.2rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -336,13 +336,13 @@ const RightButton3 = styled.button`
 `
 
 const RightButton4 = styled.button`
-    width: 100%;
-    height: 3rem;
+    width: 90%;
+    height: 5vh;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    margin-top: 1vh;
+    font-size: 1.2rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
