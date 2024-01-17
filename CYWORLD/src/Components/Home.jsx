@@ -109,10 +109,8 @@ const Body = styled.div`
     top: 0;
     right: 0;
     bottom: 0;
-`
-
-const Qorud = styled.img`
-    width: 10%;
+    display: flex;
+    align-items: center;
 `
 
 const BookCover = styled.div`
@@ -122,7 +120,7 @@ const BookCover = styled.div`
     border-radius: 2rem;
     background-color: #b4d1da;
     margin: 0 auto;
-    margin-top: 5rem;
+    /* margin-top: 4rem; */
 `
 
 const Page = styled.div`

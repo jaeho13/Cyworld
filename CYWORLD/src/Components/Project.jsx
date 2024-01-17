@@ -101,7 +101,7 @@ const Project = () => {
                         <Main>
                             <Bind>
                                 <Filed>
-                                    <FiledTop>프로젝트</FiledTop>
+                                    <FiledTop>PROJECT</FiledTop>
 
                                     <Bind2>
                                         <Contents>
@@ -301,8 +301,9 @@ const Project = () => {
                                             - React, Spring, Oracle, Figma <br />
                                             <br />
                                             5. 프로젝트 후기 <br />
-
-                                            <br />
+                                            이번 프로젝트에서는 주로 사용하던 Open API 말고, 결제, 지도 등 다양한 API를 사용해 보았다. <br />
+                                            확실히 API 사용이 익숙해져서인지 처음 API를 사용했을 때 보다 이해가 빠르고 쉽게 접근할 수 있었다. <br />
+                                            추가적으로 REST API 백엔드 코드를 구현해 보면서, 서버 - 클라이언트 사이의 통신 과정을 더 자세히 이해할 수 있었다. <br />
                                         </ContentsDetail>
                                     </Bind2>
                                 </Filed>
@@ -335,6 +336,8 @@ const Body = styled.div`
     top: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    align-items: center;
 `
 
 const BookCover = styled.div`
@@ -344,9 +347,8 @@ const BookCover = styled.div`
     border-radius: 2rem;
     background-color: #b4d1da;
     margin: 0 auto;
-    margin-top: 5rem;
+    /* margin-top: 4rem; */
 `
-
 const Page = styled.div`
     width: 96%;
     height: 47rem;

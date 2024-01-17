@@ -32,9 +32,11 @@ const Profile = () => {
                                 <Filed>
                                     <FiledTop>Introduce </FiledTop>
                                     <FiledCenter>
-                                        안녕하십니까 프론트엔드를 지망하는 97년생 이재호입니다. <br /> <br />
-                                        프로그래밍 언어, 데이터베이스, 프레임워크 등을 학습하며 다양한 웹 개발 프로젝트에 참여하였습니다. <br />
-                                        배운 내용을 활용하는 과정에서는 고정된 것이라고 생각했던 시각적 화면이 저의 손끝에서 구현된다는 생각에 가슴이 뛰었고, 그중에서 프론트엔드 구현에 가장 흥미와 즐거움을 느껴 JavaScript와 REACT를 집중적으로 공부하였습니다. <br /> <br />
+                                        {/* 안녕하십니까 프론트엔드를 지망하는 97년생 이재호입니다. <br /> <br /> */}
+                                        안녕하십니까 다재다능한 개발자를 지망하는 97년생 이재호입니다. <br /> <br />
+                                        {/* 프로그래밍 언어, 데이터베이스, 프레임워크 등을 학습하며 다양한 웹 개발 프로젝트에 참여하였습니다. <br /> */}
+                                        프로그래밍 언어, 데이터베이스, 프레임워크 등을 학습하며 다양한 개발 프로젝트에 참여하였습니다. <br />
+                                        배운 내용을 활용하는 과정에서는 고정된 것이라고 생각했던 시각적 화면이 저의 손끝에서 구현된다는 생각에 흥미를 느꼈고, 그중에서 프론트엔드 구현에 가장 흥미와 즐거움을 느껴 JavaScript와 REACT를 집중적으로 공부하였습니다. <br /> <br />
 
                                         1. 화면 구현 <br />
 
@@ -44,13 +46,14 @@ const Profile = () => {
                                         CRUD(Create, Read, Update, Delete) 기능에 대한 사용자 플로우를 고려해 데이터를 효율적으로 생성, 조회, 수정, 삭제할 수 있도록 구현하였습니다. <br />
                                         <br />
                                         3. API 사용 <br />
-                                        카카오 API를 사용하여 사이트 내 소셜 로그인을 지원하거나 위치 기반 정보를 표시하는 맵 API를 사용한 경험이 있습니다. <br />
+                                        카카오 API를 사용하여 사이트 내 소셜 로그인을 지원하거나 위치 기반 정보를 표시하는 지도, 결제 등 다양한 API를 사용한 경험이 있습니다. <br />
                                         <br />
                                         4. 데이터베이스 테이블 설계 <br />
 
                                         프로젝트의 데이터를 효율적으로 저장하고 관리하기 위해 데이터베이스 테이블을 백엔드 팀원과 함께 설계하였습니다.
                                         데이터 구조와 관계를 고려하여 테이블을 정의하고 필요한 컬럼을 설계하였습니다. <br /> <br />
-                                        저는 위와 같은 작업을 통해 프론트엔드 개발 및 백엔드와의 협업 경험을 쌓았고, 이를 통해 더 나은 웹 개발자로 성장하고자 끊임없이 노력하고 있습니다. <br /> <br />
+                                        {/* 저는 위와 같은 작업을 통해 프론트엔드 개발 및 백엔드와의 협업 경험을 쌓았고, 이를 통해 더 나은 웹 개발자로 성장하고자 끊임없이 노력하고 있습니다. <br /> <br /> */}
+                                        저는 위와 같은 작업을 통해 프론트엔드 개발 및 백엔드와의 협업 경험을 쌓았고, 이를 통해 더 나은 개발자로 성장하고자 끊임없이 노력하고 있습니다. <br /> <br />
 
                                         앞으로도 어떤 일을 하던 책임감을 가지고 진행하며, 부족함 없이 실행할 수 있도록 하겠습니다. 감사합니다. <br />
                                         <br />
@@ -60,13 +63,17 @@ const Profile = () => {
                                         <FiledBottomBind>
                                             <FiledBottomLeftTop>
                                                 <FiledBottomText>Front-End</FiledBottomText>
-                                                - html CSS JS<br />
-                                                - React Flutter
+                                                {/* - html CSS JS<br /> */}
+                                                - JavaScript <br />
+                                                - CSS <br />
+                                                - React Flutter <br />
                                             </FiledBottomLeftTop>
 
                                             <FiledBottomRightTop>
                                                 <FiledBottomText>Back-End</FiledBottomText>
-                                                - AWS<br />
+                                                - Java <br />
+                                                - REST API <br />
+                                                - AWS <br />
                                                 - Oracle Postgresql<br />
                                             </FiledBottomRightTop>
                                         </FiledBottomBind>
@@ -74,7 +81,8 @@ const Profile = () => {
                                         <FiledBottomBind>
                                             <FiledBottomLeftBottom>
                                                 <FiledBottomText>Tool</FiledBottomText>
-                                                - dbeaver<br />
+                                                - Sourcetree <br />
+                                                - dbeaver <br />
                                                 - Figma Zeplin<br />
                                             </FiledBottomLeftBottom>
 
@@ -122,6 +130,8 @@ const Body = styled.div`
     top: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    align-items: center;
 `
 
 const BookCover = styled.div`
@@ -131,7 +141,7 @@ const BookCover = styled.div`
     border-radius: 2rem;
     background-color: #b4d1da;
     margin: 0 auto;
-    margin-top: 5rem;
+    /* margin-top: 4rem; */
 `
 
 const Page = styled.div`
@@ -227,17 +237,19 @@ const FiledBottomLeftTop = styled.div`
     white-space: pre-wrap; /*한 줄 꽉 차면 줄 바꿈*/
 `
 
+const FiledBottomRightTop = styled.div`
+    width: 50%;
+    height: 7rem;
+    /* border: 2px solid red; */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+    white-space: pre-wrap; /*한 줄 꽉 차면 줄 바꿈*/
+`
+
 const FiledBottomLeftBottom = styled.div`
     width: 50%;
     height: 7rem;
     /* border: 2px solid red; */
     margin-top: 1rem;
-`
-
-const FiledBottomRightTop = styled.div`
-    width: 50%;
-    height: 7rem;
-    /* border: 2px solid red; */
 `
 
 const FiledBottomRightBottom = styled.div`
