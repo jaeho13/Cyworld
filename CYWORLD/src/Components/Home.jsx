@@ -51,7 +51,7 @@ const Home = () => {
                                     </LeftTop>
                                     <LeftCenterComment>Introduce</LeftCenterComment>
                                     <LeftCenter>
-                                        풀스택 개발자를 꿈꾸는 이재호입니다.<br />
+                                        프론트엔드 개발자를 꿈꾸는 이재호입니다.<br />
                                         사용자 경험을 고려한 직관적이고 효율적인 인터페이스를 디자인하고 개발하는 것에 관심이 많습니다. <br />
                                     </LeftCenter>
                                     <LeftBottomComment>
