@@ -1,26 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components"
+import UseNavigation from "./UseNavigation";
 
 const Contact = () => {
 
-    const navigate = useNavigate();
+    const { goToHome, goToProfile, goToProject, goToContact } = UseNavigation();
 
-    const goToHome = () => {
-        navigate("/");
-    };
-
-    const goToProfile = () => {
-        navigate("/profile");
-    };
-
-    const goToProject = () => {
-        navigate("/project");
-    };
-
-    const goToContact = () => {
-        navigate("/contact");
-    };
 
     return (
         <>

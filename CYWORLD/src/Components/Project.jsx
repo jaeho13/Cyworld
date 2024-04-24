@@ -1,26 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components"
-import { useNavigate } from "react-router-dom";
+import UseNavigation from "./UseNavigation";
 
 const Project = () => {
 
-    const navigate = useNavigate();
+    const { goToHome, goToProfile, goToProject, goToContact } = UseNavigation();
 
-    const goToHome = () => {
-        navigate("/");
-    };
-
-    const goToProfile = () => {
-        navigate("/profile");
-    };
-
-    const goToProject = () => {
-        navigate("/project");
-    };
-
-    const goToContact = () => {
-        navigate("/contact");
-    };
 
     const [cyImageIndex, setCyImageIndex] = useState(0);
     const cyImages = ['/background/c_page.1.png', '/background/c_page.2.png', '/background/c_page.3.png', '/background/c_page.4.png'];
