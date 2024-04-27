@@ -10,7 +10,6 @@ const Home = () => {
         }
 
 
-
     };
 
     const { goToHome, goToProfile, goToProject, goToContact } = UseNavigation();
