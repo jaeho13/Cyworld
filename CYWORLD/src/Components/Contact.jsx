@@ -58,44 +58,40 @@ const Body = styled.div`
     background-color: #a3a3a3;
     background-image: url(/background/pattern.png);
     background-size: 100px;
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    display: flex;
-    align-items: center;
 `
 
 const BookCover = styled.div`
     width: 70%;
-    height: 85vh;
+    height: 50rem;
     border: 2px solid #738186;
     border-radius: 2rem;
     background-color: #b4d1da;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    margin-top: 5rem;
 `
 
 const Page = styled.div`
     width: 96%;
-    height: 80vh;
+    height: 47rem;
     border: 3.5px dashed white;
     border-radius: 1rem;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    margin-top: 1rem;
 `
 
 const Main = styled.div`
     width: 97%;
-    height: 77vh;
+    height: 45rem;
     border: 2px solid #d4d4d4;
     border-radius: 1rem;
     background-color: #d4d4d4;
     margin: 0 auto;
+    margin-top: 1rem;
 `
 
 const Bind = styled.div`
@@ -105,29 +101,29 @@ const Bind = styled.div`
 
 const Filed = styled.div`
     width: 95%;
-    height: 74vh;
+    height: 43rem;
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.4);
-    margin-left: 1rem;
     margin-top: 1rem;
-    align-items: center;
+    margin-left: 2rem;
 `
 
 const FiledTop = styled.div`
-    width: 95%;
+    width: 100%;
     height: 1.2rem;
     font-size: 1.2rem;
     color: #3B87AB;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     margin-left: 1.2rem;
 `
 
+
 const FiledCenter = styled.div`
     width: 95%;
-    height: 67vh;
+    height: 38rem;
     margin: 0 auto;
-    margin-top: 1rem;
+    font-size: 1.2rem;
     color: #3B87AB;
     background-color: white;
     font-weight: bold;
@@ -135,19 +131,20 @@ const FiledCenter = styled.div`
 `
 
 const Bind2 = styled.div`
-    width: 100%;
-    height: 15vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 `
 
 const FiledIcon1 = styled.div`
     width: 8%;
-    height: 10vh;
+    height: 5rem;
     border: 2px solid black;
     border-radius: 1rem;
+    margin-right: 16rem;
+    margin-top: 2rem;
 `
 
 const FiledIconImage1 = styled.img`
@@ -159,43 +156,47 @@ const FiledIconImage1 = styled.img`
 
 const FiledIcon2 = styled.div`
     width: 8%;
-    height: 10vh;
+    height: 5rem;
     border: 2px solid black;
     border-radius: 1rem;
+    margin-top: 2rem;
 `
+
 
 const Bind3 = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
 `
 
 const FiledText1 = styled.div`
     width: 25%;
     height: 3rem;
     border-radius: 1rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 2px solid red;
 `
 
 const FiledText2 = styled.div`
     width: 25%;
     height: 3rem;
     border-radius: 1rem;
+    margin-top: 1rem;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 2px solid red;
 `
 
 
 const FiledBottom = styled.div`
     width: 95%;
-    height: 42vh;
+    height: 25rem;
     margin: 0 auto;
     margin-top: 1rem;
 `
@@ -209,19 +210,18 @@ const FiledBottomImage = styled.img`
 
 const Right = styled.div`
     width: 10%;
-    height: 50vh;
-    margin-top: 5vh;
-    /* border: 2px solid red; */
+    height: 40rem;
+    margin-top: 2rem;
 `
 
 const RightButton1 = styled.button`
-    width: 90%;
-    height: 5vh;
+    width: 100%;
+    height: 3rem;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1vh;
-    font-size: 1.2rem;
+    margin-top: 4rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -234,13 +234,13 @@ const RightButton1 = styled.button`
 `
 
 const RightButton2 = styled.button`
-    width: 90%;
-    height: 5vh;
+    width: 100%;
+    height: 3rem;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1vh;
-    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -253,13 +253,13 @@ const RightButton2 = styled.button`
 `
 
 const RightButton3 = styled.button`
-    width: 90%;
-    height: 5vh;
+    width: 100%;
+    height: 3rem;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1vh;
-    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -272,13 +272,13 @@ const RightButton3 = styled.button`
 `
 
 const RightButton4 = styled.button`
-    width: 90%;
-    height: 5vh;
+    width: 100%;
+    height: 3rem;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1vh;
-    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

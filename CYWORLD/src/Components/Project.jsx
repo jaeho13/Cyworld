@@ -314,46 +314,41 @@ const Body = styled.div`
     background-color: #a3a3a3;
     background-image: url(/background/pattern.png);
     background-size: 100px;
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    display: flex;
-    align-items: center;
 `
 
 const BookCover = styled.div`
     width: 70%;
-    height: 85vh;
+    height: 50rem;
     border: 2px solid #738186;
     border-radius: 2rem;
     background-color: #b4d1da;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    margin-top: 5rem;
 `
 
 const Page = styled.div`
     width: 96%;
-    height: 80vh;
+    height: 47rem;
     border: 3.5px dashed white;
     border-radius: 1rem;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    margin-top: 1rem;
 `
 
 const Main = styled.div`
     width: 97%;
-    height: 77vh;
+    height: 45rem;
     border: 2px solid #d4d4d4;
     border-radius: 1rem;
     background-color: #d4d4d4;
     margin: 0 auto;
+    margin-top: 1rem;
 `
-
 
 const Bind = styled.div`
     display: flex;
@@ -362,7 +357,7 @@ const Bind = styled.div`
 
 const Filed = styled.div`
     width: 95%;
-    height: 74vh;
+    height: 43rem;
     /* border: 2px solid red; */
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.4);
@@ -424,21 +419,23 @@ const ContentsDetailTitle = styled.div`
     /* padding: 0.5rem; */
  `
 
+
 const Right = styled.div`
     width: 10%;
-    height: 50vh;
-    margin-top: 5vh;
-    /* border: 2px solid red; */
+    height: 40rem;
+    /* border: 2px solid blue;   */
+    /* margin-left: 3rem; */
+    margin-top: 2rem;
 `
 
 const RightButton1 = styled.button`
-    width: 90%;
-    height: 5vh;
+    width: 100%;
+    height: 3rem;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1vh;
-    font-size: 1.2rem;
+    margin-top: 4rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -451,13 +448,13 @@ const RightButton1 = styled.button`
 `
 
 const RightButton2 = styled.button`
-    width: 90%;
-    height: 5vh;
+    width: 100%;
+    height: 3rem;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1vh;
-    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -470,13 +467,13 @@ const RightButton2 = styled.button`
 `
 
 const RightButton3 = styled.button`
-    width: 90%;
-    height: 5vh;
+    width: 100%;
+    height: 3rem;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1vh;
-    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -491,13 +488,13 @@ const RightButton3 = styled.button`
 `
 
 const RightButton4 = styled.button`
-    width: 90%;
-    height: 5vh;
+    width: 100%;
+    height: 3rem;
     border: 2px solid grey;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 1vh;
-    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
