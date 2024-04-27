@@ -8,6 +8,9 @@ const Home = () => {
         if (url !== '사이트') {
             window.open(url, '_blank');
         }
+
+
+
     };
 
     const { goToHome, goToProfile, goToProject, goToContact } = UseNavigation();
