@@ -14,10 +14,10 @@ const Home = () => {
 
     return (
         <>
-            <Body>
-                <BookCover>
-                    {/* <Page>
-                        <Main>
+            <BackgroundImage>
+                <BackArea>
+                    <BackBorder>
+                        {/* <Main>
                             <Bind>
                                 <Visit>TODAY <Visit2>11</Visit2> | TOTAL 1113</Visit>
                                 <Bind2>
@@ -67,17 +67,17 @@ const Home = () => {
                                     <RightButton4 onClick={goToContact}>Contact</RightButton4>
                                 </Right>
                             </Bind3>
-                        </Main>
-                    </Page> */}
-                </BookCover>
-            </Body>
+                        </Main> */}
+                    </BackBorder>
+                </BackArea>
+            </BackgroundImage>
         </>
     );
 };
 
 export default Home;
 
-const Body = styled.div`
+const BackgroundImage = styled.div`
     background-color: #a3a3a3;
     background-image: url(/background/pattern.png);
     background-size: 100px;
@@ -91,21 +91,22 @@ const Body = styled.div`
     align-items: center;
 `
 
-const BookCover = styled.div`
+const BackArea = styled.div`
     width: 70%;
     height: 85vh;
     border: 2px solid #738186;
-    border-radius: 2rem;
+    border-radius: 30px;
     background-color: #b4d1da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
-const Page = styled.div`
-    width: 96%;
-    height: 47rem;
+const BackBorder = styled.div`
+    width: 97%;
+    height: 80vh;
     border: 3.5px dashed white;
-    border-radius: 1rem;
-    margin: 0 auto;
-    margin-top: 1rem;
+    border-radius: 15px;
 `
 
 const Main = styled.div`
