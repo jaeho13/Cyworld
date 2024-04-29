@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <Body>
                 <BookCover>
-                    <Page>
+                    {/* <Page>
                         <Main>
                             <Bind>
                                 <Visit>TODAY <Visit2>11</Visit2> | TOTAL 1113</Visit>
@@ -68,7 +68,7 @@ const Home = () => {
                                 </Right>
                             </Bind3>
                         </Main>
-                    </Page>
+                    </Page> */}
                 </BookCover>
             </Body>
         </>
@@ -78,7 +78,6 @@ const Home = () => {
 export default Home;
 
 const Body = styled.div`
-    font-size: 16px;
     background-color: #a3a3a3;
     background-image: url(/background/pattern.png);
     background-size: 100px;
@@ -87,16 +86,17 @@ const Body = styled.div`
     top: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 const BookCover = styled.div`
     width: 70%;
-    height: 50rem;
+    height: 85vh;
     border: 2px solid #738186;
     border-radius: 2rem;
     background-color: #b4d1da;
-    margin: 0 auto;
-    margin-top: 5rem;
 `
 
 const Page = styled.div`
