@@ -17,19 +17,23 @@ const Home = () => {
             <BackgroundImage>
                 <BackArea>
                     <BackBorder>
-                        {/* <Main>
-                            <Bind>
-                                <Visit>TODAY <Visit2>11</Visit2> | TOTAL 1113</Visit>
-                                <Bind2>
+                        <BackColor>
+
+
+
+                            <TopTitle>
+                                <LeftTopTitle>TODAY <Visit2>11</Visit2> | TOTAL 1113</LeftTopTitle>
+                                <RightTopTitle>
                                     <HomePage>이재호의 미니홈피</HomePage>
                                     <Link>
                                         <a href="https://jaeho13.github.io">https://jaeho13.github.io</a>
                                     </Link>
-                                </Bind2>
-                            </Bind>
+                                </RightTopTitle>
+                            </TopTitle>
+
 
                             <Bind3>
-                                <Left>
+                                {/* <Left>
                                     <LeftTop>
                                         <LeftTopImage src="/background/Picture.png" alt="profile" />
                                     </LeftTop>
@@ -49,6 +53,7 @@ const Home = () => {
                                         </Choice>
                                     </LeftBottom>
                                 </Left>
+                                
                                 <Center>
                                     <CenterTop>Commit Status
                                         <CenterTop2>
@@ -60,14 +65,15 @@ const Home = () => {
                                         <CenterBottomImage src="/background/study.png" alt="study" />
                                     </CenterBottom>
                                 </Center>
+
                                 <Right>
                                     <RightButton1 onClick={goToHome}>Home</RightButton1>
                                     <RightButton2 onClick={goToProfile}>Profile</RightButton2>
                                     <RightButton3 onClick={goToProject}>Project</RightButton3>
                                     <RightButton4 onClick={goToContact}>Contact</RightButton4>
-                                </Right>
+                                </Right> */}
                             </Bind3>
-                        </Main> */}
+                        </BackColor>
                     </BackBorder>
                 </BackArea>
             </BackgroundImage>
@@ -107,44 +113,32 @@ const BackBorder = styled.div`
     height: 80vh;
     border: 3.5px dashed white;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
-const Main = styled.div`
+const BackColor = styled.div`
     width: 97%;
-    height: 45rem;
+    height: 75vh;
     border: 2px solid #d4d4d4;
     border-radius: 1rem;
     background-color: #d4d4d4;
-    margin: 0 auto;
-    margin-top: 1rem;
 `
 
-const Bind = styled.div`
+const TopTitle = styled.div`
     display: flex;
     flex-direction: row;
     /* margin-top: 0.8rem; */
 `
 
-const Bind2 = styled.div`
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-    /* justify-content: space-between; */
-`
-
-const Bind3 = styled.div`
-    display: flex;
-    flex-direction: row;
-`
-
-const Visit = styled.div`
+const LeftTopTitle = styled.div`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 20%;
     height: 1.5rem;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     margin-left: 1.5rem;
     font-size: 1.2rem;
     padding-top: 10px;
@@ -153,12 +147,22 @@ const Visit = styled.div`
     justify-content: center;
 `
 
+
 const Visit2 = styled.div`
     color: red;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 `
 
+
+const RightTopTitle = styled.div`
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    border: 2px solid blue;
+    /* justify-content: space-between; */
+`
 
 const HomePage = styled.div`
     width: 80%;
@@ -187,6 +191,13 @@ const Link = styled.div`
     text-overflow: ellipsis;
     color: #3B87AB
 `
+
+
+const Bind3 = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+
 
 const Left = styled.div`
     width: 20%;
