@@ -21,8 +21,21 @@ const Home = () => {
                             <BoardBind>
                                 <Left>
                                     <LeftTop>
-                                    TODAY 11 | TOTAL 1113
+                                      TODAY 11 | TOTAL 1113
+                                      {/* 수정 글씨 반응형 */}
                                     </LeftTop>
+                                    <LeftProfile>
+                                        <LeftProfileImage src="/background/Picture.png" alt="profile" />
+                                    </LeftProfile>
+
+                                    <LeftInfo>
+                                        
+                                    </LeftInfo>
+
+                                    <LeftLink>
+                                        
+                                    </LeftLink>
+                                    
                                 </Left>
 
 
@@ -172,6 +185,37 @@ const LeftTop = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+`
+
+const VisitCount = styled.div`
+    color: red;
+`
+
+const LeftProfile = styled.div`
+    width: 100%;
+    height: 27vh;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+`
+
+const LeftProfileImage = styled.img`
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+`
+
+
+const LeftInfo = styled.div`
+    width: 100%;
+    height: 35vh;
+    border: 2px solid black;
+`
+
+const LeftLink = styled.div`
+    width: 100%;
+    height: 10vh;
+    border: 2px solid blue;
 `
 
 const RightBind = styled.div`
