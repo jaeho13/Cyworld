@@ -28,8 +28,13 @@ const Home = () => {
                                         <LeftProfileImage src="/background/Picture.png" alt="profile" />
                                     </LeftProfile>
 
+                                    <LeftInfoTitle>
+                                        Introduce
+                                    </LeftInfoTitle>
+
                                     <LeftInfo>
-                                        
+                                        프론트엔드 개발자를 꿈꾸는 이재호입니다.<br />
+                                        사용자 경험을 고려한 직관적이고 효율적인 인터페이스를 디자인하고 개발하는 것에 관심이 많습니다. <br />
                                     </LeftInfo>
 
                                     <LeftLink>
@@ -205,11 +210,28 @@ const LeftProfileImage = styled.img`
     object-fit: cover;
 `
 
+const LeftInfoTitle = styled.div`
+    width: 95%;
+    height: 5vh;
+    border: 2px solid black;
+    color: #3B87AB;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 5%;
+`
+
 
 const LeftInfo = styled.div`
-    width: 100%;
-    height: 35vh;
+    width: 95%;
+    height: 30vh;
     border: 2px solid black;
+    font-size: 1.2rem;
+    padding-left: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    whiteSpace: nowrap;
 `
 
 const LeftLink = styled.div`
