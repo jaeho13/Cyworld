@@ -37,6 +37,10 @@ const Home = () => {
                                         사용자 경험을 고려한 직관적이고 효율적인 인터페이스를 디자인하고 개발하는 것에 관심이 많습니다. <br />
                                     </LeftInfo>
 
+                                    <LeftLinkTitle>
+                                        Link
+                                    </LeftLinkTitle>
+
                                     <LeftLink>
                                         
                                     </LeftLink>
@@ -231,13 +235,31 @@ const LeftInfo = styled.div`
     padding-left: 5%;
     overflow: hidden;
     text-overflow: ellipsis;
-    whiteSpace: nowrap;
 `
 
-const LeftLink = styled.div`
-    width: 100%;
-    height: 10vh;
+const LeftLinkTitle = styled.div`
+    width: 95%;
+    height: 5vh;
     border: 2px solid blue;
+    color: #3B87AB;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 5%;
+`
+
+const LeftLink = styled.select`
+    width: 95%;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding-left: 5%;
+    color: black;
+    background-color: rgba(163, 163, 163, 0.3);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 `
 
 const RightBind = styled.div`
