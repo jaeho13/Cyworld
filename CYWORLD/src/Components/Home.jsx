@@ -62,11 +62,17 @@ const Home = () => {
                                             </CenterTopLink>
                                         </CenterTop>
                                             <CenterCommitState>
-                                            Commit States
+                                                Commit States
                                             </CenterCommitState>
                                             <CenterCommitImage>
                                                 <CenterCommitImageArea src="https://ghchart.rshah.org/jaeho13" />
                                             </CenterCommitImage>
+                                            <CenterMiniroom>
+                                                Miniroom
+                                            </CenterMiniroom>
+                                            <CenterMiniroomImage>
+                                                <CenterMiniroomImageArea src="/background/study.png" alt="study" />
+                                            </CenterMiniroomImage>
                                     </Center>
 
                                     <Right>
@@ -300,7 +306,7 @@ const LeftLinkSelect = styled.select`
 const RightBind = styled.div`
     width: 70%;
     height: 75vh;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: row;
 `
@@ -320,7 +326,7 @@ const Center = styled.div`
 const CenterTop = styled.div`
     width: 100%;
     height: 4vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
 `
@@ -328,7 +334,7 @@ const CenterTop = styled.div`
 const CenterTopSite = styled.div`
     width: 50%;
     height: 4vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     text-align: left;
@@ -338,7 +344,7 @@ const CenterTopSite = styled.div`
 const CenterTopLink = styled.div`
     width: 50%;
     height: 4vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -348,7 +354,7 @@ const CenterTopLink = styled.div`
 const CenterCommitState = styled.div`
     width: 99%;
     height: 3vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     color: #3B87AB;
@@ -356,12 +362,14 @@ const CenterCommitState = styled.div`
     font-size: 1.2rem;
     font-weight: bold;
     padding-left: 1%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 `
 
 const CenterCommitImage = styled.div`
     width: 100%;
     height: 20vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,6 +383,37 @@ const CenterCommitImageArea = styled.img`
     /* border: 2px solid blue; */
 `
 
+const CenterMiniroom = styled.div`
+    width: 99%;
+    height: 3vh;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    color: #3B87AB;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 1%;
+`
+
+const CenterMiniroomImage = styled.div`
+    width: 100%;
+    height: 44vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+`
+
+const CenterMiniroomImageArea = styled.img`
+    width: 95%;
+    height: 95%;
+    object-fit: fill;
+    border-radius: 16px;
+`
 
 
 const Right = styled.div`
