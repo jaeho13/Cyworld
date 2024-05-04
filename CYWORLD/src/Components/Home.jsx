@@ -54,12 +54,14 @@ const Home = () => {
                                 <RightBind>
                                     <Center>
                                         <CenterTop>
-                                            <CenterTopSite>
-                                              이재호의 미니홈피
-                                            </CenterTopSite>
-                                            <CenterTopLink>
-                                                <a href="https://jaeho13.github.io">https://jaeho13.github.io</a>
-                                            </CenterTopLink>
+                                            <CenterTopSiteFlex>
+                                                <CenterTopSite> 이재호의 미니홈피</CenterTopSite>
+                                            </CenterTopSiteFlex>
+                                            <CenterTopLinkFlex>
+                                                <CenterTopLink>
+                                                    <a href="https://jaeho13.github.io">https://jaeho13.github.io</a>
+                                                </CenterTopLink>
+                                            </CenterTopLinkFlex>
                                         </CenterTop>
                                             <CenterCommitState>
                                                 Commit States
@@ -76,7 +78,7 @@ const Home = () => {
                                     </Center>
 
                                     <Right>
-                                        
+                                        <RightHome>Home</RightHome>
                                     </Right>
                                 </RightBind>
                             </BoardBind>
@@ -223,7 +225,8 @@ const VisitCount = styled.div`
 
 const LeftProfile = styled.div`
     width: 100%;
-    height: 27vh;
+    height: 26vh;
+    padding-top: 1vh;
     /* border: 2px solid blue; */
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -304,7 +307,7 @@ const LeftLinkSelect = styled.select`
 `
 
 const RightBind = styled.div`
-    width: 70%;
+    width: 75%;
     height: 75vh;
     /* border: 2px solid blue; */
     display: flex;
@@ -329,26 +332,52 @@ const CenterTop = styled.div`
     /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
+
+`
+
+// const CenterTopSite = styled.div`
+//     width: 49%;
+//     height: 4vh;
+//     /* border: 2px solid red; */
+//     display: flex;
+//     align-items: center;
+//     text-align: left;
+//     font-size: 1.2rem;
+//     white-space: nowrap;
+//     text-overflow: ellipsis;
+//     overflow: hidden;
+//     padding-left: 1%;
+// `
+
+const CenterTopSiteFlex = styled.div`
+    width: 49%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
 `
 
 const CenterTopSite = styled.div`
-    width: 50%;
-    height: 4vh;
-    /* border: 2px solid red; */
-    display: flex;
-    align-items: center;
-    text-align: left;
     font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+`
+
+const CenterTopLinkFlex = styled.div`
+    width: 49%;
+    height: 4vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1%;
 `
 
 const CenterTopLink = styled.div`
-    width: 50%;
-    height: 4vh;
-    /* border: 2px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `
 
 const CenterCommitState = styled.div`
@@ -421,6 +450,27 @@ const Right = styled.div`
     height: 75vh;
     border: 2px solid green;
 `
+
+const RightHome = styled.button`
+    width: 100%;
+    height: 48px;
+    border: 2px solid grey;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    /* color: white;
+    background-color: #3B87AB; */
+    color: black;
+    background-color: white;
+    display: flex;
+    float: left;
+    align-items: center;
+`
+
 
 // const TopTitle = styled.div`
 //     display: flex;
