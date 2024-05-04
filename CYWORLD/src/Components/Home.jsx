@@ -61,6 +61,12 @@ const Home = () => {
                                                 <a href="https://jaeho13.github.io">https://jaeho13.github.io</a>
                                             </CenterTopLink>
                                         </CenterTop>
+                                            <CenterCommitState>
+                                            Commit States
+                                            </CenterCommitState>
+                                            <CenterCommitImage>
+                                                <CenterCommitImageArea src="https://ghchart.rshah.org/jaeho13" />
+                                            </CenterCommitImage>
                                     </Center>
 
                                     <Right>
@@ -313,8 +319,8 @@ const Center = styled.div`
 
 const CenterTop = styled.div`
     width: 100%;
-    height: 3vh;
-    /* border: 2px solid black; */
+    height: 4vh;
+    border: 2px solid black;
     display: flex;
     flex-direction: row;
 `
@@ -322,7 +328,7 @@ const CenterTop = styled.div`
 const CenterTopSite = styled.div`
     width: 50%;
     height: 4vh;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     align-items: center;
     text-align: left;
@@ -332,12 +338,44 @@ const CenterTopSite = styled.div`
 const CenterTopLink = styled.div`
     width: 50%;
     height: 4vh;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     font-size: 1.2rem;
 `
+
+const CenterCommitState = styled.div`
+    width: 99%;
+    height: 3vh;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    color: #3B87AB;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 1%;
+`
+
+const CenterCommitImage = styled.div`
+    width: 100%;
+    height: 20vh;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+`
+
+const CenterCommitImageArea = styled.img`
+    width: 95%;
+    height: 65%;
+    /* height: auto; */
+    /* border: 2px solid blue; */
+`
+
+
 
 const Right = styled.div`
     width: 10%;
