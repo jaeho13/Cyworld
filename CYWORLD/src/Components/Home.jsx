@@ -78,11 +78,30 @@ const Home = () => {
                                     </Center>
 
                                     <Right>
-                                        <RightHome>Home</RightHome>
+                                        <RightHomeFlex>
+                                            <RightHome>Home</RightHome>
+                                        </RightHomeFlex>
+
+                                        <RightProfileFlex>
+                                            <RightProfile>Profile</RightProfile>
+                                        </RightProfileFlex>
+                                        
+                                        <RightProjectFlex>
+                                            <RightProject>Project</RightProject>
+                                        </RightProjectFlex>
+                                        
+                                        <RightContactFlex>
+                                            <RightContact>Contact</RightContact>
+                                        </RightContactFlex>
                                     </Right>
                                 </RightBind>
                             </BoardBind>
-    
+
+
+                                            
+                                            
+                                            
+
 
                             {/* <TopTitle>
                                 <LeftTopTitle>TODAY <Visit2>11</Visit2> | TOTAL 1113</LeftTopTitle>
@@ -280,25 +299,24 @@ const LeftLinkTitle = styled.div`
 `
 
 const LeftLink = styled.div`
-    width: 95%;
+    width: 100%;
     height: 5vh;
     /* border: 1px solid black; */
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    padding-left: 5%;
     color: black;
     background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    justify-content: center;
 `
 
 const LeftLinkSelect = styled.select`
-    width: 95%;
+    width: 90%;
     height: 3vh;
     border: 1px solid black;
-    border-radius: 16px;
-    padding-left: 5%;
+    border-radius: 8px;
+    padding-left: 2%;
     color: black;
     background-color: rgba(163, 163, 163, 0.3);
     /* display: flex;
@@ -355,6 +373,7 @@ const CenterTopSiteFlex = styled.div`
     display: flex;
     align-items: center;
     padding-left: 1%;
+    font-weight: bold;
 `
 
 const CenterTopSite = styled.div`
@@ -365,12 +384,13 @@ const CenterTopSite = styled.div`
 `
 
 const CenterTopLinkFlex = styled.div`
-    width: 49%;
+    width: 48%;
     height: 4vh;
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-right: 1%;
+    padding-right: 2%;
+    font-weight: bold;
 `
 
 const CenterTopLink = styled.div`
@@ -428,7 +448,6 @@ const CenterMiniroom = styled.div`
 const CenterMiniroomImage = styled.div`
     width: 100%;
     height: 44vh;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,33 +463,98 @@ const CenterMiniroomImageArea = styled.img`
     border-radius: 16px;
 `
 
-
 const Right = styled.div`
     width: 10%;
     height: 75vh;
-    border: 2px solid green;
 `
 
-const RightHome = styled.button`
-    width: 100%;
+const RightHomeFlex = styled.div`
+    width: 97%;
     height: 48px;
     border: 2px solid grey;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    margin-top: 5vh;
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+`
+
+const RightHome = styled.div`
     font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    cursor: pointer;
-    /* color: white;
-    background-color: #3B87AB; */
-    color: black;
-    background-color: white;
+`
+
+const RightProfileFlex = styled.div`
+    width: 97%;
+    height: 48px;
+    border: 2px solid grey;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;    
+    color: white;
+    background-color: #3B87AB;
+    margin-top: 1vh;
+    padding-left: 3%;
     display: flex;
-    float: left;
     align-items: center;
 `
 
+const RightProfile = styled.div`
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+`
+
+const RightProjectFlex = styled.div`
+    width: 97%;
+    height: 48px;
+    border: 2px solid grey;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #3B87AB;
+    margin-top: 1vh;
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+`
+
+const RightProject = styled.div`
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+`
+
+const RightContactFlex = styled.div`
+    width: 97%;
+    height: 48px;
+    border: 2px solid grey;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #3B87AB;
+    margin-top: 1vh;
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+`
+
+const RightContact = styled.div`
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+`
 
 // const TopTitle = styled.div`
 //     display: flex;
@@ -721,58 +805,58 @@ const RightHome = styled.button`
 // `
 
 // const RightButton2 = styled.button`
-//     width: 100%;
-//     height: 3rem;
-//     border: 2px solid grey;
-//     border-top-right-radius: 0.5rem;
-//     border-bottom-right-radius: 0.5rem;
-//     margin-top: 1rem;
-//     font-size: 1.5rem;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     cursor: pointer;
-//     color: white;
-//     background-color: #3B87AB;
-//     display: flex;
-//     float: left;
-//     align-items: center;
+    // width: 100%;
+    // height: 3rem;
+    // border: 2px solid grey;
+    // border-top-right-radius: 0.5rem;
+    // border-bottom-right-radius: 0.5rem;
+    // margin-top: 1rem;
+    // font-size: 1.5rem;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // cursor: pointer;
+    // color: white;
+    // background-color: #3B87AB;
+    // display: flex;
+    // float: left;
+    // align-items: center;
 // `
 
 // const RightButton3 = styled.button`
-//     width: 100%;
-//     height: 3rem;
-//     border: 2px solid grey;
-//     border-top-right-radius: 0.5rem;
-//     border-bottom-right-radius: 0.5rem;
-//     margin-top: 1rem;
-//     font-size: 1.5rem;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     cursor: pointer;
-//     color: white;
-//     background-color: #3B87AB;
-//     display: flex;
-//     float: left;
-//     align-items: center;
+    // width: 100%;
+    // height: 3rem;
+    // border: 2px solid grey;
+    // border-top-right-radius: 0.5rem;
+    // border-bottom-right-radius: 0.5rem;
+    // margin-top: 1rem;
+    // font-size: 1.5rem;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // cursor: pointer;
+    // color: white;
+    // background-color: #3B87AB;
+    // display: flex;
+    // float: left;
+    // align-items: center;
 // `
 
 // const RightButton4 = styled.button`
-//     width: 100%;
-//     height: 3rem;
-//     border: 2px solid grey;
-//     border-top-right-radius: 0.5rem;
-//     border-bottom-right-radius: 0.5rem;
-//     margin-top: 1rem;
-//     font-size: 1.5rem;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     cursor: pointer;
-//     color: white;
-//     background-color: #3B87AB;
-//     display: flex;
-//     float: left;
-//     align-items: center;
+    // width: 100%;
+    // height: 3rem;
+    // border: 2px solid grey;
+    // border-top-right-radius: 0.5rem;
+    // border-bottom-right-radius: 0.5rem;
+    // margin-top: 1rem;
+    // font-size: 1.5rem;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // cursor: pointer;
+    // color: white;
+    // background-color: #3B87AB;
+    // display: flex;
+    // float: left;
+    // align-items: center;
 // `
