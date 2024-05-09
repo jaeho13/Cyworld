@@ -20,7 +20,31 @@ const Profile = () => {
 
                                 <FiledLeft>
                                     <IntroduceTitle>Introduce</IntroduceTitle>
-                                    <IntroduceBoard>보드보드</IntroduceBoard>
+                                    <IntroduceBoard>
+                                        안녕하십니까 프론트엔드 개발자 97년생 이재호입니다. <br /> <br />
+                                        {/* 안녕하십니까 다재다능한 개발자를 지망하는 97년생 이재호입니다. <br /> <br /> */}
+                                        프로그래밍 언어, 데이터베이스, 프레임워크 등을 학습하며 다양한 웹 개발 프로젝트에 참여하였습니다. <br /> @@@@@@@@@@@@@@@@@@@@@@
+                                        프로그래밍 언어, 데이터베이스, 프레임워크 등을 학습하며 다양한 개발 프로젝트에 참여하였습니다. <br />
+                                        배운 내용을 활용하는 과정에서는 고정된 것이라고 생각했던 시각적 화면이 저의 손끝에서 구현된다는 생각에 흥미를 느꼈고, 그중에서 프론트엔드 구현에 가장 흥미와 즐거움을 느껴 JavaScript와 REACT를 집중적으로 공부하였습니다. <br /> <br />
+
+                                        1. 화면 구현 <br />
+
+                                        사용자 인터페이스(UI)를 설계하고, REACT를 활용하여 시각적인 화면을 개발하였습니다. 특히 사용자가 쉽게 접근하고 사용할 수 있는 직관적인 디자인을 구현해 사용자 경험을 개선하기 위해 노력하였습니다. <br />
+                                        <br />
+                                        2. 기획 및 CRUD 기능 구현 <br />
+                                        CRUD(Create, Read, Update, Delete) 기능에 대한 사용자 플로우를 고려해 데이터를 효율적으로 생성, 조회, 수정, 삭제할 수 있도록 구현하였습니다. <br />
+                                        <br />
+                                        3. API 사용 <br />
+                                        카카오 API를 사용하여 사이트 내 소셜 로그인을 지원하거나 위치 기반 정보를 표시하는 지도, 결제 등 다양한 API를 사용한 경험이 있습니다. <br />
+                                        <br />
+                                        4. 데이터베이스 테이블 설계 <br />
+
+                                        프로젝트의 데이터를 효율적으로 저장하고 관리하기 위해 데이터베이스 테이블을 백엔드 팀원과 함께 설계하였습니다.
+                                        데이터 구조와 관계를 고려하여 테이블을 정의하고 필요한 컬럼을 설계하였습니다. <br /> <br />
+                                        저는 위와 같은 작업을 통해 프론트엔드 개발 및 백엔드와의 협업 경험을 쌓았고, 이를 통해 더 나은 개발자로 성장하고자 끊임없이 노력하고 있습니다. <br /> <br />
+
+                                        앞으로도 어떤 일을 하던 책임감을 가지고 진행하며, 부족함 없이 실행할 수 있도록 하겠습니다. 감사합니다. <br />
+                                    </IntroduceBoard>
                                     <IntroduceTitle>Stack</IntroduceTitle>
                                     <IntroduceBoard>보드보드</IntroduceBoard>
                                 </FiledLeft>
@@ -101,25 +125,13 @@ const IntroduceBoard = styled.div`
     border-radius: 16px;
     background-color: white;
     margin-bottom: 1vh;
+    overflow: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    /* padding: 8px; */
+    padding-left: 8px;
+    padding-top: 8px;
 `
-
-
-// const FiledCenter = styled.div`
-//     width: 95%;
-//     height: 17rem;
-//     margin: 0 auto;
-//     padding: 0.5rem;
-//     font-size: 1.2rem;
-//     color: black;
-//     background-color: white;
-//     font-weight: bold;
-//     border-radius: 1rem;
-//     overflow: auto; /* 스크롤 추가 */
-//     overflow-x: hidden; /* 가로 스크롤 제거 */
-//     white-space: pre-wrap; /*한 줄 꽉 차면 줄 바꿈*/
-// `
-
-
 
 
 {/* <Body>
