@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components"
 import UseNavigation from "./UseNavigation";
+import { RightContact, RightContactFlexBlack, RightHome, RightHomeFlexWhite, RightProfile, RightProfileFlexWhite, RightProject, RightProjectFlexWhite } from "./button/Button";
+import { BackArea, BackBorder, BackColor, BackgroundImage } from "./background/Background";
+
 
 const Contact = () => {
 
@@ -9,7 +12,76 @@ const Contact = () => {
 
     return (
         <>
-            <Body>
+            <BackgroundImage>
+                <BackArea>
+                    <BackBorder>
+                        <BackColor>
+                            <FiledBind>
+                                <FiledLeft>
+
+                                    <ContactTitle>
+                                        Contact
+                                    </ContactTitle>
+
+                                    <ContactBackgroundImageFlex>
+                                        <ContactBackgroundImage>
+                                            <ContactImageCover>
+                                                <ContactPhoneCover>
+                                                    <ContactImage src="/background/Call.png" alt="Phone" />
+                                                </ContactPhoneCover>
+
+                                                <ContactMailCover>
+                                                    <ContactImage src="/background/Mail.png" alt="Phone" />
+                                                </ContactMailCover>
+                                            </ContactImageCover>
+
+                                            <ContactString>
+                                                <ContactStringFlex>
+                                                    <ContactNumber>
+                                                        010-9386-9804
+                                                    </ContactNumber>
+                                                </ContactStringFlex>
+
+                                                <ContactStringFlex>
+                                                    <ContactMail>
+                                                        jaehooo13@naver.com
+                                                    </ContactMail>
+                                                </ContactStringFlex>
+                                            </ContactString>
+
+                                            <ContactThankImage>
+                                                ds
+                                            </ContactThankImage>
+
+                                        </ContactBackgroundImage>
+                                    </ContactBackgroundImageFlex>
+
+
+                                </FiledLeft>
+
+                                <FiledRight>
+                                    <RightHomeFlexWhite>
+                                        <RightHome onClick={goToHome}>Home</RightHome>
+                                    </RightHomeFlexWhite>
+
+                                    <RightProfileFlexWhite>
+                                        <RightProfile onClick={goToProfile}>Profile</RightProfile>
+                                    </RightProfileFlexWhite>
+
+                                    <RightProjectFlexWhite>
+                                        <RightProject onClick={goToProject}>Project</RightProject>
+                                    </RightProjectFlexWhite>
+
+                                    <RightContactFlexBlack>
+                                        <RightContact onClick={goToContact}>Contact</RightContact>
+                                    </RightContactFlexBlack>
+                                </FiledRight>
+                            </FiledBind>
+                        </BackColor>
+                    </BackBorder>
+                </BackArea>
+            </BackgroundImage>
+            {/* <Body>
                 <BookCover>
                     <Page>
                         <Main>
@@ -46,248 +118,334 @@ const Contact = () => {
                         </Main>
                     </Page>
                 </BookCover>
-            </Body >
+            </Body > */}
         </>
     );
 }
 
 export default Contact;
 
-const Body = styled.div`
-    font-size: 16px;
-    background-color: #a3a3a3;
-    background-image: url(/background/pattern.png);
-    background-size: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-`
 
-const BookCover = styled.div`
-    width: 70%;
-    height: 50rem;
-    border: 2px solid #738186;
-    border-radius: 2rem;
-    background-color: #b4d1da;
-    margin: 0 auto;
-    margin-top: 5rem;
-`
-
-const Page = styled.div`
-    width: 96%;
-    height: 47rem;
-    border: 3.5px dashed white;
-    border-radius: 1rem;
-    margin: 0 auto;
-    margin-top: 1rem;
-`
-
-const Main = styled.div`
-    width: 97%;
-    height: 45rem;
-    border: 2px solid #d4d4d4;
-    border-radius: 1rem;
-    background-color: #d4d4d4;
-    margin: 0 auto;
-    margin-top: 1rem;
-`
-
-const Bind = styled.div`
+const FiledBind = styled.div`
+    width: 100%;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 `
 
-const Filed = styled.div`
-    width: 95%;
-    height: 43rem;
-    border-radius: 1rem;
+const FiledLeft = styled.div`
+    width: 90%;
+    height: 73vh;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.4);
-    margin-top: 1rem;
-    margin-left: 2rem;
 `
 
-const FiledTop = styled.div`
-    width: 100%;
-    height: 1.2rem;
-    font-size: 1.2rem;
+const FiledRight = styled.div`
+    width: 7%;
+    height: 73vh;
+    border: 2px solid green;
+`
+
+const ContactTitle = styled.div`
+    width: 97%;
+    height: 3vh;
+    margin-top: 1vh;
+    border: 2px solid blue;
     color: #3B87AB;
     font-weight: bold;
-    margin-top: 1.2rem;
-    margin-left: 1.2rem;
+    font-size: 1.5rem;
+    margin-top: 1vh;
+    padding-left: 2.5%;
 `
 
+const ContactBackgroundImageFlex = styled.div`
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+`
 
-const FiledCenter = styled.div`
+const ContactBackgroundImage = styled.div`
     width: 95%;
-    height: 38rem;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    color: #3B87AB;
+    height: 65vh;
+    border: 2px solid red;
     background-color: white;
-    font-weight: bold;
-    border-radius: 1rem;
-`
-
-const Bind2 = styled.div`
+    border-radius: 16px;
     display: flex;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-`
-
-const FiledIcon1 = styled.div`
-    width: 8%;
-    height: 5rem;
-    border: 2px solid black;
-    border-radius: 1rem;
-    margin-right: 16rem;
-    margin-top: 2rem;
-`
-
-const FiledIconImage1 = styled.img`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-`
-
-const FiledIcon2 = styled.div`
-    width: 8%;
-    height: 5rem;
-    border: 2px solid black;
-    border-radius: 1rem;
-    margin-top: 2rem;
-`
-
-
-const Bind3 = styled.div`
-    display: flex;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-`
-
-const FiledText1 = styled.div`
-    width: 25%;
-    height: 3rem;
-    border-radius: 1rem;
-    margin-right: 5rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 `
 
-const FiledText2 = styled.div`
-    width: 25%;
-    height: 3rem;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
-
-
-const FiledBottom = styled.div`
-    width: 95%;
-    height: 25rem;
-    margin: 0 auto;
-    margin-top: 1rem;
-`
-
-const FiledBottomImage = styled.img`
+const ContactImageCover = styled.div`
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
+    height: 20vh;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 `
 
-const Right = styled.div`
+const ContactPhoneCover = styled.div`
     width: 10%;
-    height: 40rem;
-    margin-top: 2rem;
-`
-
-const RightButton1 = styled.button`
-    width: 100%;
-    height: 3rem;
-    border: 2px solid grey;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    margin-top: 4rem;
-    font-size: 1.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    cursor: pointer;
-    color: white;
-    background-color: #3B87AB;
+    height: 10vh;
+    border: 2px solid red;
+    border-radius: 16px;
     display: flex;
-    float: left;
+    justify-content: center;
     align-items: center;
 `
 
-const RightButton2 = styled.button`
-    width: 100%;
-    height: 3rem;
-    border: 2px solid grey;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    cursor: pointer;
-    color: white;
-    background-color: #3B87AB;
+const ContactMailCover = styled.div`
+    width: 10%;
+    height: 10vh;
+    border: 2px solid red;
+    border-radius: 16px;
     display: flex;
-    float: left;
+    justify-content: center;
     align-items: center;
 `
 
-const RightButton3 = styled.button`
-    width: 100%;
-    height: 3rem;
-    border: 2px solid grey;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    cursor: pointer;
-    color: white;
-    background-color: #3B87AB;
-    display: flex;
-    float: left;
-    align-items: center;
+const ContactImage = styled.img`
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 16px;
 `
 
-const RightButton4 = styled.button`
+
+
+
+const ContactString = styled.div`
     width: 100%;
-    height: 3rem;
-    border: 2px solid grey;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    margin-top: 1rem;
+    height: 5vh;
+    border: 2px solid red;
+    display: flex;
+`
+
+
+const ContactStringFlex = styled.div`
+    width: 50%;
+    height: 5vh;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+`
+
+const ContactNumber = styled.div`
     font-size: 1.5rem;
+    color: #3B87AB;
+    font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    cursor: pointer;
-    /* color: white;
-    background-color: #3B87AB; */
-    color: black;
-    background-color: white;
-    display: flex;
-    float: left;
-    align-items: center;
 `
+
+const ContactMail = styled.div`
+    font-size: 1.5rem;
+    color: #3B87AB;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+`
+
+const ContactThankImage = styled.div`
+    width: 95%;
+    height: 35vh;
+    border: 2px solid blue;
+    display: flex;
+`
+
+// const FiledTop = styled.div`
+//     width: 100%;
+//     height: 1.2rem;
+//     font-size: 1.2rem;
+//     color: #3B87AB;
+//     font-weight: bold;
+//     margin-top: 1.2rem;
+//     margin-left: 1.2rem;
+// `
+
+
+// const FiledCenter = styled.div`
+//     width: 95%;
+//     height: 38rem;
+//     margin: 0 auto;
+//     font-size: 1.2rem;
+//     color: #3B87AB;
+//     background-color: white;
+//     font-weight: bold;
+//     border-radius: 1rem;
+// `
+
+// const Bind2 = styled.div`
+//     display: flex;
+//     flex-direction: row;
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 2rem;
+// `
+
+// const FiledIcon1 = styled.div`
+//     width: 8%;
+//     height: 5rem;
+//     border: 2px solid black;
+//     border-radius: 1rem;
+//     margin-right: 16rem;
+//     margin-top: 2rem;
+// `
+
+// const FiledIconImage1 = styled.img`
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 1rem;
+// `
+
+// const FiledIcon2 = styled.div`
+//     width: 8%;
+//     height: 5rem;
+//     border: 2px solid black;
+//     border-radius: 1rem;
+//     margin-top: 2rem;
+// `
+
+
+// const Bind3 = styled.div`
+//     display: flex;
+//     flex-direction: row;
+//     display: flex;
+//     justify-content: center;
+// `
+
+// const FiledText1 = styled.div`
+//     width: 25%;
+//     height: 3rem;
+//     border-radius: 1rem;
+//     margin-right: 5rem;
+//     margin-top: 1rem;
+//     font-size: 1.5rem;
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// `
+
+// const FiledText2 = styled.div`
+//     width: 25%;
+//     height: 3rem;
+//     border-radius: 1rem;
+//     margin-top: 1rem;
+//     font-size: 1.5rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// `
+
+
+// const FiledBottom = styled.div`
+//     width: 95%;
+//     height: 25rem;
+//     margin: 0 auto;
+//     margin-top: 1rem;
+// `
+
+// const FiledBottomImage = styled.img`
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 1rem;
+// `
+
+// const Right = styled.div`
+//     width: 10%;
+//     height: 40rem;
+//     margin-top: 2rem;
+// `
+
+// const RightButton1 = styled.button`
+//     width: 100%;
+//     height: 3rem;
+//     border: 2px solid grey;
+//     border-top-right-radius: 0.5rem;
+//     border-bottom-right-radius: 0.5rem;
+//     margin-top: 4rem;
+//     font-size: 1.5rem;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     cursor: pointer;
+//     color: white;
+//     background-color: #3B87AB;
+//     display: flex;
+//     float: left;
+//     align-items: center;
+// `
+
+// const RightButton2 = styled.button`
+//     width: 100%;
+//     height: 3rem;
+//     border: 2px solid grey;
+//     border-top-right-radius: 0.5rem;
+//     border-bottom-right-radius: 0.5rem;
+//     margin-top: 1rem;
+//     font-size: 1.5rem;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     cursor: pointer;
+//     color: white;
+//     background-color: #3B87AB;
+//     display: flex;
+//     float: left;
+//     align-items: center;
+// `
+
+// const RightButton3 = styled.button`
+//     width: 100%;
+//     height: 3rem;
+//     border: 2px solid grey;
+//     border-top-right-radius: 0.5rem;
+//     border-bottom-right-radius: 0.5rem;
+//     margin-top: 1rem;
+//     font-size: 1.5rem;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     cursor: pointer;
+//     color: white;
+//     background-color: #3B87AB;
+//     display: flex;
+//     float: left;
+//     align-items: center;
+// `
+
+// const RightButton4 = styled.button`
+//     width: 100%;
+//     height: 3rem;
+//     border: 2px solid grey;
+//     border-top-right-radius: 0.5rem;
+//     border-bottom-right-radius: 0.5rem;
+//     margin-top: 1rem;
+//     font-size: 1.5rem;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     cursor: pointer;
+//     /* color: white;
+//     background-color: #3B87AB; */
+//     color: black;
+//     background-color: white;
+//     display: flex;
+//     float: left;
+//     align-items: center;
+// `
