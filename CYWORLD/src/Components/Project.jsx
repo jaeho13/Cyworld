@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components"
 import UseNavigation from "./UseNavigation";
+import { RightContact, RightContactFlexWhite, RightHome, RightHomeFlexWhite, RightProfile, RightProfileFlexBlack, RightProject, RightProjectFlexWhite } from "./button/Button";
+import { BackArea, BackBorder, BackColor, BackgroundImage, FiledBind } from "./background/Background";
+
 
 const Project = () => {
 
@@ -80,7 +83,21 @@ const Project = () => {
 
     return (
         <>
-            <Body>
+            <BackgroundImage>
+                <BackArea>
+                    <BackBorder>
+                        <BackColor>
+                            <FiledBind>
+
+                            </FiledBind>
+                        </BackColor>
+                    </BackBorder>
+                </BackArea>
+            </BackgroundImage>
+
+
+
+            {/* <Body>
                 <BookCover>
                     <Page>
                         <Main>
@@ -302,7 +319,7 @@ const Project = () => {
                         </Main>
                     </Page>
                 </BookCover>
-            </Body >
+            </Body > */}
         </>
     );
 }

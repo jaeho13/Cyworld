@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components"
 import UseNavigation from "./UseNavigation";
 import { RightContact, RightContactFlexBlack, RightHome, RightHomeFlexWhite, RightProfile, RightProfileFlexWhite, RightProject, RightProjectFlexWhite } from "./button/Button";
-import { BackArea, BackBorder, BackColor, BackgroundImage } from "./background/Background";
+import { BackArea, BackBorder, BackColor, BackgroundImage, FiledBind } from "./background/Background";
 
 
 const Contact = () => {
@@ -41,7 +41,6 @@ const Contact = () => {
                                                         010-9386-9804
                                                     </ContactNumber>
                                                 </ContactStringFlex>
-
                                                 <ContactStringFlex>
                                                     <ContactMail>
                                                         jaehooo13@naver.com
@@ -124,16 +123,6 @@ const Contact = () => {
 }
 
 export default Contact;
-
-
-const FiledBind = styled.div`
-    width: 100%;
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-`
 
 const FiledLeft = styled.div`
     width: 90%;
@@ -227,15 +216,14 @@ const ContactString = styled.div`
     display: flex;
 `
 
-
 const ContactStringFlex = styled.div`
+    /* width: 25%; */
     width: 50%;
     height: 5vh;
     /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
-    
 `
 
 const ContactNumber = styled.div`

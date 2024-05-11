@@ -1,5 +1,24 @@
 import styled from "styled-components";
 
+const Background = () => {
+    return (
+        <>
+            <BackgroundImage>
+                <BackArea>
+                    <BackBorder>
+                        <BackColor>
+                            <FiledBind>
+
+                            </FiledBind>
+                        </BackColor>
+                    </BackBorder>
+                </BackArea>
+            </BackgroundImage>
+        </>
+    )
+}
+
+export default Background;
 
 export const BackgroundImage = styled.div`
     background-color: #a3a3a3;
@@ -43,5 +62,13 @@ export const BackColor = styled.div`
     border-radius: 1rem;
     background-color: #d4d4d4;
     display: flex;
+    align-items: center;
+`
+
+export const FiledBind = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 `
