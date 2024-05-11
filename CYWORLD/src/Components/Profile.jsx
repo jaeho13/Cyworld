@@ -93,7 +93,7 @@ const FiledBind = styled.div`
 const FiledLeft = styled.div`
     width: 90%;
     height: 73vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
