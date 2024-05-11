@@ -46,7 +46,10 @@ const Profile = () => {
                                         앞으로도 어떤 일을 하던 책임감을 가지고 진행하며, 부족함 없이 실행할 수 있도록 하겠습니다. 감사합니다. <br />
                                     </IntroduceBoard>
                                     <IntroduceTitle>Stack</IntroduceTitle>
-                                    <IntroduceBoard>보드보드</IntroduceBoard>
+                                    <IntroduceBoard>
+
+
+                                    </IntroduceBoard>
                                 </FiledLeft>
 
                                 <FiledRight>
@@ -90,7 +93,7 @@ const FiledBind = styled.div`
 const FiledLeft = styled.div`
     width: 90%;
     height: 73vh;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,9 +110,10 @@ const FiledRight = styled.div`
 
 const IntroduceTitle = styled.div`
     width: 95%;
-    height: 4vh;
+    height: 3vh;
+    margin-top: 1vh;
     /* border: 2px solid red; */
-    padding-left: 2%;
+    padding-left: 1%;
     color: #3B87AB;
     font-size: 1.5rem;
     font-weight: bold;
@@ -132,6 +136,15 @@ const IntroduceBoard = styled.div`
     padding-left: 8px;
     padding-top: 8px;
 `
+
+const Stack = styled.div`
+    width: 100%;
+    height: 2rem;
+    /* border: 2px solid blue; */
+    display: flex;
+    color: #3B87AB;
+`
+
 
 
 {/* <Body>

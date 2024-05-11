@@ -49,9 +49,9 @@ const Contact = () => {
                                                 </ContactStringFlex>
                                             </ContactString>
 
-                                            <ContactThankImage>
-                                                ds
-                                            </ContactThankImage>
+                                            <ContactThankImageCover>
+                                                <ContactThankImage src="/background/Last.png" alt="Thank" />
+                                            </ContactThankImageCover>
 
                                         </ContactBackgroundImage>
                                     </ContactBackgroundImageFlex>
@@ -138,7 +138,7 @@ const FiledBind = styled.div`
 const FiledLeft = styled.div`
     width: 90%;
     height: 73vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     /* justify-content: center;
@@ -150,14 +150,14 @@ const FiledLeft = styled.div`
 const FiledRight = styled.div`
     width: 7%;
     height: 73vh;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 `
 
 const ContactTitle = styled.div`
     width: 97%;
     height: 3vh;
     margin-top: 1vh;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     color: #3B87AB;
     font-weight: bold;
     font-size: 1.5rem;
@@ -176,7 +176,7 @@ const ContactBackgroundImageFlex = styled.div`
 const ContactBackgroundImage = styled.div`
     width: 95%;
     height: 65vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: white;
     border-radius: 16px;
     display: flex;
@@ -187,7 +187,7 @@ const ContactBackgroundImage = styled.div`
 const ContactImageCover = styled.div`
     width: 100%;
     height: 20vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -196,7 +196,7 @@ const ContactImageCover = styled.div`
 const ContactPhoneCover = styled.div`
     width: 10%;
     height: 10vh;
-    border: 2px solid red;
+    border: 2px solid black;
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -206,7 +206,7 @@ const ContactPhoneCover = styled.div`
 const ContactMailCover = styled.div`
     width: 10%;
     height: 10vh;
-    border: 2px solid red;
+    border: 2px solid black;
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -216,17 +216,14 @@ const ContactMailCover = styled.div`
 const ContactImage = styled.img`
     width: 90%;
     height: 90%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 16px;
 `
-
-
-
 
 const ContactString = styled.div`
     width: 100%;
     height: 5vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
 `
 
@@ -234,7 +231,7 @@ const ContactString = styled.div`
 const ContactStringFlex = styled.div`
     width: 50%;
     height: 5vh;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,12 +256,23 @@ const ContactMail = styled.div`
     text-overflow: ellipsis;
 `
 
-const ContactThankImage = styled.div`
+const ContactThankImageCover = styled.div`
     width: 95%;
-    height: 35vh;
-    border: 2px solid blue;
+    height: 40vh;
+    /* border: 2px solid blue; */
     display: flex;
+    justify-content: center;
+    align-items: center;
 `
+
+const ContactThankImage = styled.img`
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    /* border: 2px solid red; */
+    border-radius: 16px;
+`
+
 
 // const FiledTop = styled.div`
 //     width: 100%;

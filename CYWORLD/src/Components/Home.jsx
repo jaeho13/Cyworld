@@ -158,7 +158,7 @@ const LeftProfile = styled.div`
 const LeftProfileImage = styled.img`
     width: 90%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 `
 
 const LeftInfoTitle = styled.div`
@@ -283,7 +283,8 @@ const CenterTopLink = styled.div`
 
 const CenterCommitState = styled.div`
     width: 99%;
-    height: 3vh;
+    height: 2vh;
+    padding-top: 1vh;
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
