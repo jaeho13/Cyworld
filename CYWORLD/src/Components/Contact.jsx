@@ -54,8 +54,6 @@ const Contact = () => {
 
                                         </ContactBackgroundImage>
                                     </ContactBackgroundImageFlex>
-
-
                                 </FiledLeft>
 
                                 <FiledRight>
@@ -80,44 +78,6 @@ const Contact = () => {
                     </BackBorder>
                 </BackArea>
             </BackgroundImage>
-            {/* <Body>
-                <BookCover>
-                    <Page>
-                        <Main>
-                            <Bind>
-                                <Filed>
-                                    <FiledTop>Contact </FiledTop>
-                                    <FiledCenter>
-                                        <Bind2>
-                                            <FiledIcon1>
-                                                <FiledIconImage1 img src="/background/Call.png" alt="call" />
-                                            </FiledIcon1>
-                                            <FiledIcon2>
-                                                <FiledIconImage1 img src="/background/Mail.png" alt="mail" />
-                                            </FiledIcon2>
-                                        </Bind2>
-
-                                        <Bind3>
-                                            <FiledText1>010-9386-9804</FiledText1>
-                                            <FiledText2>jaehooo13@naver.com</FiledText2>
-                                        </Bind3>
-                                        <FiledBottom>
-                                            <FiledBottomImage img src="/background/Last.png" alt="last" />
-                                        </FiledBottom>
-                                    </FiledCenter>
-                                </Filed>
-
-                                <Right>
-                                    <RightButton1 onClick={goToHome}>Home</RightButton1>
-                                    <RightButton2 onClick={goToProfile}>Profile</RightButton2>
-                                    <RightButton3 onClick={goToProject}>Project</RightButton3>
-                                    <RightButton4 onClick={goToContact}>Contact</RightButton4>
-                                </Right>
-                            </Bind>
-                        </Main>
-                    </Page>
-                </BookCover>
-            </Body > */}
         </>
     );
 }
@@ -151,7 +111,7 @@ const ContactTitle = styled.div`
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 1vh;
-    padding-left: 2.5%;
+    padding-left: 3%;
 `
 
 const ContactBackgroundImageFlex = styled.div`
