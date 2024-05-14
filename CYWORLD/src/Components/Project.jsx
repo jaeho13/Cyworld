@@ -96,7 +96,26 @@ const Project = () => {
 
                                     <ProjectListFlex>
                                         <ProjectImage>
+                                            <img src={cyImages[cyImageIndex]} alt="carousel" />
+                                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                                {cyImages.map((_, index) => (
+                                                    <span
+                                                        key={index}
+                                                        onClick={() => goCyImage(index)}
+                                                        style={{
+                                                            width: '10px',
+                                                            height: '10px',
+                                                            borderRadius: '50%',
+                                                            backgroundColor: index === cyImageIndex ? '#3B87AB' : 'gray',
+                                                            margin: '5px',
+                                                            cursor: 'pointer',
+                                                        }}
+                                                    ></span>
+                                                ))}
+                                            </div>
                                         </ProjectImage>
+
+
                                         <ProjectInfo>
                                             <ProjectInfoTitle>
                                                 싸이월드 자기소개서
@@ -300,8 +319,15 @@ const ProjectListFlex = styled.div`
 const ProjectImage = styled.div`
     width: 40%;
     height: 25vh;
-    border: 2px solid red;
+    border: 2px solid #A3A3A3;
     border-radius: 16px;
+    opacity: 0.9;
+    img {
+        width: 100%; /* Contents의 가로 너비에 맞게 이미지 너비 조정 */
+        height: 100%; /* Contents의 세로 높이에 맞게 이미지 높이 조정 */
+        object-fit: contain; /* 이미지를 Contents에 맞게 조절 */
+        border-radius: 1rem; /* 이미지에도 둥근 모서리를 적용 */
+     }
 `
 
 const ProjectInfo = styled.div`
@@ -334,6 +360,9 @@ const ProjectInfoTitle = styled.div`
                                     <FiledTop>프로젝트</FiledTop>
 
                                     <Bind2>
+
+
+
                                         <Contents>
                                             <img src={cyImages[cyImageIndex]} alt="carousel" />
                                             <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -353,6 +382,30 @@ const ProjectInfoTitle = styled.div`
                                                 ))}
                                             </div>
                                         </Contents>
+
+
+                                        const [cyImageIndex, setCyImageIndex] = useState(0);
+
+                                        const cyImages = ['/background/c_page.1.png', '/background/c_page.2.png', '/background/c_page.3.png', '/background/c_page.4.png'];
+
+                                        const goCyImage = (index) => {
+                                            setCyImageIndex(index);
+                                        };
+
+                                        useEffect(() => {
+                                            const cyInterval = setInterval(() => {
+                                                setCyImageIndex((prevIndex) => (prevIndex + 1) % cyImages.length);
+                                            }, 2500);
+
+                                            return () => {
+                                                clearInterval(cyInterval);
+                                            };
+                                        }, [cyImages]);
+
+                                        
+
+
+
                                         <ContentsDetail>
                                             <ContentsDetailTitle>싸이월드 자기소개서</ContentsDetailTitle>
                                             (링크 - <a href="https://github.com/jaeho13/Cyworld">https://github.com/jaeho13/Cyworld</a>)
