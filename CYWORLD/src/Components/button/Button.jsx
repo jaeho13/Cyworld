@@ -12,6 +12,7 @@ export const RightHomeFlexBlack = styled.div`
     background-color: white;
     /* color: ${props => props.textColor || "black"};
     background-color: ${props => props.color || "white"}; */
+    /* background-color: ${(props) => props.bgColor}; */
     margin-top: 5vh;
     padding-left: 3%;
     display: flex;
