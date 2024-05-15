@@ -249,15 +249,16 @@ const CenterTop = styled.div`
 `
 
 const CenterTopSiteFlex = styled.div`
-    width: 49%;
+    width: 50%;
     height: 4vh;
     display: flex;
     align-items: center;
-    padding-left: 1%;
+    /* padding-left: 1%; */
     font-weight: bold;
 `
 
 const CenterTopSite = styled.div`
+    /* color: #3B87AB; */
     font-size: 1.2rem;
     white-space: nowrap;
     overflow: hidden;
@@ -265,12 +266,11 @@ const CenterTopSite = styled.div`
 `
 
 const CenterTopLinkFlex = styled.div`
-    width: 48%;
+    width: 50%;
     height: 4vh;
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-right: 2%;
     font-weight: bold;
 `
 
