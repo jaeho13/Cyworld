@@ -346,6 +346,7 @@ const CenterMiniroomImageArea = styled.img`
 `
 
 const Right = styled.div`
-    width: 10%;
-    height: 75vh;
+    width: 9%;
+    height: 73vh;
+    margin-top: 1vh;
 `
