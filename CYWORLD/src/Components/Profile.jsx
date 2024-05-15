@@ -66,16 +66,38 @@ const Profile = () => {
                                                 - MsOffice Hwp <br />
                                             </StackSkillInfo>
                                         </StackSkillFlex>
-
-
-
                                     </StackBoard>
 
                                     <BoardTitle>Career</BoardTitle>
-                                    <IntroduceBoard>
-                                        dasdsa
+                                    <CareerBoard>
+                                        <CareerFlex>
+                                            <CareerName>
+                                                인졀미 (23.07 ~ 24.02)
+                                            </CareerName>
+                                        </CareerFlex>
+                                        <CareerFlex>
+                                            <CareerExperience>
+                                                - JavaScript <br />
+                                                - React, Styled-Components <br />
+                                            </CareerExperience>
+                                        </CareerFlex>
 
-                                    </IntroduceBoard>
+
+                                        <CareerFlex>
+                                            <CareerName>
+                                                라온시큐어 (24.02 ~ )
+                                            </CareerName>
+                                        </CareerFlex>
+                                        <CareerFlex>
+                                            <CareerExperience>
+                                                - JavaScript <br />
+                                                - React, Styled-Components <br />
+                                            </CareerExperience>
+                                        </CareerFlex>
+                                    </CareerBoard>
+
+
+
                                 </FiledLeft>
 
                                 <FiledRight>
@@ -187,29 +209,50 @@ const StackSkillInfo = styled.div`
     font-size: 1.2rem;
 `
 
-const IntroduceBoard = styled.div`
+const CareerBoard = styled.div`
     width: 95%;
     height: 30vh;
     /* border: 2px solid black; */
     border-radius: 16px;
     background-color: white;
     margin-bottom: 1vh;
+    padding: 8px;
+    /* padding-left: 8px;
+    padding-top: 8px; */
     overflow: auto;
     overflow-x: hidden;
     white-space: pre-wrap;
-    /* padding: 8px; */
-    padding-left: 8px;
-    padding-top: 8px;
 `
 
-const Stack = styled.div`
-    width: 100%;
-    height: 2rem;
-    /* border: 2px solid blue; */
+const CareerFlex = styled.div`
     display: flex;
-    color: #3B87AB;
+    flex-direction: row;
+    padding-left: 1%;
 `
 
+const CareerName = styled.div`
+    width: 100%;
+    height: 4vh;
+    /* border: 2px solid red; */
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #3B87AB;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+`
+
+const CareerExperience = styled.div`
+    width: 100%;
+    height: 10vh;
+    /* border: 2px solid blue; */
+    font-size: 1.2rem;
+    overflow: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+`
 
 
 {/* <Body>
