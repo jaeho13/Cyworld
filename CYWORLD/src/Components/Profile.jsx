@@ -78,7 +78,6 @@ const Profile = () => {
                                         <CareerFlex>
                                             <CareerExperience>
                                                 - JavaScript <br />
-                                                - React, Styled-Components <br />
                                             </CareerExperience>
                                         </CareerFlex>
 
@@ -91,7 +90,6 @@ const Profile = () => {
                                         <CareerFlex>
                                             <CareerExperience>
                                                 - JavaScript <br />
-                                                - React, Styled-Components <br />
                                             </CareerExperience>
                                         </CareerFlex>
                                     </CareerBoard>
