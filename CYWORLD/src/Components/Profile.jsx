@@ -77,10 +77,11 @@ const Profile = () => {
                                         </CareerFlex>
                                         <CareerFlex>
                                             <CareerExperience>
-                                                - JavaScript <br />
+                                                - 앱 프론트 개발 및 관리자 페이지 개발 <br />
+                                                - 사용자 경험 개선을 위한 테스트 및 버그 리포트 작성 <br />
+                                                - PostgreSQL을 이용한 게임 데이터 밸런스 작업 진행 <br />
                                             </CareerExperience>
                                         </CareerFlex>
-
 
                                         <CareerFlex>
                                             <CareerName>
@@ -89,7 +90,10 @@ const Profile = () => {
                                         </CareerFlex>
                                         <CareerFlex>
                                             <CareerExperience>
-                                                - JavaScript <br />
+                                                - 데모 앱 개선 <br />
+                                                - 빋드 <br />
+                                                - 장애 대응 <br />
+                                                - 샘플앱 만듦 <br />
                                             </CareerExperience>
                                         </CareerFlex>
                                     </CareerBoard>
