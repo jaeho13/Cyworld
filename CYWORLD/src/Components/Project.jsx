@@ -372,7 +372,7 @@ const ProjectImage = styled.div`
     img {
         width: 100%; /* Contents의 가로 너비에 맞게 이미지 너비 조정 */
         height: 100%; /* Contents의 세로 높이에 맞게 이미지 높이 조정 */
-        object-fit: contain; /* 이미지를 Contents에 맞게 조절 */
+        object-fit: fill; /* 이미지를 Contents에 맞게 조절 */
         border-radius: 1rem; /* 이미지에도 둥근 모서리를 적용 */
      }
 `
