@@ -287,8 +287,9 @@ const Project = () => {
                                             - React, Spring, Oracle, Figma <br /> <br />
 
                                             5. 프로젝트 후기 <br />
-
-                                            <br />
+                                            이번 프로젝트에서는 로그인 API만을 사용한게 아닌 다양한 API를 사용해보고 싶었다. <br />
+                                            처음 프로젝트를 시작하기 전에 어떠한 API를 사용해볼지 생각하고 그에 맞게 프로젝트를 기획했다. <br />
+                                            지도와 결제 API는 어렵다는 평가가 많았는데, 요즘에는 잘 정리되어 있어서 금방 해결할 수 있었다. <br />
                                         </ProjectInfo>
                                     </ProjectListFlex>
                                 </FiledLeft>
@@ -338,7 +339,7 @@ const FiledLeft = styled.div`
 `
 
 const FiledRight = styled.div`
-    width: 7%;
+    width: 7.5%;
     height: 73vh;
     /* border: 2px solid green; */
 `

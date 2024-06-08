@@ -153,7 +153,7 @@ const FiledLeft = styled.div`
 `
 
 const FiledRight = styled.div`
-    width: 7%;
+    width: 7.5%;
     height: 73vh;
     /* border: 2px solid green; */
 `
