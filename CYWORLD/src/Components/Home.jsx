@@ -36,7 +36,7 @@ const Home = () => {
                                     </LeftInfoTitle>
                                     <LeftInfo>
                                         프론트엔드 개발자를 꿈꾸는 이재호입니다.<br />
-                                        사용자 경험을 고려한 직관적이고 효율적인 인터페이스를 디자인하고 개발하는 것에 관심이 많습니다. <br />
+                                        사용자 경험을 고려한 직관적이고 효율적인 인터페이스를 디자인하고 개발하는 것에 관심이 많습니다.<br />
                                     </LeftInfo>
                                     <LeftLinkTitle>
                                         Link
@@ -172,6 +172,9 @@ const LeftInfoTitle = styled.div`
     align-items: center;
     font-size: 1.2rem;
     padding-left: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `
 
 
@@ -184,6 +187,18 @@ const LeftInfo = styled.div`
     padding-left: 5%;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @media (max-width: 1024px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 10px;
+    }
 `
 
 const LeftLinkTitle = styled.div`
@@ -220,6 +235,9 @@ const LeftLinkSelect = styled.select`
     padding-left: 2%;
     color: black;
     background-color: rgba(163, 163, 163, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     /* display: flex;
     align-items: center;
     margin: 0 auto; */
@@ -346,7 +364,8 @@ const CenterMiniroomImageArea = styled.img`
 `
 
 const Right = styled.div`
-    width: 9%;
+    width: 10%;
     height: 73vh;
     margin-top: 1vh;
+    /* border: 2px solid red; */
 `
