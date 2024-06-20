@@ -90,12 +90,12 @@ const Profile = () => {
                                         </CareerFlex>
                                         <CareerFlex>
                                             <CareerExperience>
-                                                - 데모 앱 개선 <br />
-                                                - 관리자 페이지  <br />
-                                                - 관리자 페이지 리액트 라이브러리 마이그레이션 <br />
-                                                - 빋드 <br />
+                                                - 샘플 앱 및 데모 앱 개선 <br />
+                                                - 어플리케이션 빌드 및 테스트 <br />
+                                                - 관리자 페이지 화면 ui 개선 <br />
+
                                                 - 장애 대응 <br />
-                                                - 샘플앱 만듦 <br />
+                                                - 관리자 페이지 리액트 라이브러리로 마이그레이션 <br />
                                             </CareerExperience>
                                         </CareerFlex>
                                     </CareerBoard>
