@@ -93,9 +93,8 @@ const Profile = () => {
                                                 - 샘플 앱 및 데모 앱 개선 <br />
                                                 - 어플리케이션 빌드 및 테스트 <br />
                                                 - 관리자 페이지 화면 ui 개선 <br />
-
-                                                - 장애 대응 <br />
-                                                - 관리자 페이지 리액트 라이브러리로 마이그레이션 <br />
+                                                {/* - 장애 대응 <br />
+                                                - 관리자 페이지 리액트 라이브러리로 마이그레이션 <br /> */}
                                             </CareerExperience>
                                         </CareerFlex>
                                     </CareerBoard>
