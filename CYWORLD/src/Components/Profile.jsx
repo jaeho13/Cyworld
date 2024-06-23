@@ -204,7 +204,7 @@ const StackSkillTitle = styled.div`
 
 const StackSkillInfo = styled.div`
     width: 50%;
-    height: 10vh;
+    height: 11vh;
     /* border: 2px solid blue; */
     overflow: auto;
     overflow-x: hidden;
@@ -235,7 +235,7 @@ const CareerFlex = styled.div`
 
 const CareerName = styled.div`
     width: 100%;
-    height: 4vh;
+    height: 5vh;
     /* border: 2px solid red; */
     font-size: 1.3rem;
     font-weight: bold;
@@ -249,7 +249,7 @@ const CareerName = styled.div`
 
 const CareerExperience = styled.div`
     width: 100%;
-    height: 10vh;
+    height: 12vh;
     /* border: 2px solid blue; */
     font-size: 1.2rem;
     overflow: auto;

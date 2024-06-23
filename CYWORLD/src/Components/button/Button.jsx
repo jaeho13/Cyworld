@@ -38,7 +38,7 @@ export const RightHomeFlexWhite = styled.div`
 
 
 export const RightHome = styled.div`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -75,7 +75,7 @@ export const RightProfileFlexWhite = styled.div`
 `
 
 export const RightProfile = styled.div`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -113,7 +113,7 @@ export const RightProjectFlexWhite = styled.div`
 `
 
 export const RightProject = styled.div`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -150,7 +150,7 @@ export const RightContactFlexWhite = styled.div`
 `
 
 export const RightContact = styled.div`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
