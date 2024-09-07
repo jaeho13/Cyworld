@@ -70,7 +70,18 @@ const Home = () => {
                         </Center>
 
                         <Right>
-                            <PageButton />
+                            <PageButton
+                                name="Home"
+                            />
+                            <PageButton
+                                name="Profile"
+                            />
+                            <PageButton
+                                name="Project"
+                            />
+                            <PageButton
+                                name="Contact"
+                            />
                         </Right>
                     </RightBind>
                 </BoardBind>
@@ -344,4 +355,5 @@ const Right = styled.div`
     height: 73vh;
     margin-top: 1vh;
     /* border: 2px solid red; */
+    padding-top: 30px
 `
