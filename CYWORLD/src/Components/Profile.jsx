@@ -1,131 +1,119 @@
 import React from "react";
 import styled from "styled-components"
-import UseNavigation from "./UseNavigation";
-import { RightContact, RightContactFlexWhite, RightHome, RightHomeFlexWhite, RightProfile, RightProfileFlexBlack, RightProject, RightProjectFlexWhite } from "./button/Button";
-import { BackArea, BackBorder, BackColor, BackgroundImage } from "./background/Background";
-
+import Background from './background/Background';
+import PageButton from "./button/PageButton";
 
 const Profile = () => {
 
-    const { goToHome, goToProfile, goToProject, goToContact } = UseNavigation();
-
-
     return (
         <>
-            <BackgroundImage>
-                <BackArea>
-                    <BackBorder>
-                        <BackColor>
-                            <FiledBind>
+            <Background>
+                <FiledBind>
+                    <FiledLeft>
+                        <BoardTitle>Stack</BoardTitle>
 
-                                <FiledLeft>
-                                    <BoardTitle>Stack</BoardTitle>
-                                    <StackBoard>
-                                        <StackSkillFlex>
-                                            <StackSkillTitle>
-                                                Front-End
-                                            </StackSkillTitle>
+                        <StackBoard>
+                            <StackSkillFlex>
+                                <StackSkillTitle>
+                                    Front-End
+                                </StackSkillTitle>
 
-                                            <StackSkillTitle>
-                                                Tool
-                                            </StackSkillTitle>
-                                        </StackSkillFlex>
+                                <StackSkillTitle>
+                                    Tool
+                                </StackSkillTitle>
+                            </StackSkillFlex>
 
-                                        <StackSkillFlex>
-                                            <StackSkillInfo>
-                                                - JavaScript <br />
-                                                - React, Styled-Components <br />
-                                            </StackSkillInfo>
+                            <StackSkillFlex>
+                                <StackSkillInfo>
+                                    - JavaScript <br />
+                                    - React, Styled-Components <br />
+                                </StackSkillInfo>
 
-                                            <StackSkillInfo>
-                                                - Dbeaver <br />
-                                                - Sourcetree <br />
-                                                - Figma Zeplin <br />
-                                            </StackSkillInfo>
-                                        </StackSkillFlex>
+                                <StackSkillInfo>
+                                    - Dbeaver <br />
+                                    - Sourcetree <br />
+                                    - Figma Zeplin <br />
+                                </StackSkillInfo>
+                            </StackSkillFlex>
 
+                            <StackSkillFlex>
+                                <StackSkillTitle>
+                                    Experience
+                                </StackSkillTitle>
 
-                                        <StackSkillFlex>
-                                            <StackSkillTitle>
-                                                Experience
-                                            </StackSkillTitle>
-                                            <StackSkillTitle>
-                                                Etc.
-                                            </StackSkillTitle>
-                                        </StackSkillFlex>
-                                        <StackSkillFlex>
-                                            <StackSkillInfo>
-                                                - DB <br />
-                                                - Flutter <br />
-                                                - Android <br />
-                                            </StackSkillInfo>
+                                <StackSkillTitle>
+                                    Etc.
+                                </StackSkillTitle>
+                            </StackSkillFlex>
 
-                                            <StackSkillInfo>
-                                                - Github Notion <br />
-                                                - Slack Discord <br />
-                                                - MsOffice Hwp <br />
-                                            </StackSkillInfo>
-                                        </StackSkillFlex>
-                                    </StackBoard>
+                            <StackSkillFlex>
+                                <StackSkillInfo>
+                                    - DB <br />
+                                    - Flutter <br />
+                                    - Android <br />
+                                </StackSkillInfo>
 
-                                    <BoardTitle>Career</BoardTitle>
-                                    <CareerBoard>
-                                        <CareerFlex>
-                                            <CareerName>
-                                                인졀미 (23.07 ~ 24.02)
-                                            </CareerName>
-                                        </CareerFlex>
-                                        <CareerFlex>
-                                            <CareerExperience>
-                                                - 앱 프론트 개발 및 관리자 페이지 개발 <br />
-                                                - 사용자 경험 개선을 위한 테스트 및 버그 리포트 작성 <br />
-                                                - PostgreSQL을 이용한 게임 데이터 밸런스 작업 진행 <br />
-                                            </CareerExperience>
-                                        </CareerFlex>
+                                <StackSkillInfo>
+                                    - Github Notion <br />
+                                    - Slack Discord <br />
+                                    - MsOffice Hwp <br />
+                                </StackSkillInfo>
+                            </StackSkillFlex>
+                        </StackBoard>
 
-                                        <CareerFlex>
-                                            <CareerName>
-                                                라온시큐어 (24.02 ~ )
-                                            </CareerName>
-                                        </CareerFlex>
-                                        <CareerFlex>
-                                            <CareerExperience>
-                                                - 샘플 앱 및 데모 앱 개선 <br />
-                                                - 어플리케이션 빌드 및 테스트 <br />
-                                                - 관리자 페이지 화면 ui 개선 <br />
-                                                {/* - 장애 대응 <br />
+                        <BoardTitle>Career</BoardTitle>
+
+                        <CareerBoard>
+                            <CareerFlex>
+                                <CareerName>
+                                    인졀미 (23.07 ~ 24.02)
+                                </CareerName>
+                            </CareerFlex>
+
+                            <CareerFlex>
+                                <CareerExperience>
+                                    - 앱 프론트 개발 및 관리자 페이지 개발 <br />
+                                    - 사용자 경험 개선을 위한 테스트 및 버그 리포트 작성 <br />
+                                    - PostgreSQL을 이용한 게임 데이터 밸런스 작업 진행 <br />
+                                </CareerExperience>
+                            </CareerFlex>
+
+                            <CareerFlex>
+                                <CareerName>
+                                    라온시큐어 (24.02 ~ )
+                                </CareerName>
+                            </CareerFlex>
+
+                            <CareerFlex>
+                                <CareerExperience>
+                                    - 샘플 앱 및 데모 앱 개선 <br />
+                                    - 어플리케이션 빌드 및 테스트 <br />
+                                    - 관리자 페이지 화면 ui 개선 <br />
+                                    {/* - 장애 대응 <br />
                                                 - 관리자 페이지 리액트 라이브러리로 마이그레이션 <br /> */}
-                                            </CareerExperience>
-                                        </CareerFlex>
-                                    </CareerBoard>
+                                </CareerExperience>
+                            </CareerFlex>
+                        </CareerBoard>
+                    </FiledLeft>
 
-
-
-                                </FiledLeft>
-
-                                <FiledRight>
-                                    <RightHomeFlexWhite>
-                                        <RightHome onClick={goToHome}>Home</RightHome>
-                                    </RightHomeFlexWhite>
-
-                                    <RightProfileFlexBlack>
-                                        <RightProfile onClick={goToProfile}>Profile</RightProfile>
-                                    </RightProfileFlexBlack>
-
-                                    <RightProjectFlexWhite>
-                                        <RightProject onClick={goToProject}>Project</RightProject>
-                                    </RightProjectFlexWhite>
-
-                                    <RightContactFlexWhite>
-                                        <RightContact onClick={goToContact}>Contact</RightContact>
-                                    </RightContactFlexWhite>
-                                </FiledRight>
-
-                            </FiledBind>
-                        </BackColor>
-                    </BackBorder>
-                </BackArea>
-            </BackgroundImage>
+                    <FiledRight>
+                        <BtnDown>
+                            <PageButton
+                                name="Home"
+                            />
+                            <PageButton
+                                name="Profile"
+                            />
+                            <PageButton
+                                name="Project"
+                            />
+                            <PageButton
+                                name="Contact"
+                            />
+                        </BtnDown>
+                    </FiledRight>
+                </FiledBind>
+            </Background>
         </>
     );
 }
@@ -157,6 +145,10 @@ const FiledRight = styled.div`
     width: 7.5%;
     height: 73vh;
     /* border: 2px solid green; */
+`
+
+const BtnDown = styled.div`
+    padding-top: 40px;
 `
 
 const BoardTitle = styled.div`
