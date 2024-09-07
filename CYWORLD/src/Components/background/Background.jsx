@@ -57,8 +57,9 @@ const WhiteBorder = styled.div`
 
 const GrayArea = styled.div`
     width: 97%;
-    height: 75vh;
+    height: 78vh;
     border: 2px solid #d4d4d4;
     border-radius: 16px;
     background-color: #d4d4d4;
+    display: flex;
 `
