@@ -1,88 +1,84 @@
 import React from "react";
 import styled from "styled-components"
-import UseNavigation from "./UseNavigation";
-import { RightContact, RightContactFlexBlack, RightHome, RightHomeFlexWhite, RightProfile, RightProfileFlexWhite, RightProject, RightProjectFlexWhite } from "./button/Button";
-import { BackArea, BackBorder, BackColor, BackgroundImage, FiledBind } from "./background/Background";
-
+import Background from './background/Background';
+import PageButton from "./button/PageButton";
 
 const Contact = () => {
 
-    const { goToHome, goToProfile, goToProject, goToContact } = UseNavigation();
-
-
     return (
         <>
-            <BackgroundImage>
-                <BackArea>
-                    <BackBorder>
-                        <BackColor>
-                            <FiledBind>
-                                <FiledLeft>
+            <Background>
+                <FiledBind>
+                    <FiledLeft>
+                        <ContactTitle>
+                            Contact
+                        </ContactTitle>
 
-                                    <ContactTitle>
-                                        Contact
-                                    </ContactTitle>
+                        <ContactBackgroundImageFlex>
+                            <ContactBackgroundImage>
+                                <ContactImageCover>
+                                    <ContactPhoneCover>
+                                        <ContactImage src="/background/Call.png" alt="Phone" />
+                                    </ContactPhoneCover>
 
-                                    <ContactBackgroundImageFlex>
-                                        <ContactBackgroundImage>
-                                            <ContactImageCover>
-                                                <ContactPhoneCover>
-                                                    <ContactImage src="/background/Call.png" alt="Phone" />
-                                                </ContactPhoneCover>
+                                    <ContactMailCover>
+                                        <ContactImage src="/background/Mail.png" alt="Phone" />
+                                    </ContactMailCover>
+                                </ContactImageCover>
 
-                                                <ContactMailCover>
-                                                    <ContactImage src="/background/Mail.png" alt="Phone" />
-                                                </ContactMailCover>
-                                            </ContactImageCover>
+                                <ContactString>
+                                    <ContactStringFlex>
+                                        <ContactNumber>
+                                            010-9386-9804
+                                        </ContactNumber>
+                                    </ContactStringFlex>
+                                    <ContactStringFlex>
+                                        <ContactMail>
+                                            jaehooo13@naver.com
+                                        </ContactMail>
+                                    </ContactStringFlex>
+                                </ContactString>
 
-                                            <ContactString>
-                                                <ContactStringFlex>
-                                                    <ContactNumber>
-                                                        010-9386-9804
-                                                    </ContactNumber>
-                                                </ContactStringFlex>
-                                                <ContactStringFlex>
-                                                    <ContactMail>
-                                                        jaehooo13@naver.com
-                                                    </ContactMail>
-                                                </ContactStringFlex>
-                                            </ContactString>
+                                <ContactThankImageCover>
+                                    <ContactThankImage src="/background/Last.png" alt="Thank" />
+                                </ContactThankImageCover>
 
-                                            <ContactThankImageCover>
-                                                <ContactThankImage src="/background/Last.png" alt="Thank" />
-                                            </ContactThankImageCover>
+                            </ContactBackgroundImage>
+                        </ContactBackgroundImageFlex>
+                    </FiledLeft>
 
-                                        </ContactBackgroundImage>
-                                    </ContactBackgroundImageFlex>
-                                </FiledLeft>
-
-                                <FiledRight>
-                                    <RightHomeFlexWhite>
-                                        <RightHome onClick={goToHome}>Home</RightHome>
-                                    </RightHomeFlexWhite>
-
-                                    <RightProfileFlexWhite>
-                                        <RightProfile onClick={goToProfile}>Profile</RightProfile>
-                                    </RightProfileFlexWhite>
-
-                                    <RightProjectFlexWhite>
-                                        <RightProject onClick={goToProject}>Project</RightProject>
-                                    </RightProjectFlexWhite>
-
-                                    <RightContactFlexBlack>
-                                        <RightContact onClick={goToContact}>Contact</RightContact>
-                                    </RightContactFlexBlack>
-                                </FiledRight>
-                            </FiledBind>
-                        </BackColor>
-                    </BackBorder>
-                </BackArea>
-            </BackgroundImage>
+                    <FiledRight>
+                        <BtnDown>
+                            <PageButton
+                                name="Home"
+                            />
+                            <PageButton
+                                name="Profile"
+                            />
+                            <PageButton
+                                name="Project"
+                            />
+                            <PageButton
+                                name="Contact"
+                            />
+                        </BtnDown>
+                    </FiledRight>
+                </FiledBind>
+            </Background>
         </>
     );
 }
 
 export default Contact;
+
+const FiledBind = styled.div`
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+`
 
 const FiledLeft = styled.div`
     width: 90%;
@@ -100,6 +96,10 @@ const FiledRight = styled.div`
     width: 7.5%;
     height: 73vh;
     /* border: 2px solid green; */
+`
+
+const BtnDown = styled.div`
+    padding-top: 40px;
 `
 
 const ContactTitle = styled.div`
