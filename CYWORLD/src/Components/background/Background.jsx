@@ -1,27 +1,26 @@
 import React from 'react';
 import styled from "styled-components";
 
-const Background = () => {
+const Background = ({ children }) => {
     return (
         <>
             <BackgroundImage>
-                <BackArea>
-                    <BackBorder>
-                        <BackColor>
-                            <FiledBind>
-
-                            </FiledBind>
-                        </BackColor>
-                    </BackBorder>
-                </BackArea>
+                <BlueArea>
+                    <WhiteBorder>
+                        <GrayArea>
+                            {children}
+                        </GrayArea>
+                    </WhiteBorder>
+                </BlueArea>
             </BackgroundImage>
         </>
     )
 }
 
+
 export default Background;
 
-export const BackgroundImage = styled.div`
+const BackgroundImage = styled.div`
     background-color: #a3a3a3;
     background-image: url(/background/pattern.png);
     background-size: 100px;
@@ -35,7 +34,7 @@ export const BackgroundImage = styled.div`
     align-items: center;
 `
 
-export const BackArea = styled.div`
+const BlueArea = styled.div`
     width: 70%;
     height: 85vh;
     border: 2px solid #738186;
@@ -46,30 +45,20 @@ export const BackArea = styled.div`
     align-items: center;
 `
 
-export const BackBorder = styled.div`
+const WhiteBorder = styled.div`
     width: 97%;
     height: 80vh;
     border: 3.5px dashed white;
-    border-radius: 15px;
+    border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
 `
 
-export const BackColor = styled.div`
+const GrayArea = styled.div`
     width: 97%;
     height: 75vh;
     border: 2px solid #d4d4d4;
-    border-radius: 1rem;
+    border-radius: 16px;
     background-color: #d4d4d4;
-    display: flex;
-    align-items: center;
-`
-
-export const FiledBind = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 `
