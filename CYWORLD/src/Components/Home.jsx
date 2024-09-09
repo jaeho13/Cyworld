@@ -97,6 +97,7 @@ const BoardBind = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    /* border: 2px solid red; */
 `
 
 const Left = styled.div`

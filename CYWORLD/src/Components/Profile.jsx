@@ -131,7 +131,7 @@ const FiledBind = styled.div`
 
 const FiledLeft = styled.div`
     width: 90%;
-    height: 73vh;
+    height: 76vh;
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@ const FiledRight = styled.div`
 `
 
 const BtnDown = styled.div`
-    padding-top: 40px;
+    padding-top: 17px;
 `
 
 const BoardTitle = styled.div`

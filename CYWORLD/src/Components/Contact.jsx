@@ -182,5 +182,5 @@ const FiledRight = styled.div`
 `
 
 const BtnDown = styled.div`
-    padding-top: 20px;
+    padding-top: 17px;
 `
