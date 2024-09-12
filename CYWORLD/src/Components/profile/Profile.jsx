@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components"
-import Background from './background/Background';
-import PageButton from "./button/PageButton";
-import ProjectSlide from "./ProjectSlide";
-import ProjectInfo from "./ProjectInfo";
+import Background from '../background/Background';
+import PageButton from "../button/PageButton";
+import ProfileStack from "./ProfileStack";
+import ProfileCareer from "./ProfileCareer";
 
 const Profile = () => {
 
@@ -12,16 +12,9 @@ const Profile = () => {
             <Background>
                 <FiledBind>
                     <FiledLeft>
-                        <ProjectTitle>
-                            Project
-                        </ProjectTitle>
+                        <ProfileStack title="Stack" />
 
-                        <ProjectBind>
-                            <ProjectSlide />
-                            <ProjectInfo />
-                        </ProjectBind>
-
-
+                        <ProfileCareer title="Career" />
 
                     </FiledLeft>
 
@@ -65,37 +58,7 @@ const FiledLeft = styled.div`
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.4);
     align-items: center;
-    overflow: auto;
-    overflow-x: hidden;
 `
-
-const ProjectTitle = styled.div`
-    width: 97%;
-    height: 3vh;
-    margin-top: 1vh;
-    color: #3B87AB;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding-left: 3%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 3vh;
-`
-
-const ProjectBind = styled.div`
-    width: 95%;
-    height: 25vh;
-    border: 2px solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-`
-
-
-
-
-
-
 
 const FiledRight = styled.div`
     width: 7.5%;

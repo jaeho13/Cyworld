@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components"
-import Background from './background/Background';
-import PageButton from "./button/PageButton";
+import Background from '../background/Background';
+import PageButton from "../button/PageButton";
 
 const Contact = () => {
 
