@@ -2,8 +2,10 @@ import React from "react";
 import styled from "styled-components"
 import Background from '../background/Background';
 import PageButton from "../button/PageButton";
-import ProjectSlide from "./ProjectSlide";
-import ProjectInfo from "./ProjectInfo";
+import FirstProjectSlide from "./first/FirstProjectSlide";
+import FirstProjectInfo from "./first/FirstProjectInfo";
+import SecondProjectSlide from "./second/SecondProjectSlide";
+import SecondProjectInfo from "./second/SecondProjectInfo";
 
 const Profile = () => {
 
@@ -17,13 +19,13 @@ const Profile = () => {
                         </ProjectTitle>
 
                         <ProjectBind>
-                            <ProjectSlide />
-                            <ProjectInfo />
+                            <FirstProjectSlide />
+                            <FirstProjectInfo />
                         </ProjectBind>
 
                         <ProjectBind>
-                            <ProjectSlide />
-                            <ProjectInfo />
+                            <SecondProjectSlide />
+                            <SecondProjectInfo />
                         </ProjectBind>
 
 

@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components"
 
 
-const ProjectInfo = () => {
+const FirstProjectInfo = () => {
     return (
         <>
             <TextBind>
-
                 <ProjectInfoTitle>
                     싸이월드 자기소개서
                 </ProjectInfoTitle>
@@ -31,7 +30,7 @@ const ProjectInfo = () => {
     )
 }
 
-export default ProjectInfo;
+export default FirstProjectInfo;
 
 const TextBind = styled.div`
     width: 40%;
