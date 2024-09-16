@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import styled from "styled-components";
 import ProjectImage from "../ProjectImage";
 
-const FirstProjectSlide = () => {
+const ThirdProjectSlide = () => {
 
     var settings = {
         dots: true,
@@ -23,17 +23,18 @@ const FirstProjectSlide = () => {
         <>
             <SliderBorder>
                 <Slider {...settings}>
-                    <ProjectImage imgSrc="/background/c_page.1.png" />
-                    <ProjectImage imgSrc="/background/c_page.2.png" />
-                    <ProjectImage imgSrc="/background/c_page.3.png" />
-                    <ProjectImage imgSrc="/background/c_page.4.png" />
+                    <ProjectImage imgSrc="/background/j_page.1.png" />
+                    <ProjectImage imgSrc="/background/j_page.2.png" />
+                    <ProjectImage imgSrc="/background/j_page.3.png" />
+                    <ProjectImage imgSrc="/background/j_page.4.png" />
+                    <ProjectImage imgSrc="/background/j_page.5.png" />
                 </Slider>
             </SliderBorder>
         </>
     )
 }
 
-export default FirstProjectSlide;
+export default ThirdProjectSlide;
 
 const SliderBorder = styled.div`
     width: 40%;

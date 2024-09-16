@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styled from "styled-components";
-import ProjectImage from "../first/FirstProjectImage";
+import ProjectImage from "../ProjectImage";
 
 const SecondProjectSlide = () => {
 
@@ -14,9 +14,8 @@ const SecondProjectSlide = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         draggable: true,
-        autoplay: false,
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
     };
 

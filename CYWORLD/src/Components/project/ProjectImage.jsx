@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const FirstProjectImage = (props) => {
+const ProjectImage = (props) => {
     return (
         <>
             <ImageBind src={props.imgSrc} />
@@ -10,7 +10,7 @@ const FirstProjectImage = (props) => {
     )
 }
 
-export default FirstProjectImage;
+export default ProjectImage;
 
 const ImageBind = styled.img`
     width: 99%;

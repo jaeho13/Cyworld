@@ -6,6 +6,10 @@ import FirstProjectSlide from "./first/FirstProjectSlide";
 import FirstProjectInfo from "./first/FirstProjectInfo";
 import SecondProjectSlide from "./second/SecondProjectSlide";
 import SecondProjectInfo from "./second/SecondProjectInfo";
+import ThirdProjectSlide from "./third/ThirdProjectSlide";
+import ThirdProjectInfo from "./third/ThirdProjectInfo";
+import FourthProjectSlide from "./fourth/FourthProjectSlide";
+import FourthProjectInfo from "./fourth/FourthProjectInfo";
 
 const Profile = () => {
 
@@ -26,6 +30,16 @@ const Profile = () => {
                         <ProjectBind>
                             <SecondProjectSlide />
                             <SecondProjectInfo />
+                        </ProjectBind>
+
+                        <ProjectBind>
+                            <ThirdProjectSlide />
+                            <ThirdProjectInfo />
+                        </ProjectBind>
+
+                        <ProjectBind>
+                            <FourthProjectSlide />
+                            <FourthProjectInfo />
                         </ProjectBind>
 
 
@@ -96,12 +110,6 @@ const ProjectBind = styled.div`
     justify-content: space-around;
     margin-bottom: 50px;
 `
-
-
-
-
-
-
 
 const FiledRight = styled.div`
     width: 7.5%;
