@@ -64,6 +64,9 @@ const BoardArea = styled.div`
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 1vh;
+    overflow: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
 `
 
 const CareerTitle = styled.div`
@@ -83,7 +86,4 @@ const CareerContent = styled.div`
     min-height: 95px;
     margin-bottom: 10px;
     font-size: 1.2rem;
-    overflow: auto;
-    overflow-x: hidden;
-    white-space: pre-wrap;
 `
