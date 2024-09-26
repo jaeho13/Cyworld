@@ -10,6 +10,8 @@ import ThirdProjectSlide from "./third/ThirdProjectSlide";
 import ThirdProjectInfo from "./third/ThirdProjectInfo";
 import FourthProjectSlide from "./fourth/FourthProjectSlide";
 import FourthProjectInfo from "./fourth/FourthProjectInfo";
+import FifthProjectSlide from "./fifth/FifthProjectSlide";
+import FifthProjectInfo from "./fifth/FifthProjectInfo";
 
 const Profile = () => {
 
@@ -22,10 +24,10 @@ const Profile = () => {
                             Project
                         </ProjectTitle>
 
-                        <ProjectBind>
+                        {/* <ProjectBind>
                             <FirstProjectSlide />
                             <FirstProjectInfo />
-                        </ProjectBind>
+                        </ProjectBind> */}
 
                         <ProjectBind>
                             <SecondProjectSlide />
@@ -42,6 +44,10 @@ const Profile = () => {
                             <FourthProjectInfo />
                         </ProjectBind>
 
+                        <ProjectBind>
+                            <FifthProjectSlide />
+                            <FifthProjectInfo />
+                        </ProjectBind>
 
                     </FiledLeft>
 
