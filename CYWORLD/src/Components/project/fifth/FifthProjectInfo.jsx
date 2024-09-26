@@ -22,8 +22,10 @@ const FifthProjectInfo = () => {
                 - React, styled-components, axios, RESTful API, react-chartjs <br /> <br />
 
                 4. 구현 내용 <br />
-                - RESTful API를 이용한 도서 리스트 호출, 검색 및 사용자 관리 CRUD <br />
-                - react-chartjs를 이용한 도서 대출, 도서 분야 및 회원 연령대 차트 구현
+                - axios 통신을 이용한 비동기 통신 <br />
+                - 도서 검색 기능 구현 <br />
+                - RESTful API를 이용한 도서, 사용자 관리 CRUD <br />
+                - react-chartjs를 이용한 대시보드 구현(도서 대출, 도서 분야, 회원 연령대)
             </TextBind>
         </>
     )

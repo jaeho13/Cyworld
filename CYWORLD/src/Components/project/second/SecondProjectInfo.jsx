@@ -27,13 +27,14 @@ const SecondProjectInfo = () => {
                 - RESTful API를 이용한 React, Spring 게시판 CRUD 구현 <br /> <br />
 
                 4. 사용 기술 <br />
-                - React, styled-components, axios, RESTful API <br /> <br />
+                - React, styled-components, axios, web API, RESTful API <br /> <br />
 
-                5. 프로젝트 후기 <br />
-                저번 프로젝트에 이어서 React, Spring 게시판 CRUD를 구현하며 다시 한번 복습할 수 있었다. <br />
-                나아가 저번에는 구현하지 못했던 로그인까지 카카오 로그인 API를 사용하여 구현할 수 있었다. <br />
-                이번 프로젝트에서도 CRUD를 구현헀는데, 확실히 모든 개발은 CRUD에 의거하여 조금씩 수정하며 만들어지는 것 같다.
-                또한 어렵게만 생각했던 로그인 API도 막상 구현해보니 어렵지 않고 재밌게 할 수 있었다. <br />
+                5. 구현 내용 <br />
+                - axios 통신을 이용한 비동기 통신 <br />
+                - web API를 이용한 카카오 로그인 <br />
+                - 초대코드 공유를 이용한 교환 일기 연결 <br />
+                - RESTful API를 이용한 일기 및 교환 일기 구현 <br />
+                - 공통 질문 생성 및 교환 일기 CRUD
             </TextBind >
         </>
     )

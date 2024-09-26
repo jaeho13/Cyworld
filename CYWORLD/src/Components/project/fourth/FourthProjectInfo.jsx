@@ -29,12 +29,14 @@ const FourthProjectInfo = () => {
                 - RESTful API를 이용한 React, Spring 게시판 및 댓글 CRUD 구현 <br /> <br />
 
                 4. 사용 기술 <br />
-                - React, styled-components, axios, RESTful API <br /> <br />
+                - React, styled-components, axios, 카카오 API(로그인, 지도, 결제), RESTful API <br /> <br />
 
-                5. 프로젝트 후기 <br />
-                이번 프로젝트에서는 로그인 API만을 사용한게 아닌 다양한 API를 사용해보고 싶었다. <br />
-                처음 프로젝트를 시작하기 전에 어떠한 API를 사용해볼지 생각하고 그에 맞게 프로젝트를 기획했다. <br />
-                지도와 결제 API는 어렵다는 평가가 많았는데, 요즘에는 잘 정리되어 있어서 금방 해결할 수 있었다. <br />
+                5. 구현 내용 <br />
+                - axios 통신을 이용한 비동기 통신 <br />
+                - web API를 이용한 카카오 로그인 <br />
+                - 지도 API를 이용한 거래 장소 지정 <br />
+                - 결제 API를 이용한 가상 결제 시스템 구현 <br />
+                - RESTful API를 이용한 구매, 판매 거래 및 댓글 CRUD
             </TextBind >
         </>
     )

@@ -30,13 +30,13 @@ const Profile = () => {
                         </ProjectBind> */}
 
                         <ProjectBind>
-                            <SecondProjectSlide />
-                            <SecondProjectInfo />
+                            <ThirdProjectSlide />
+                            <ThirdProjectInfo />
                         </ProjectBind>
 
                         <ProjectBind>
-                            <ThirdProjectSlide />
-                            <ThirdProjectInfo />
+                            <SecondProjectSlide />
+                            <SecondProjectInfo />
                         </ProjectBind>
 
                         <ProjectBind>

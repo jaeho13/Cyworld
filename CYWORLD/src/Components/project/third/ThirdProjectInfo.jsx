@@ -26,13 +26,12 @@ const ThirdProjectInfo = () => {
                 - RESTful API를 이용한 React, Spring 게시판 및 댓글 CRUD 구현 <br /> <br />
 
                 4. 사용 기술 <br />
-                - React, styled-components, axios, RESTful API <br /> <br />
+                - React, styled-components, axios, web API, RESTful API <br /> <br />
 
-                5. 프로젝트 후기 <br />
-                처음으로 혼자가 아닌 팀으로 시작하게 된 프로젝트이다. 프로젝트에서는 게시판 및 댓글 기능 CRUD를 맡았는데,
-                처음에는 어떻게 구현을 해야할 지 몰라 많이 힘들었지만 팀원과의 소통으로 개발의 방향성을 잡고 배워가며 맡은 일을 진행할 수 있었다. <br />
-                이번 프로젝트에서 나는 게시판을 만드는 CRUD를 배웠고, 팀원들과의 소통이 얼마나 중요한지도 알 수 있었다. <br />
-                더불어, 맡은 업무에 대한 책임감을 키우는 기회가 되어서 좋았다. <br />
+                5. 구현 내용 <br />
+                - axios 통신을 이용한 비동기 통신 <br />
+                - web API를 이용한 카카오, 네이버 로그인 <br />
+                - RESTful API를 이용한 게시판 CRUD, Jelly MBTI 테스트 구현
             </TextBind >
         </>
     )
