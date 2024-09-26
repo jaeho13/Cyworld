@@ -7,24 +7,23 @@ const FifthProjectInfo = () => {
         <>
             <TextBind>
                 <ProjectInfoTitle>
-                    싸이월드 자기소개서
+                    도서 관리 시스템
                 </ProjectInfoTitle>
-                (링크 - <a href="https://github.com/jaeho13/Cyworld">https://github.com/jaeho13/Cyworld</a>)
+                (링크 - <a href="https://github.com/jaeho13/Library">https://github.com/jaeho13/Library</a>)
                 <br /> <br />
                 1. 개발 배경 및 내용 <br />
-                - 어린 시절 유행하던 싸이월드 자기소개서 <br /> <br />
+                - 신규 라이브러리 사용 및 기존 학습 내용 복습 <br /> <br />
 
                 2. 개발 목표 <br />
-                - CSS 학습 <br />
-                - 자기소개서 개선 <br /> <br />
+                - 기존 학습 내용 복습 및 정리 <br />
+                - 사용해 보지 않은 신규 라이브러리 사용 <br /> <br />
 
                 3. 사용 기술 <br />
-                - React, styled-components <br /> <br />
+                - React, styled-components, axios, RESTful API, react-chartjs <br /> <br />
 
-                4. 프로젝트 후기 <br />
-                개발을 처음 시작하고 급급하게 만들었던 자기소개서를 보면서 볼수록 부족하다는 생각을 많이 들었다. <br />
-                자기소개서를 새로 만들기로 결심하고, 어떻게 만들어야 사람들이 봤을 때 기억에 남을까 생각을 많이 했다. <br />
-                어린 시절에 유행하던 싸이월드로 자기소개서를 만들면 사람들에 공감을 받을 수 있을 것 같아서 만들기 시작했는데, 생각했던 것보다 잘 나온 것 같아서 재밌었다.
+                4. 구현 내용 <br />
+                - RESTful API를 이용한 도서 리스트 호출, 검색 및 사용자 관리 CRUD <br />
+                - react-chartjs를 이용한 도서 대출, 도서 분야 및 회원 연령대 차트 구현
             </TextBind>
         </>
     )
