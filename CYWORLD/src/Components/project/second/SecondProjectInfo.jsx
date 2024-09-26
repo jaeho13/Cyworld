@@ -27,7 +27,7 @@ const SecondProjectInfo = () => {
                 - RESTful API를 이용한 React, Spring 게시판 CRUD 구현 <br /> <br />
 
                 4. 사용 기술 <br />
-                - React, Spring, Oracle, Figma <br /> <br />
+                - React, styled-components, axios, RESTful API <br /> <br />
 
                 5. 프로젝트 후기 <br />
                 저번 프로젝트에 이어서 React, Spring 게시판 CRUD를 구현하며 다시 한번 복습할 수 있었다. <br />

@@ -22,11 +22,11 @@ const ThirdProjectInfo = () => {
                 3. 역할 <br />
                 - 기획 <br />
                 - Frontend <br />
-                - Jelly MBTI 테스트 구현 <br /> <br />
-                - RESTful API를 이용한 React, Spring 게시판 및 댓글 CRUD 구현 <br />
+                - Jelly MBTI 테스트 구현 <br />
+                - RESTful API를 이용한 React, Spring 게시판 및 댓글 CRUD 구현 <br /> <br />
 
                 4. 사용 기술 <br />
-                - React, Spring, Oracle, Figma <br /> <br />
+                - React, styled-components, axios, RESTful API <br /> <br />
 
                 5. 프로젝트 후기 <br />
                 처음으로 혼자가 아닌 팀으로 시작하게 된 프로젝트이다. 프로젝트에서는 게시판 및 댓글 기능 CRUD를 맡았는데,

@@ -29,7 +29,7 @@ const FourthProjectInfo = () => {
                 - RESTful API를 이용한 React, Spring 게시판 및 댓글 CRUD 구현 <br /> <br />
 
                 4. 사용 기술 <br />
-                - React, Spring, Oracle, Figma <br /> <br />
+                - React, styled-components, axios, RESTful API <br /> <br />
 
                 5. 프로젝트 후기 <br />
                 이번 프로젝트에서는 로그인 API만을 사용한게 아닌 다양한 API를 사용해보고 싶었다. <br />

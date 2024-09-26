@@ -19,7 +19,7 @@ const FirstProjectInfo = () => {
                 - 자기소개서 개선 <br /> <br />
 
                 3. 사용 기술 <br />
-                - React, styled-components <br /> <br />
+                - React, styled-components, react-slick <br /> <br />
 
                 4. 프로젝트 후기 <br />
                 개발을 처음 시작하고 급급하게 만들었던 자기소개서를 보면서 볼수록 부족하다는 생각을 많이 들었다. <br />
