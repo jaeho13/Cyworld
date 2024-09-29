@@ -1,6 +1,5 @@
 import React from "react";
-import { BoardArea, BoardTitle } from "./styles/ProfileCareerStyle";
-import { BoardBind, StackContent, StackTitle } from "./styles/ProfileStackStyle";
+import { BoardArea, BoardBind, BoardTitle, StackContent, StackTitle } from "./styles/ProfileStackStyle";
 
 const ProfileStack = (props) => {
     return (
