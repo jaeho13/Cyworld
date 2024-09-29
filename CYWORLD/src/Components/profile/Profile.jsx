@@ -1,9 +1,9 @@
 import React from "react";
-import styled from "styled-components"
 import Background from '../background/Background';
 import PageButton from "../button/PageButton";
 import ProfileStack from "./ProfileStack";
 import ProfileCareer from "./ProfileCareer";
+import { BtnDown, FiledBind, FiledLeft, FiledRight } from "./styles/ProfileStyle";
 
 const Profile = () => {
 
@@ -41,30 +41,3 @@ const Profile = () => {
 }
 
 export default Profile;
-
-const FiledBind = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-`
-
-const FiledLeft = styled.div`
-    width: 90%;
-    height: 76vh;
-    display: flex;
-    flex-direction: column;
-    border-radius: 16px;
-    background-color: rgba(255, 255, 255, 0.4);
-    align-items: center;
-`
-
-const FiledRight = styled.div`
-    width: 7.5%;
-    height: 73vh;
-`
-
-const BtnDown = styled.div`
-    padding-top: 17px;
-`

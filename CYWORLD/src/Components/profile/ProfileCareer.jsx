@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components"
-
+import { BoardArea, BoardTitle, CareerContent, CareerTitle } from "./styles/ProfileCareerStyle";
 
 const ProfileCareer = (props) => {
     return (
@@ -10,7 +9,6 @@ const ProfileCareer = (props) => {
             </BoardTitle>
 
             <BoardArea>
-
                 <CareerTitle>
                     인졀미 (23.07 ~ 24.02)
                 </CareerTitle>
@@ -20,7 +18,6 @@ const ProfileCareer = (props) => {
                     - PostgreSQL을 이용한 게임 데이터 밸런스 작업 진행 <br />
                     - 사용자 경험 개선을 위한 테스트 및 버그 리포트 작성 <br />
                 </CareerContent>
-
 
                 <CareerTitle>
                     라온시큐어 (24.02 ~ )
@@ -39,51 +36,3 @@ const ProfileCareer = (props) => {
 }
 
 export default ProfileCareer;
-
-
-const BoardTitle = styled.div`
-    width: 97%;
-    height: 3vh;
-    margin-top: 1vh;
-    color: #3B87AB;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding-left: 3%;
-    display: flex;
-    align-items: center;
-`
-
-const BoardArea = styled.div`
-    width: 93%;
-    height: 30vh;
-    min-height: 290px;
-    border: 2px solid #d4d4d4;
-    border-radius: 16px;
-    background-color: white;
-    margin-top: 1vh;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 1vh;
-    overflow: auto;
-    overflow-x: hidden;
-    white-space: pre-wrap;
-`
-
-const CareerTitle = styled.div`
-    width: 100%;
-    height: 3.5vh;
-    min-height: 33px;
-    color: #3B87AB;
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-`
-
-const CareerContent = styled.div`
-    width: 100%;
-    height: 10vh;
-    min-height: 95px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-`
