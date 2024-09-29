@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import styled from "styled-components";
-import ProjectImage from "../ProjectImage";
+import ProjectImage from "../../ProjectImage";
+import { SliderBorder } from "../styles/BindStyle";
 
 const ThirdProjectSlide = () => {
 
@@ -35,9 +35,3 @@ const ThirdProjectSlide = () => {
 }
 
 export default ThirdProjectSlide;
-
-const SliderBorder = styled.div`
-    width: 40%;
-    height: 24.5vh;
-    border-radius: 16px;
-`

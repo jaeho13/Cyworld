@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import styled from "styled-components";
-import ProjectImage from "../ProjectImage";
+import ProjectImage from "../../ProjectImage";
+import { SliderBorder } from "../styles/BindStyle";
 
-const FifthProjectSlide = () => {
+const SecondProjectSlide = () => {
 
     var settings = {
         dots: true,
@@ -23,21 +23,15 @@ const FifthProjectSlide = () => {
         <>
             <SliderBorder>
                 <Slider {...settings}>
-                    <ProjectImage imgSrc="/background/l_page1.png" />
-                    <ProjectImage imgSrc="/background/l_page2.png" />
-                    <ProjectImage imgSrc="/background/l_page3.png" />
-                    <ProjectImage imgSrc="/background/l_page4.png" />
-
+                    <ProjectImage imgSrc="/background/p_page.1.png" />
+                    <ProjectImage imgSrc="/background/p_page.2.png" />
+                    <ProjectImage imgSrc="/background/p_page.3.png" />
+                    <ProjectImage imgSrc="/background/p_page.4.png" />
+                    <ProjectImage imgSrc="/background/p_page.5.png" />
                 </Slider>
             </SliderBorder>
         </>
     )
 }
 
-export default FifthProjectSlide;
-
-const SliderBorder = styled.div`
-    width: 40%;
-    height: 24.5vh;
-    border-radius: 16px;
-`
+export default SecondProjectSlide;

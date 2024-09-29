@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components"
-
+import { ProjectInfoTitle, TextBind } from "../styles/BindStyle";
 
 const SecondProjectInfo = () => {
     return (
@@ -41,19 +40,3 @@ const SecondProjectInfo = () => {
 }
 
 export default SecondProjectInfo;
-
-const TextBind = styled.div`
-    width: 40%;
-    height: 24vh;
-    border: 2px solid #A3A3A3;
-    border-radius: 16px;
-    overflow: auto;
-    overflow-x: hidden;
-    background-color: rgba(255, 255, 255, 0.4);
-    padding-left: 1%;
-    padding-top: 1%;
-`
-
-const ProjectInfoTitle = styled.div`
-    font-size: 1.3rem;
-`
