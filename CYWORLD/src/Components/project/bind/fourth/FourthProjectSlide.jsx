@@ -28,6 +28,7 @@ const FourthProjectSlide = () => {
                     <ProjectImage imgSrc="/background/s_page.3.png" />
                     <ProjectImage imgSrc="/background/s_page.4.png" />
                     <ProjectImage imgSrc="/background/s_page.5.png" />
+                    <ProjectImage imgSrc="/background/s_page.6.png" />
                 </Slider>
             </SliderBorder>
         </>
