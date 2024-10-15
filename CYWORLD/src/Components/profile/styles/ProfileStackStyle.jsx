@@ -36,7 +36,7 @@ export const BoardBind = styled.div`
 export const StackTitle = styled.div`
     width: 100%;
     height: 3.5vh;
-    min-height: 33px;
+    /* min-height: 33px; */
     color: #3B87AB;
     font-weight: bold;
     font-size: 20px;
@@ -47,7 +47,7 @@ export const StackTitle = styled.div`
 export const StackContent = styled.div`
     width: 100%;
     height: 10vh;
-    min-height: 95px;
+    /* min-height: 95px; */
     font-size: 1.2rem;
     overflow: auto;
     overflow-x: hidden;
