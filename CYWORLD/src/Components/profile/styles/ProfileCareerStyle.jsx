@@ -31,7 +31,7 @@ export const BoardArea = styled.div`
 export const CareerTitle = styled.div`
     width: 100%;
     height: 3.5vh;
-    min-height: 33px;
+    /* min-height: 33px; */
     color: #3B87AB;
     font-weight: bold;
     font-size: 20px;
@@ -42,7 +42,7 @@ export const CareerTitle = styled.div`
 export const CareerContent = styled.div`
     width: 100%;
     height: 10vh;
-    min-height: 95px;
+    /* min-height: 95px; */
     margin-bottom: 10px;
     font-size: 1.2rem;
 `
