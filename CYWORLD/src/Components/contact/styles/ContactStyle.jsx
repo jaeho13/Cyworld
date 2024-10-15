@@ -49,7 +49,8 @@ export const BoardTop = styled.div`
 
 export const IconBorder = styled.div`
     width: 90px;
-    height: 90px;
+    /* height: 90px; */
+    height: 9.5vh;
     border: 2px solid black;
     border-radius: 16px;
     display: flex;

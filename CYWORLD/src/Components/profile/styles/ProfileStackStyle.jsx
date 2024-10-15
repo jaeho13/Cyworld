@@ -15,7 +15,7 @@ export const BoardTitle = styled.div`
 export const BoardArea = styled.div`
     width: 93%;
     height: 30vh;
-    min-height: 290px;
+    /* min-height: 290px; */
     border: 2px solid #d4d4d4;
     border-radius: 16px;
     background-color: white;
