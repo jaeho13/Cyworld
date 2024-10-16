@@ -74,16 +74,19 @@ export const BoardCenterBind = styled.div`
 export const BoardCenter = styled.div`
     width: 50%;
     height: 7vh;
+    line-height: 7vh;
+    text-align: center;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     font-size: 1.5rem;
     color: #3B87AB;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    border: 2px solid red;
 `
 
 export const BoardBottom = styled.div`

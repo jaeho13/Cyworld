@@ -45,4 +45,8 @@ export const CareerContent = styled.div`
     /* min-height: 95px; */
     margin-bottom: 10px;
     font-size: 1.2rem;
+    /* border: 2px solid red; */
+    overflow: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
 `
