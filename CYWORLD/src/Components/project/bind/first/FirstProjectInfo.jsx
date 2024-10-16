@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectInfoTitle, TextBind } from "../styles/BindStyle";
+import { Link, ProjectInfoTitle, TextBind } from "../styles/BindStyle";
 
 const FirstProjectInfo = () => {
     return (
@@ -8,8 +8,9 @@ const FirstProjectInfo = () => {
                 <ProjectInfoTitle>
                     싸이월드 자기소개서
                 </ProjectInfoTitle>
-                (링크 - <a href="https://github.com/jaeho13/Cyworld">https://github.com/jaeho13/Cyworld</a>)
+                (링크 - <Link href="https://github.com/jaeho13/Cyworld">https://github.com/jaeho13/Cyworld</Link>)
                 <br /> <br />
+
                 1. 개발 배경 및 내용 <br />
                 - 어린 시절 유행하던 싸이월드 자기소개서 <br /> <br />
 

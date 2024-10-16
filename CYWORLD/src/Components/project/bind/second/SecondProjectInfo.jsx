@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectInfoTitle, TextBind } from "../styles/BindStyle";
+import { Link, ProjectInfoTitle, TextBind } from "../styles/BindStyle";
 
 const SecondProjectInfo = () => {
     return (
@@ -8,7 +8,7 @@ const SecondProjectInfo = () => {
                 <ProjectInfoTitle>
                     펜팔펜스
                 </ProjectInfoTitle>
-                (링크 - <a href="https://github.com/jaeho13/PenPalPens">https://github.com/jaeho13/PenPalPens</a>)
+                (링크 - <Link href="https://github.com/jaeho13/PenPalPens">https://github.com/jaeho13/PenPalPens</Link>)
                 <br /> <br />
 
                 1. 개발 배경 및 내용 <br />

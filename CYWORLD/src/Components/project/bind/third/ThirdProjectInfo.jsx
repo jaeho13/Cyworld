@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectInfoTitle, TextBind } from "../styles/BindStyle";
+import { Link, ProjectInfoTitle, TextBind } from "../styles/BindStyle";
 
 const ThirdProjectInfo = () => {
     return (
@@ -8,8 +8,9 @@ const ThirdProjectInfo = () => {
                 <ProjectInfoTitle>
                     Jell-BTI
                 </ProjectInfoTitle>
-                (링크 - <a href="https://github.com/kimpizza/Jell-BTI_Project">https://github.com/kimpizza/Jell-BTI_Project</a>)
+                (링크 - <Link href="https://github.com/kimpizza/Jell-BTI_Project">https://github.com/kimpizza/Jell-BTI_Project</Link>)
                 <br /> <br />
+
                 1. 개발 배경 및 내용 <br />
                 - 젤리 MBTI 테스트로 성향 파악 <br />
                 - 내 취향에 맞는 하리보 젤리 찾기 <br /> <br />

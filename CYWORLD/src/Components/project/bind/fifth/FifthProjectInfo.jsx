@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectInfoTitle, TextBind } from "../styles/BindStyle";
+import { Link, ProjectInfoTitle, TextBind } from "../styles/BindStyle";
 
 const FifthProjectInfo = () => {
     return (
@@ -8,8 +8,9 @@ const FifthProjectInfo = () => {
                 <ProjectInfoTitle>
                     도서 관리 시스템
                 </ProjectInfoTitle>
-                (링크 - <a href="https://github.com/jaeho13/Library">https://github.com/jaeho13/Library</a>)
+                (링크 - <Link href="https://github.com/jaeho13/Library">https://github.com/jaeho13/Library</Link>)
                 <br /> <br />
+
                 1. 개발 배경 및 내용 <br />
                 - 신규 라이브러리 사용 및 기존 학습 내용 복습 <br /> <br />
 

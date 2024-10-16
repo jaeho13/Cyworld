@@ -21,3 +21,8 @@ export const SliderBorder = styled.div`
     height: 24.5vh;
     border-radius: 16px;
 `
+
+export const Link = styled.a`
+    word-wrap: break-word;
+    white-space: normal;
+`;
