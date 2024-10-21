@@ -86,7 +86,7 @@ export const BoardCenter = styled.div`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 `
 
 export const BoardBottom = styled.div`
