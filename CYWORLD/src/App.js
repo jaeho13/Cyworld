@@ -8,7 +8,7 @@ import Contact from "./Components/contact/Contact";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Cywolrd" >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
