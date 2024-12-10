@@ -57,7 +57,7 @@ const Home = () => {
 
                                 <CenterTopLinkFlex>
                                     <CenterTopLink>
-                                        <a href="https://jaeho13.github.io">https://jaeho13.github.io/Cyworld</a>
+                                        <a href="https://jaeho13.github.io/Cyworld">https://jaeho13.github.io/Cyworld</a>
                                     </CenterTopLink>
                                 </CenterTopLinkFlex>
                             </CenterTop>
