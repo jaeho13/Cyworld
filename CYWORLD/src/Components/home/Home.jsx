@@ -23,7 +23,7 @@ const Home = () => {
                         </LeftTopFlex>
 
                         <LeftProfile>
-                            <LeftProfileImage src="/background/Picture.png" alt="profile" />
+                            <LeftProfileImage src="/background/picture.png" alt="profile" />
                         </LeftProfile>
 
                         <LeftInfoTitle>
