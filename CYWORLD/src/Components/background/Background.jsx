@@ -1,25 +1,24 @@
 import React from "react";
 import {
+  BackgroundArea,
   BackgroundImage,
   BlueArea,
   GrayArea,
-  ImgTest,
-  Test,
   WhiteBorder,
 } from "./styles/BackgroundStyle";
 
 const Background = ({ children }) => {
   return (
     <>
-      <Test>
-        <ImgTest>
+      <BackgroundArea>
+        <BackgroundImage>
           <BlueArea>
             <WhiteBorder>
               <GrayArea>{children}</GrayArea>
             </WhiteBorder>
           </BlueArea>
-        </ImgTest>
-      </Test>
+        </BackgroundImage>
+      </BackgroundArea>
     </>
   );
 };
