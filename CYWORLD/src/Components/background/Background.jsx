@@ -6,19 +6,26 @@ import {
   GrayArea,
   WhiteBorder,
 } from "./styles/BackgroundStyle";
+import { BrowserView, MobileView } from "react-device-detect";
 
 const Background = ({ children }) => {
   return (
     <>
-      <BackgroundArea>
-        <BackgroundImage>
-          <BlueArea>
-            <WhiteBorder>
-              <GrayArea>{children}</GrayArea>
-            </WhiteBorder>
-          </BlueArea>
-        </BackgroundImage>
-      </BackgroundArea>
+      <BrowserView>
+        <BackgroundArea>
+          <BackgroundImage>
+            <BlueArea>
+              <WhiteBorder>
+                <GrayArea>{children}</GrayArea>
+              </WhiteBorder>
+            </BlueArea>
+          </BackgroundImage>
+        </BackgroundArea>
+      </BrowserView>
+
+      <MobileView>
+        <div className="w-full h-screen bg-red-500">테스트</div>
+      </MobileView>
     </>
   );
 };
