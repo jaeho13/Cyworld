@@ -24,7 +24,9 @@ const Background = ({ children }) => {
       </BrowserView>
 
       <MobileView>
-        <div className="w-full h-screen bg-red-500">테스트</div>
+        <div className="w-full h-screen flex justify-center items-center">
+          PC 환경에서 접속 부탁드립니다.
+        </div>
       </MobileView>
     </>
   );
