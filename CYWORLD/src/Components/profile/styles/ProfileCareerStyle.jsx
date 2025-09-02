@@ -50,5 +50,6 @@ export const CareerContent = styled.div`
   overflow: auto;
   overflow-x: hidden;
   white-space: pre-wrap;
-  line-height: 1.3;
+  /* line-height: 1.3; */
+  line-height: 1.2;
 `;
