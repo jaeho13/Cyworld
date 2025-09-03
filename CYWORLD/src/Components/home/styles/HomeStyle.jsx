@@ -63,8 +63,7 @@ export const LeftProfileImage = styled.img`
 
 export const LeftInfoTitle = styled.div`
   width: 95%;
-  height: 4vh;
-  /* border: 2px solid black; */
+  height: 30px;
   color: #3b87ab;
   background-color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
@@ -81,7 +80,7 @@ export const LeftInfoTitle = styled.div`
 
 export const LeftInfo = styled.div`
   width: 95%;
-  height: 30vh;
+  height: 320px;
   /* border: 2px solid black; */
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
@@ -109,8 +108,8 @@ export const LeftInfo = styled.div`
 
 export const LeftLinkTitle = styled.div`
   width: 95%;
-  height: 4vh;
-  /* border: 2px solid blue; */
+  height: 30px;
+  /* border: 2px solid black; */
   background-color: rgba(255, 255, 255, 0.6);
   color: #3b87ab;
   font-weight: bold;
@@ -204,6 +203,7 @@ export const CenterTopLink = styled.div`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.5;
 `;
 
 export const CenterCommitState = styled.div`
