@@ -10,13 +10,10 @@ export const TestBtn = styled.div`
   cursor: pointer;
   color: ${(props) => (props.$backgroundColor === "white" ? "black" : "white")};
   background-color: ${(props) => props.$backgroundColor};
-  margin-top: 1vh;
+  margin-top: 10px;
   padding-left: 3%;
-  /* display: flex; */
   align-items: center;
-  /* font-size: 1.3rem; */
   font-size: 20px;
-  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
 `;

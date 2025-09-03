@@ -42,7 +42,9 @@ export const VisitCount = styled.div`
 `;
 
 export const LeftProfile = styled.div`
-  width: 100%;
+  /* width: 100%; */
+  width: 95%;
+
   height: 26vh;
   padding-top: 1vh;
   /* border: 2px solid blue; */
@@ -69,7 +71,9 @@ export const LeftInfoTitle = styled.div`
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  padding-left: 5%;
+  /* padding-left: 5%; */
+  padding: 10px;
+  padding-top: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -81,7 +85,8 @@ export const LeftInfo = styled.div`
   /* border: 2px solid black; */
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
-  padding-left: 5%;
+  /* padding-left: 5%; */
+  padding: 10px;
   overflow: auto;
   overflow-x: hidden;
 
@@ -116,7 +121,8 @@ export const LeftLinkTitle = styled.div`
 `;
 
 export const LeftLink = styled.div`
-  width: 100%;
+  /* width: 100%; */
+  width: 95%;
   height: 5vh;
   /* border: 1px solid black; */
   border-bottom-left-radius: 16px;
@@ -201,17 +207,17 @@ export const CenterTopLink = styled.div`
 `;
 
 export const CenterCommitState = styled.div`
-  width: 99%;
-  height: 2vh;
-  padding-top: 1vh;
+  width: 100%;
+  height: 30px;
   /* border: 2px solid red; */
+  padding: 15px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   color: #3b87ab;
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
   font-weight: bold;
-  padding-left: 1%;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 `;
@@ -234,16 +240,17 @@ export const CenterCommitImageArea = styled.img`
 `;
 
 export const CenterMiniroom = styled.div`
-  width: 99%;
-  height: 3vh;
+  width: 100%;
+  height: 30px;
   /* border: 2px solid red; */
+  padding: 15px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   color: #3b87ab;
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
   font-weight: bold;
-  padding-left: 1%;
 `;
 
 export const CenterMiniroomImage = styled.div`

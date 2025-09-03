@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BoardTitle = styled.div`
   width: 97%;
   height: 3vh;
-  margin-top: 1vh;
+  margin-top: 20px;
   color: #3b87ab;
   font-weight: bold;
   font-size: 1.5rem;
